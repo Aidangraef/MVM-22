@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<RootPaths>
+		<ProjectRoot>../../../../MVMNOV23_WwiseProject</ProjectRoot>
+		<SourceFilesRoot>../../../../MVMNOV23_WwiseProject/.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>../../../../MVMNOV23_WwiseProject/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{882F4550-4F50-D322-D275-A89E98BF0BC0}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="77978275" Name="Ambient"/>
+				<Bus Id="833916109" Name="NPCs"/>
+				<Bus Id="838047381" Name="Non-World"/>
+				<Bus Id="1069431850" Name="Player"/>
+				<Bus Id="1551306167" Name="UI"/>
+				<Bus Id="1695690031" Name="Objects"/>
+				<Bus Id="2609808943" Name="World"/>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+				<Bus Id="3991942870" Name="Music"/>
+			</Busses>
+		</SoundBank>
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{598DA4AE-A771-B465-C42E-EB1C3B77C432}">
+			<ShortName>GameplayLoop</ShortName>
+			<Path>GameplayLoop.bnk</Path>
+			<Media>
+				<File Id="516606022" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_UI_PickUp.wav</ShortName>
+					<CachePath>SFX/SFX_UI_PickUp_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1012192840" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_UI_Start.wav</ShortName>
+					<CachePath>SFX/SFX_UI_Start_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1776921608" Name="testComplete" DurationType="OneShot" DurationMin="1.5" DurationMax="1.5">
+					<MediaRefs>
+						<MediaRef Id="516606022"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1435302941" Name="testFail" DurationType="OneShot" DurationMin="3.5" DurationMax="3.5">
+					<MediaRefs>
+						<MediaRef Id="1012192840"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{91063EAC-EC0A-BA67-329B-9AE6190B8B6C}</FileHash>
+</SoundBanksInfo>

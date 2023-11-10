@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo>
+	<Project Name="MVMNOV23_WwiseProject" GUID="{6BF1317B-3A5F-4C73-BEED-73952034530B}" Generator="2022.1.0.8070"/>
+	<CacheRoot>../../../../MVMNOV23_WwiseProject/.cache</CacheRoot>
+	<Platforms>
+		<Platform Name="Mac" GUID="{CA535002-73CB-4E14-8764-5A976C844E23}" BasePlatform="Mac" BasePlatformGUID="{9C6217D5-DD11-4795-87C1-6CE02853C540}" Path="../../../WwiseData/Banks/Mac"/>
+		<Platform Name="Web" GUID="{EF562F0A-977B-464F-8743-CC7FC1684F82}" BasePlatform="Web" BasePlatformGUID="{639AD233-23F2-4C0F-9127-79F44C15E1DA}" Path="../../../WwiseData/Banks/Web"/>
+		<Platform Name="Windows" GUID="{53229DEC-D47F-4C6F-8F53-7A6036D97458}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="../../../WwiseData/Banks/Windows"/>
+	</Platforms>
+	<Languages>
+		<Language Name="English(US)" Id="684519430" GUID="{834975FA-8391-4877-85FB-4337E83B56CB}" Default="true" UseAsStandIn="true"/>
+	</Languages>
+	<FileHash>{18415C93-28C0-2427-FB38-CE7E37802CAD}</FileHash>
+</ProjectInfo>

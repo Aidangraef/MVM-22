@@ -1,0 +1,15 @@
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	77978275	Ambient			\Default Work Unit\Master Audio Bus\World\Ambient	
+	833916109	NPCs			\Default Work Unit\Master Audio Bus\World\NPCs	
+	838047381	Non-World			\Default Work Unit\Master Audio Bus\Non-World	
+	1069431850	Player			\Default Work Unit\Master Audio Bus\World\Player	
+	1551306167	UI			\Default Work Unit\Master Audio Bus\Non-World\UI	
+	1695690031	Objects			\Default Work Unit\Master Audio Bus\World\Objects	
+	2609808943	World			\Default Work Unit\Master Audio Bus\World	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Non-World\Music	
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+

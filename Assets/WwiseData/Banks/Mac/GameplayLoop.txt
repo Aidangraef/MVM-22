@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1435302941	testFail			\Default Work Unit\UI\testFail	
+	1776921608	testComplete			\Default Work Unit\UI\testComplete	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	516606022	testComplete	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\SFX_UI_PickUp_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\testSounds\testComplete		288096
+	1012192840	testFail	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\SFX_UI_Start_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\testSounds\testFail		672096
+

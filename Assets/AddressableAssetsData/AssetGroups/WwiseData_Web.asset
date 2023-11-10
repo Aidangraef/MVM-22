@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: WwiseData_Web
+  m_EditorClassIdentifier: 
+  m_GroupName: WwiseData_Web
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 5d40805ec44336c4898efe211365d12c
+  m_SerializeEntries:
+  - m_GUID: 8887716f75c48934db8ee11ffb54a7d5
+    m_Address: Assets/WwiseData/Banks/Web/GameplayLoop.bnk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: c516851382ca209429278370b961927e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 3fc31c7f9f350aa4da06b9eb3481b1a3, type: 2}
+    - {fileID: 11400000, guid: 5c18b6db940649e499262a01604fff30, type: 2}

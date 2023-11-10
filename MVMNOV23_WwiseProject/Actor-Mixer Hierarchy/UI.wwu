@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CB787123-DEB4-4217-BA3A-6ED3F50ADA76}" SchemaVersion="110" RootDocumentID="{3296693B-190B-452A-9C31-D1FDB06FEBD2}" ParentDocumentID="{3296693B-190B-452A-9C31-D1FDB06FEBD2}">
+	<AudioObjects>
+		<WorkUnit Name="UI" ID="{CB787123-DEB4-4217-BA3A-6ED3F50ADA76}" OwnerID="{E70C60B2-112D-46DF-9E6C-F977B337D0CC}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="UI" ID="{8C9C5C10-F357-4C21-A08E-002FB3C1FB5F}" ShortID="241092751">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="testSounds" ID="{AA80145A-7D34-4D7A-B1E7-73C92EBED0D6}" ShortID="246390375">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="testFail" ID="{56D9DE5F-386E-4105-B37E-B9C7642E5DEE}" ShortID="163105241">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_UI_Start" ID="{FFBC412A-E37A-40DE-AE61-CEEF7142BC39}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_UI_Start.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1012192840"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_UI_Start" ID="{FFBC412A-E37A-40DE-AE61-CEEF7142BC39}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="testComplete" ID="{986EB032-3E18-4265-8653-96CAB4099DB4}" ShortID="741141949">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_UI_PickUp" ID="{B03CEA4D-1436-49E2-A93A-0211EA749810}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_UI_PickUp.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="516606022"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_UI_PickUp" ID="{B03CEA4D-1436-49E2-A93A-0211EA749810}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

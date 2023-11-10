@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}" SchemaVersion="110">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{2BB5DEDA-8219-4A79-8F72-C73A51B6188B}" WorkUnitID="{534AD6E9-EB34-418B-A2EB-92F7AED8BAC7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Non-World" ID="{9EA25C38-6BE9-4F4E-924A-336D5BEC5CEC}">
+							<ChildrenList>
+								<Bus Name="Music" ID="{28C8B42B-4786-499B-8837-8E74A2E5B722}"/>
+								<Bus Name="UI" ID="{52F65652-5F7A-4A18-AE86-1FEDE723E106}"/>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="World" ID="{84928634-45EA-448D-94B8-A4CF48FA052D}">
+							<ChildrenList>
+								<Bus Name="Ambient" ID="{E2F1B47E-09A6-462F-BEBC-58232F1B29E3}"/>
+								<Bus Name="NPCs" ID="{BB88EB2A-314D-43F8-A870-5A43D59E36D9}"/>
+								<Bus Name="Player" ID="{F12A23B2-2402-4512-868D-18D1FC33FE6D}"/>
+								<Bus Name="Objects" ID="{99FE6F70-A41A-4041-AA02-8FDC4BC8191D}"/>
+							</ChildrenList>
+						</Bus>
+					</ChildrenList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

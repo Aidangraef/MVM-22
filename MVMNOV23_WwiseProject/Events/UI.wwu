@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{AFA36B95-C8E4-4810-A4F2-29F69183D587}" SchemaVersion="110" RootDocumentID="{0FDCE87A-3E1C-4B5A-8A91-CD3C3E4E6159}" ParentDocumentID="{0FDCE87A-3E1C-4B5A-8A91-CD3C3E4E6159}">
+	<Events>
+		<WorkUnit Name="UI" ID="{AFA36B95-C8E4-4810-A4F2-29F69183D587}" OwnerID="{0FDCE87A-3E1C-4B5A-8A91-CD3C3E4E6159}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="testComplete" ID="{B17AF0B5-2F46-43E3-9E3F-9EE0C82EBB29}">
+					<ChildrenList>
+						<Action Name="" ID="{8348FBBF-BFB1-45C4-930C-DB8A0CB1B893}" ShortID="846246333">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="testComplete" ID="{986EB032-3E18-4265-8653-96CAB4099DB4}" WorkUnitID="{CB787123-DEB4-4217-BA3A-6ED3F50ADA76}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="testFail" ID="{06366194-163D-4D77-9601-06A041F1D5C5}">
+					<ChildrenList>
+						<Action Name="" ID="{34277259-C2E8-44EA-B2D6-CAF43251EECA}" ShortID="781687102">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="testFail" ID="{56D9DE5F-386E-4105-B37E-B9C7642E5DEE}" WorkUnitID="{CB787123-DEB4-4217-BA3A-6ED3F50ADA76}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

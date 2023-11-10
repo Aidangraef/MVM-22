@@ -1,0 +1,44 @@
+{
+    "originalSdkFolder": "D:\\Audio_Integration\\Wwise 2022.1.0.8070\\SDK",
+    "currentVersion": {
+        "nickname": "",
+        "build": 2611,
+        "major": 1,
+        "minor": 0,
+        "year": 2022
+    },
+    "installedBundleGroups": [
+        {
+            "id": "Packages",
+            "valueId": "Unity"
+        },
+        {
+            "id": "Packages",
+            "valueId": "Extensions"
+        },
+        {
+            "id": "DeploymentPlatforms",
+            "valueId": "Mac"
+        },
+        {
+            "id": "DeploymentPlatforms",
+            "valueId": "Windows"
+        },
+        {
+            "id": "Packages",
+            "valueId": "Unity"
+        },
+        {
+            "id": "DeploymentPlatforms",
+            "valueId": "Mac"
+        },
+        {
+            "id": "DeploymentPlatforms",
+            "valueId": "Windows"
+        },
+        {
+            "id": "DeploymentPlatforms",
+            "valueId": "Emscripten"
+        }
+    ]
+}

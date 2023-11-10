@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0FDCE87A-3E1C-4B5A-8A91-CD3C3E4E6159}" SchemaVersion="110">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{0FDCE87A-3E1C-4B5A-8A91-CD3C3E4E6159}" PersistMode="Standalone">
+			<ChildrenList>
+				<WorkUnit Name="Ambient" ID="{C9FD24E4-D0C3-47F1-A067-3A76C132B255}" PersistMode="Reference"/>
+				<WorkUnit Name="NPCs" ID="{65A5EE05-15E9-4608-8C72-AA45659CACF6}" PersistMode="Reference"/>
+				<WorkUnit Name="Objects" ID="{8120CDDE-C03B-49A1-9097-0FB092482B3A}" PersistMode="Reference"/>
+				<WorkUnit Name="Player" ID="{A5316B78-3C56-4BA3-B621-613D151278FB}" PersistMode="Reference"/>
+				<WorkUnit Name="UI" ID="{AFA36B95-C8E4-4810-A4F2-29F69183D587}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
