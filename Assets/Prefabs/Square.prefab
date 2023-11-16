@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 109959827000306111}
   - component: {fileID: 109959827000306106}
   - component: {fileID: 1648830670636198710}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b566b33531e240546b0b2496225a9a58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attractableRadius: 5
+  attractableRadius: 12
   attractionStrength: 50
   blackHoleLayer:
     serializedVersion: 2
