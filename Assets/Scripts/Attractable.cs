@@ -13,11 +13,14 @@ public class Attractable : MonoBehaviour
     private Rigidbody2D rb;
     private bool shrinking;
 
+    private List<GameObject> inventory;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         shrinking = false;
+        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>().inventory;
     }
 
     // Update is called once per frame
@@ -82,7 +85,8 @@ public class Attractable : MonoBehaviour
             yield return new WaitForSeconds(0.05f);
         }
 
-        // Destroy this object now
-        Destroy(gameObject);
+        // Get rid of this object for now
+        inventory.Add(gameObject);
+        gameObject.SetActive(false);
     }
 }
