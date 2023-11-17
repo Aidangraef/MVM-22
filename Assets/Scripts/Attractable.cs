@@ -7,14 +7,17 @@ public class Attractable : MonoBehaviour
     [SerializeField] private float attractableRadius = 0.5f;
     [SerializeField] private float attractionStrength = 1f;
     [SerializeField] private LayerMask blackHoleLayer;
+    [SerializeField] private bool storable;
 
     private GameObject blackHole;
     private Rigidbody2D rb;
+    private bool shrinking;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        shrinking = false;
     }
 
     // Update is called once per frame
@@ -51,5 +54,35 @@ public class Attractable : MonoBehaviour
         {
             rb.AddForce((attractionStrength * offset.normalized / magsqr) * rb.mass);
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        // only store storable objects
+        if (!storable) return;
+
+        // check for collision with black hole
+        if (collision.gameObject.tag != "Black Hole") return;
+
+        // don't start the coroutine if it is already happening
+        if (shrinking) return;
+
+        shrinking = true;
+        StartCoroutine(DoShrink());
+    }
+
+    public IEnumerator DoShrink()
+    {
+        for(int i = 0; i < 20; i++)
+        {
+            Vector3 newScale = transform.localScale;
+            newScale.x -= 0.05f;
+            newScale.y -= 0.05f;
+            transform.localScale = newScale;
+            yield return new WaitForSeconds(0.05f);
+        }
+
+        // Destroy this object now
+        Destroy(gameObject);
     }
 }

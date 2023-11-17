@@ -1383,6 +1383,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 109959827000306104, guid: c9cdb3a54f96a2b43993226d10224273, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 109959827000306104, guid: c9cdb3a54f96a2b43993226d10224273, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9484317
+      objectReference: {fileID: 0}
+    - target: {fileID: 109959827000306104, guid: c9cdb3a54f96a2b43993226d10224273, type: 3}
+      propertyPath: m_Color.r
+      value: 0.23113209
+      objectReference: {fileID: 0}
     - target: {fileID: 109959827000306105, guid: c9cdb3a54f96a2b43993226d10224273, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1430,6 +1442,10 @@ PrefabInstance:
     - target: {fileID: 109959827000306110, guid: c9cdb3a54f96a2b43993226d10224273, type: 3}
       propertyPath: m_Name
       value: Square (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1648830670636198710, guid: c9cdb3a54f96a2b43993226d10224273, type: 3}
+      propertyPath: storable
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1648830670636198710, guid: c9cdb3a54f96a2b43993226d10224273, type: 3}
       propertyPath: attractionStrength
