@@ -16,11 +16,18 @@ public class PlayerInventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown("v"))
+        if(Input.GetMouseButtonDown(1))
         {
-            //Instantiate(inventory[0], blackHole.transform.position, Quaternion.identity);
-            inventory[0].SetActive(true);
-            inventory[0].transform.position = blackHole.transform.position;
+            if(inventory.Count > 0)
+            {
+                // "respawn" item
+                inventory[0].SetActive(true);
+                inventory[0].transform.position = blackHole.transform.GetChild(0).position;
+                inventory[0].GetComponent<Attractable>().Shoot(blackHole);
+
+                // remove from inventory
+                inventory.RemoveAt(0);
+            }           
         }
     }
 }

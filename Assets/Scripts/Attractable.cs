@@ -6,6 +6,7 @@ public class Attractable : MonoBehaviour
 {
     [SerializeField] private float attractableRadius = 0.5f;
     [SerializeField] private float attractionStrength = 1f;
+    [SerializeField] private float shootingForce = 25f;
     [SerializeField] private LayerMask blackHoleLayer;
     [SerializeField] private bool storable;
 
@@ -87,6 +88,43 @@ public class Attractable : MonoBehaviour
 
         // Get rid of this object for now
         inventory.Add(gameObject);
+        shrinking = false;
         gameObject.SetActive(false);
+    }
+
+    // shoot out of black hole
+    public void Shoot(GameObject bh)
+    {
+        // temporarily turn off attraction
+        StartCoroutine(DoRestoreAttraction());
+
+        transform.localScale = Vector3.one;
+
+        // get mouse pointer and direction to
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePos.z = 0f; // 2D
+
+        Vector3 direction = -bh.transform.position + bh.transform.GetChild(0).position;
+        direction.Normalize();
+
+        // shoot towards mouse
+        rb.AddForce(direction * shootingForce, ForceMode2D.Impulse);
+    }
+
+    public IEnumerator DoRestoreAttraction()
+    {
+        // save for later
+        float currentAttractionStrength = attractionStrength;
+
+        // turn off attraction
+        attractableRadius = 0;
+        attractionStrength = 0;
+
+        // wait an appropriate amount of time
+        yield return new WaitForSeconds(1);
+
+        // turn back on
+        attractionStrength = currentAttractionStrength;
+
     }
 }

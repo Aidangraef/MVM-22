@@ -27,7 +27,7 @@ public class BlackHoleMovement : MonoBehaviour
             //updatePosition = false;
         }
 
-        if(Input.GetMouseButtonDown(1))
+        if(Input.GetKeyDown("v"))
         {
             blackHole.transform.position = new Vector3(-3000, -3000, 0); // "delete" the black hole
         }
@@ -35,10 +35,16 @@ public class BlackHoleMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!updatePosition) return; // mouse is not being clicked so nothing needs to happen
-
+        // get mouse position
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePos.z = 0f; // 2D
+
+        // rotate black hole towards mouse always
+        Vector2 direction = new Vector2(mousePos.x - blackHole.transform.position.x, mousePos.y - blackHole.transform.position.y);
+        blackHole.transform.up = direction;
+
+        if (!updatePosition) return; // mouse is not being clicked so nothing needs to happen
+
         blackHole.transform.position = mousePos;
         updatePosition = false;
     }
