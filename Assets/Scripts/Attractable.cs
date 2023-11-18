@@ -117,7 +117,7 @@ public class Attractable : MonoBehaviour
         float currentAttractionStrength = attractionStrength;
 
         // turn off attraction
-        attractableRadius = 0;
+        //attractableRadius = 0;
         attractionStrength = 0;
 
         // wait an appropriate amount of time
@@ -125,6 +125,7 @@ public class Attractable : MonoBehaviour
 
         // turn back on
         attractionStrength = currentAttractionStrength;
+        Debug.Log("returned attraction strength");
 
     }
 }
