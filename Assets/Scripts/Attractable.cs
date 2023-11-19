@@ -87,7 +87,6 @@ public class Attractable : MonoBehaviour
         }
 
         // Get rid of this object for now
-
         inventory.AddToInventory(gameObject);
         shrinking = false;
         gameObject.SetActive(false);
