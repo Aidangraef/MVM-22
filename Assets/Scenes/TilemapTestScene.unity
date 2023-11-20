@@ -9122,7 +9122,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed39f2b237e573f4f85990bb5d1440ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitBank: {fileID: 11400000, guid: 208d3d6d9b7f1bb4c927b97a624020c7, type: 2}
 --- !u!114 &1561245051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9488,6 +9487,7 @@ GameObject:
   - component: {fileID: 1991969016}
   - component: {fileID: 1991969021}
   - component: {fileID: 1991969022}
+  - component: {fileID: 1991969023}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -9528,7 +9528,7 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 3
   m_Material: {fileID: 6200000, guid: 0bb64cd51f7ae974aa51060782a22cd8, type: 2}
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
@@ -9600,8 +9600,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
-  m_Color: {r: 0.49461553, g: 0.8962264, b: 0.8692902, a: 1}
+  m_Sprite: {fileID: 25371775, guid: c1937fea123e83246ab814f0c0446dbe, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9656,3 +9656,24 @@ MonoBehaviour:
   blackHole: {fileID: 1309042543}
   slotPrefab: {fileID: 2049118569036197371, guid: 810bb9018053ab7428dad434b984686d, type: 3}
   UIBar: {fileID: 1595913173}
+--- !u!95 &1991969023
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991969015}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5dfe2bb2636bb02488cc75646b4619ea, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
