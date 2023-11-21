@@ -12,10 +12,15 @@ public class EnemyMove : MonoBehaviour
     [SerializeField] private float movementSpeed = 5f;
     private bool isMoving = true;
 
+    Rigidbody2D rb;
+
     void Start()
     {
         // Start by moving towards point1
         currentTarget = point1;
+
+        // set rb
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
@@ -59,5 +64,20 @@ public class EnemyMove : MonoBehaviour
 
         // Resume moving
         isMoving = true;
+    }
+
+    // check for player collision
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Player")
+        {
+            Debug.Log("collided with player");
+            // make player do their stuff
+            collision.gameObject.GetComponent<PlayerMovement>().TakeDamage(transform);
+
+            // enemy do your stuff (recoil)
+            Vector3 direction = transform.position - collision.transform.position;
+            rb.AddForce(direction * 3, ForceMode2D.Impulse);
+        }
     }
 }

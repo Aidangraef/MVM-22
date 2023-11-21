@@ -154,4 +154,13 @@ public class PlayerMovement : MonoBehaviour
         newScale.x *= -1;
         transform.localScale = newScale;
     }
+
+    public void TakeDamage(Transform enemy)
+    {
+        // recoil
+        Vector3 direction = transform.position - enemy.position;
+        rb.AddForce(direction * 3, ForceMode2D.Impulse);
+
+        // TODO: Decrease health
+    }
 }
