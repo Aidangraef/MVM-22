@@ -7,6 +7,7 @@ using UnityEngine.EventSystems;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed; // how fast the player moves
+    [SerializeField] private int hp = 5;
     [SerializeField] private float jumpForce = 400f; // force added when the player jumps
     [SerializeField] private float jumpDecay = 0.33f;
     [SerializeField] private float movementSmoothing = 0.05f; // how much to smooth the movement
@@ -155,12 +156,19 @@ public class PlayerMovement : MonoBehaviour
         transform.localScale = newScale;
     }
 
-    public void TakeDamage(Transform enemy)
+    public void TakeDamage(Transform enemy, int dmg)
     {
         // recoil
         Vector3 direction = transform.position - enemy.position;
         rb.AddForce(direction * 3, ForceMode2D.Impulse);
 
-        // TODO: Decrease health
+        // Decrease health
+        hp -= dmg;
+
+        // check for dead
+        if(hp <= 0)
+        {
+            //TODO: GameOver()
+        }
     }
 }

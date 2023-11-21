@@ -73,7 +73,7 @@ public class EnemyMove : MonoBehaviour
         {
             Debug.Log("collided with player");
             // make player do their stuff
-            collision.gameObject.GetComponent<PlayerMovement>().TakeDamage(transform);
+            collision.gameObject.GetComponent<PlayerMovement>().TakeDamage(transform, 1);
 
             // enemy do your stuff (recoil)
             Vector3 direction = transform.position - collision.transform.position;
