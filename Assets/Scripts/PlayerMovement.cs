@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpBufferTime = 0.2f; // how much time the player can buffer a jump
     [SerializeField] private LayerMask whatIsGround; // used to determine when the player touches the ground so they can jump again
     [SerializeField] private Transform groundCheck; // place this gameobject as a child of the player at the bottom of the sprite
+    [SerializeField] private GameObject HPUIBar;
     const float groundedRadius = 0.2f; // used for checking if the player is on the ground
     private float coyoteTimeCounter;
     private float jumpBufferCounter;
@@ -170,5 +171,8 @@ public class PlayerMovement : MonoBehaviour
         {
             //TODO: GameOver()
         }
+
+        // update UI
+        Destroy(HPUIBar.transform.GetChild(0).gameObject);
     }
 }
