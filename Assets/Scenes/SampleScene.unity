@@ -1343,6 +1343,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 1441999010119473195, guid: ad8edc08d5626ad4582244dcdd22ca24, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5575734204448639884, guid: ad8edc08d5626ad4582244dcdd22ca24, type: 3}
       propertyPath: target
       value: 
@@ -3714,7 +3718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d2dfc6a633713f40b4c860d95d30c95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitializationSettings: {fileID: 11400000, guid: 6392982308f4e134a9cfabb067e0db4b, type: 2}
+  InitializationSettings: {fileID: 0}
   basePath: 
   language: 
   defaultPoolSize: 0
@@ -4888,6 +4892,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
+  hp: 5
   jumpForce: 600
   jumpDecay: 0.4
   movementSmoothing: 0.05
@@ -4897,6 +4902,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   groundCheck: {fileID: 458609773}
+  HPUIBar: {fileID: 0}
   grounded: 0
   facingRight: 1
   OnLandEvent:
