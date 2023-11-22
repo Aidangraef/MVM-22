@@ -38,4 +38,19 @@ public class EnemyFlip : MonoBehaviour
         }
         
     }
+
+    // check for player collision
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            Debug.Log("collided with player");
+            // make player do their stuff
+            collision.gameObject.GetComponent<PlayerMovement>().TakeDamage(transform, 1);
+
+            // enemy do your stuff (recoil)
+            Vector3 direction = transform.position - collision.transform.position;
+            rb.AddForce(direction * 30000000, ForceMode2D.Impulse);
+        }
+    }
 }
