@@ -26,6 +26,8 @@ public class PlayerMovement : MonoBehaviour
 
     public UnityEvent OnLandEvent; // pretty straightforward
 
+    private float damageTimer = 0f;
+
     [System.Serializable]
     public class BoolEvent : UnityEvent<bool> { }
 
@@ -33,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
     //GameObject camera;
 
     bool invincible; // if the player is temporarily invincible due to damage or something
+    float invincibleTimer = 10f;
     float input; // player keryboard input
     bool jump; // becomes true when the player tries to jump
     bool releaseJump; // becomes true when the player lets go of the jump button
@@ -79,6 +82,15 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         // and actually do the movement in FixedUpdate
+
+        invincibleTimer -= 1;
+
+        // damage recoil
+        if (damageTimer > 0)
+        {
+            damageTimer -= 1;
+            return;
+        }
 
         // subtract from jumpBufferCounter
         jumpBufferCounter -= Time.fixedDeltaTime;
@@ -159,9 +171,15 @@ public class PlayerMovement : MonoBehaviour
 
     public void TakeDamage(Transform enemy, int dmg)
     {
+        if (invincible)
+        {
+            return;
+        }
+
         // recoil
         Vector3 direction = transform.position - enemy.position;
-        rb.AddForce(direction * 3, ForceMode2D.Impulse);
+        rb.AddForce(direction * 25, ForceMode2D.Impulse);
+        damageTimer = 10f; // wait this many frames
 
         // Decrease health
         hp -= dmg;
