@@ -50,7 +50,7 @@ public class EnemyFlip : MonoBehaviour
 
             // enemy do your stuff (recoil)
             Vector3 direction = transform.position - collision.transform.position;
-            rb.AddForce(direction * 30000000, ForceMode2D.Impulse);
+            rb.AddForce(direction * 25, ForceMode2D.Impulse);
         }
     }
 }

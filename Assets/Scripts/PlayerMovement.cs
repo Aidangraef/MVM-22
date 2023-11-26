@@ -31,12 +31,12 @@ public class PlayerMovement : MonoBehaviour
     [System.Serializable]
     public class BoolEvent : UnityEvent<bool> { }
 
-    //Animator animator;
+    Animator animator;
     //GameObject camera;
 
     bool invincible; // if the player is temporarily invincible due to damage or something
     float invincibleTimer = 10f;
-    float input; // player keryboard input
+    float input; // player keyboard input
     bool jump; // becomes true when the player tries to jump
     bool releaseJump; // becomes true when the player lets go of the jump button
 
@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
     {
         // All normal set up stuff
         rb = GetComponent<Rigidbody2D>();
-        //animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
         //camera = camera.main
 
         if (OnLandEvent == null)
@@ -82,6 +82,16 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         // and actually do the movement in FixedUpdate
+
+        // animation
+        if(input >= -0.0001 || input <= 0.0001)
+        {
+            animator.SetBool("isRunning", false);
+        }
+        else
+        {
+            animator.SetBool("isRunning", true);
+        }
 
         invincibleTimer -= 1;
 

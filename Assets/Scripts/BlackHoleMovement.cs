@@ -18,7 +18,7 @@ public class BlackHoleMovement : MonoBehaviour
     void Update()
     {
         // only move the black hole if the mouse button is held down
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(1))
         {
             updatePosition = true;
         }
@@ -27,7 +27,7 @@ public class BlackHoleMovement : MonoBehaviour
             //updatePosition = false;
         }
 
-        if(Input.GetKeyDown("v"))
+        if(Input.GetKeyDown("v") || Input.GetMouseButtonUp(1))
         {
             blackHole.transform.position = new Vector3(-3000, -3000, 0); // "delete" the black hole
         }
