@@ -18,7 +18,7 @@ public class PlayerInventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(1))
+        if(Input.GetMouseButtonDown(0) && Input.GetMouseButton(1))
         {
             if(inventory.Count > 0)
             {
