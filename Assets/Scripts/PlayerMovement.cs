@@ -7,6 +7,7 @@ using UnityEngine.EventSystems;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed; // how fast the player moves
+    [SerializeField] private int hp = 5;
     [SerializeField] private float jumpForce = 400f; // force added when the player jumps
     [SerializeField] private float jumpDecay = 0.33f;
     [SerializeField] private float movementSmoothing = 0.05f; // how much to smooth the movement
@@ -14,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpBufferTime = 0.2f; // how much time the player can buffer a jump
     [SerializeField] private LayerMask whatIsGround; // used to determine when the player touches the ground so they can jump again
     [SerializeField] private Transform groundCheck; // place this gameobject as a child of the player at the bottom of the sprite
+    [SerializeField] private GameObject HPUIBar;
     const float groundedRadius = 0.2f; // used for checking if the player is on the ground
     private float coyoteTimeCounter;
     private float jumpBufferCounter;
@@ -24,14 +26,17 @@ public class PlayerMovement : MonoBehaviour
 
     public UnityEvent OnLandEvent; // pretty straightforward
 
+    private float damageTimer = 0f;
+
     [System.Serializable]
     public class BoolEvent : UnityEvent<bool> { }
 
-    //Animator animator;
+    Animator animator;
     //GameObject camera;
 
     bool invincible; // if the player is temporarily invincible due to damage or something
-    float input; // player keryboard input
+    float invincibleTimer = 10f;
+    float input; // player keyboard input
     bool jump; // becomes true when the player tries to jump
     bool releaseJump; // becomes true when the player lets go of the jump button
 
@@ -39,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
     {
         // All normal set up stuff
         rb = GetComponent<Rigidbody2D>();
-        //animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
         //camera = camera.main
 
         if (OnLandEvent == null)
@@ -77,6 +82,25 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         // and actually do the movement in FixedUpdate
+
+        // animation
+        if(input >= -0.0001 || input <= 0.0001)
+        {
+            animator.SetBool("isRunning", false);
+        }
+        else
+        {
+            animator.SetBool("isRunning", true);
+        }
+
+        invincibleTimer -= 1;
+
+        // damage recoil
+        if (damageTimer > 0)
+        {
+            damageTimer -= 1;
+            return;
+        }
 
         // subtract from jumpBufferCounter
         jumpBufferCounter -= Time.fixedDeltaTime;
@@ -153,5 +177,30 @@ public class PlayerMovement : MonoBehaviour
         Vector3 newScale = transform.localScale;
         newScale.x *= -1;
         transform.localScale = newScale;
+    }
+
+    public void TakeDamage(Transform enemy, int dmg)
+    {
+        if (invincible)
+        {
+            return;
+        }
+
+        // recoil
+        Vector3 direction = transform.position - enemy.position;
+        rb.AddForce(direction * 25, ForceMode2D.Impulse);
+        damageTimer = 10f; // wait this many frames
+
+        // Decrease health
+        hp -= dmg;
+
+        // check for dead
+        if(hp <= 0)
+        {
+            //TODO: GameOver()
+        }
+
+        // update UI
+        Destroy(HPUIBar.transform.GetChild(0).gameObject);
     }
 }
