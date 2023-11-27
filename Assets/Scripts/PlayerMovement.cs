@@ -36,7 +36,8 @@ public class PlayerMovement : MonoBehaviour
     //GameObject camera;
 
     bool invincible; // if the player is temporarily invincible due to damage or something
-    float invincibleTimer = 10f;
+    float invincibleTimer = -1f;
+    SpriteRenderer spriteRenderer;
     float input; // player keyboard input
     bool jump; // becomes true when the player tries to jump
     bool releaseJump; // becomes true when the player lets go of the jump button
@@ -46,6 +47,7 @@ public class PlayerMovement : MonoBehaviour
         // All normal set up stuff
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         //camera = camera.main
 
         if (OnLandEvent == null)
@@ -94,7 +96,27 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("isRunning", true);
         }
 
-        invincibleTimer -= 1;
+        // invincibility
+        if(invincibleTimer > 0)
+        {
+            invincibleTimer -= 1;
+
+            // blink
+            if (invincibleTimer % 4 == 0)
+            {
+                spriteRenderer.enabled = false;
+            }
+            else
+            {
+                spriteRenderer.enabled = true;
+            }
+        }
+        else if (invincibleTimer == 0)
+        {
+            invincibleTimer = -1f; // keep at -1 when not invincible
+            invincible = false;
+            spriteRenderer.enabled = true;
+        }
 
         // damage recoil
         if (damageTimer > 0)
@@ -212,6 +234,10 @@ public class PlayerMovement : MonoBehaviour
         {
             //TODO: GameOver()
         }
+
+        // set invincible
+        invincible = true;
+        invincibleTimer = 60f;
 
         // update UI
         Destroy(HPUIBar.transform.GetChild(0).gameObject);
