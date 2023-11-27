@@ -7,7 +7,7 @@ using UnityEngine.EventSystems;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed; // how fast the player moves
-    [SerializeField] private int hp = 5;
+    [SerializeField] public int hp = 5;
     [SerializeField] private float jumpForce = 400f; // force added when the player jumps
     [SerializeField] private float jumpDecay = 0.33f;
     [SerializeField] private float movementSmoothing = 0.05f; // how much to smooth the movement
@@ -16,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask whatIsGround; // used to determine when the player touches the ground so they can jump again
     [SerializeField] private Transform groundCheck; // place this gameobject as a child of the player at the bottom of the sprite
     [SerializeField] private GameObject HPUIBar;
+    [SerializeField] private GameObject GameOverPanel;
+    [SerializeField] private MapSwitcher mapSwitcher;
     const float groundedRadius = 0.2f; // used for checking if the player is on the ground
     private float coyoteTimeCounter;
     private float jumpBufferCounter;
@@ -36,7 +38,8 @@ public class PlayerMovement : MonoBehaviour
     //GameObject camera;
 
     bool invincible; // if the player is temporarily invincible due to damage or something
-    float invincibleTimer = 10f;
+    float invincibleTimer = -1f;
+    SpriteRenderer spriteRenderer;
     float input; // player keyboard input
     bool jump; // becomes true when the player tries to jump
     bool releaseJump; // becomes true when the player lets go of the jump button
@@ -46,6 +49,7 @@ public class PlayerMovement : MonoBehaviour
         // All normal set up stuff
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         //camera = camera.main
 
         if (OnLandEvent == null)
@@ -65,6 +69,9 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // cannot move when in map view
+        if (mapSwitcher.mapIsActive) return;
+
         // get player input in Update
         input = Input.GetAxisRaw("Horizontal");
 
@@ -94,7 +101,27 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("isRunning", true);
         }
 
-        invincibleTimer -= 1;
+        // invincibility
+        if(invincibleTimer > 0)
+        {
+            invincibleTimer -= 1;
+
+            // blink
+            if (invincibleTimer % 4 == 0)
+            {
+                spriteRenderer.enabled = false;
+            }
+            else
+            {
+                spriteRenderer.enabled = true;
+            }
+        }
+        else if (invincibleTimer == 0)
+        {
+            invincibleTimer = -1f; // keep at -1 when not invincible
+            invincible = false;
+            spriteRenderer.enabled = true;
+        }
 
         // damage recoil
         if (damageTimer > 0)
@@ -185,7 +212,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void TakeDamage(Transform enemy, int dmg)
     {
-        if (invincible)
+        if (invincible || hp <= 0)
         {
             return;
         }
@@ -210,10 +237,21 @@ public class PlayerMovement : MonoBehaviour
         // check for dead
         if(hp <= 0)
         {
-            //TODO: GameOver()
+            GameOver();
         }
+
+        // set invincible
+        invincible = true;
+        invincibleTimer = 60f;
 
         // update UI
         Destroy(HPUIBar.transform.GetChild(0).gameObject);
+    }
+
+    void GameOver()
+    {
+        GameOverPanel.SetActive(true);
+        speed = 0f;
+        jumpForce = 0f;
     }
 }

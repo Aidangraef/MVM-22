@@ -20,6 +20,10 @@ public class PlayerCombat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(GetComponent<PlayerMovement>().hp <= 0)
+        {
+            return; // do nothing if dead
+        }
 
         if (Input.GetMouseButtonDown(0) && !Input.GetMouseButton(1))
         {
