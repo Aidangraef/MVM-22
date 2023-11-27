@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Black Hole
   - Spikes
+  - Ground
   layers:
   - Default
   - TransparentFX
