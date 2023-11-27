@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform groundCheck; // place this gameobject as a child of the player at the bottom of the sprite
     [SerializeField] private GameObject HPUIBar;
     [SerializeField] private GameObject GameOverPanel;
+    [SerializeField] private MapSwitcher mapSwitcher;
     const float groundedRadius = 0.2f; // used for checking if the player is on the ground
     private float coyoteTimeCounter;
     private float jumpBufferCounter;
@@ -68,6 +69,9 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // cannot move when in map view
+        if (mapSwitcher.mapIsActive) return;
+
         // get player input in Update
         input = Input.GetAxisRaw("Horizontal");
 
