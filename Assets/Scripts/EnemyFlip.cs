@@ -44,7 +44,6 @@ public class EnemyFlip : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            Debug.Log("collided with player");
             // make player do their stuff
             collision.gameObject.GetComponent<PlayerMovement>().TakeDamage(transform, 1);
 

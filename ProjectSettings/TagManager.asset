@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Black Hole
+  - Spikes
+  - Ground
   layers:
   - Default
   - TransparentFX

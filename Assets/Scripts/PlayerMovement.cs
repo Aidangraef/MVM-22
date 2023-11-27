@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     private float coyoteTimeCounter;
     private float jumpBufferCounter;
     public bool grounded;
+    Vector3 lastGroundedPosition;
     private Rigidbody2D rb;
     public bool facingRight = true; // for sprite flipping
     private Vector3 velocity = Vector3.zero;
@@ -105,6 +106,9 @@ public class PlayerMovement : MonoBehaviour
         // subtract from jumpBufferCounter
         jumpBufferCounter -= Time.fixedDeltaTime;
 
+        // save last grounded position
+        if (grounded) lastGroundedPosition = transform.position;
+
         // determine if the player is grounded
         bool wasGrounded = grounded;
         grounded = false;
@@ -186,10 +190,19 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        // recoil
-        Vector3 direction = transform.position - enemy.position;
-        rb.AddForce(direction * 25, ForceMode2D.Impulse);
-        damageTimer = 10f; // wait this many frames
+        // check if spikes dealt the damage
+        if (enemy.gameObject.tag == "Spikes")
+        {
+            // teleport to last ground position
+            transform.position = lastGroundedPosition;
+        }
+        else
+        {
+            // recoil
+            Vector3 direction = transform.position - enemy.position;
+            rb.AddForce(direction * 25, ForceMode2D.Impulse);
+            damageTimer = 10f; // wait this many frames
+        }
 
         // Decrease health
         hp -= dmg;
