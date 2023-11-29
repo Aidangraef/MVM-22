@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerInventory : MonoBehaviour
 {
@@ -18,7 +19,7 @@ public class PlayerInventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(1))
+        if(Input.GetMouseButtonDown(0) && Input.GetMouseButton(1))
         {
             if(inventory.Count > 0)
             {
@@ -39,6 +40,7 @@ public class PlayerInventory : MonoBehaviour
         inventory.Add(obj);
         GameObject newItem = Instantiate(slotPrefab, UIBar);
 
-        // TODO: Code to get image of object
+        //get image of object
+        newItem.GetComponent<Image>().overrideSprite = obj.GetComponent<SpriteRenderer>().sprite;
     }
 }

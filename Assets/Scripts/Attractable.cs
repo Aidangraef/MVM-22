@@ -65,6 +65,9 @@ public class Attractable : MonoBehaviour
         // only store storable objects
         if (!storable) return;
 
+        // only store if inventory is not full
+        if (inventory.inventory.Count >= 10) return;
+
         // check for collision with black hole
         if (collision.gameObject.tag != "Black Hole") return;
 
@@ -82,6 +85,11 @@ public class Attractable : MonoBehaviour
             Vector3 newScale = transform.localScale;
             newScale.x -= 0.05f;
             newScale.y -= 0.05f;
+
+            // don't let scale go negative
+            if (newScale.x < 0) newScale.x = 0;
+            if (newScale.y < 0) newScale.y = 0;
+
             transform.localScale = newScale;
             yield return new WaitForSeconds(0.05f);
         }
