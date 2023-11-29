@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using Pathfinding;
+using UnityEngine.UI;
 public class EnemyFlip : MonoBehaviour
 {
     private Rigidbody2D rb; 
     private AIPath aiPath;
-
+    [SerializeField] float kbTime;
+    [SerializeField] float kbAmount; 
     void Awake(){
         rb = GetComponent<Rigidbody2D>();
         aiPath = GetComponent<AIPath>();
@@ -46,10 +48,18 @@ public class EnemyFlip : MonoBehaviour
         {
             // make player do their stuff
             collision.gameObject.GetComponent<PlayerMovement>().TakeDamage(transform, 1);
-
+            StartCoroutine(ToggleScript());
             // enemy do your stuff (recoil)
             Vector3 direction = transform.position - collision.transform.position;
-            rb.AddForce(direction * 25, ForceMode2D.Impulse);
+            rb.velocity = Vector2.zero;
+            rb.AddForce(direction.normalized * kbAmount, ForceMode2D.Impulse);
         }
+    }
+
+    IEnumerator ToggleScript()
+    {
+        aiPath.enabled = false;
+        yield return new WaitForSeconds(kbTime);
+        aiPath.enabled = true;          
     }
 }
