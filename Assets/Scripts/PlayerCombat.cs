@@ -47,7 +47,7 @@ public class PlayerCombat : MonoBehaviour
     void Attack()
     {
         attackHitBox.SetActive(true);
-        attackTimer = 30f;
+        attackTimer = 15f;
 
         // animation - cycle attacks
         if (currentAttack == "none" || currentAttack == "Attack3")

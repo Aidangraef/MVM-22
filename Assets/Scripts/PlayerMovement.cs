@@ -52,6 +52,9 @@ public class PlayerMovement : MonoBehaviour
     private float dashingCooldown = 0.5f;
     [SerializeField] private TrailRenderer tr;
 
+    // double jump
+    private bool canDoubleJump = true;
+
     private void Awake()
     {
         // All normal set up stuff
@@ -106,6 +109,12 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         // and actually do the movement in FixedUpdate
+
+        // for double jump
+        if(grounded)
+        {
+            canDoubleJump = true;
+        }
 
         // animation
         if(input >= -0.0001 || input <= 0.0001)
@@ -202,6 +211,20 @@ public class PlayerMovement : MonoBehaviour
         if(coyoteTimeCounter > 0 && jumpBufferCounter > 0)
         {
             // Add a vertical force to the player
+            grounded = false;
+            rb.velocity = new Vector2(rb.velocity.x, 0);
+            rb.AddForce(new Vector2(0f, jumpForce));
+            jumpBufferCounter = 0;
+
+            // turn on doubleJump
+            canDoubleJump = true;
+        }
+        else if (canDoubleJump && jump)
+        {
+            // the above is not true, so we can't normally jump, but double jump is on
+            canDoubleJump = false;
+
+            // normal jump stuff
             grounded = false;
             rb.velocity = new Vector2(rb.velocity.x, 0);
             rb.AddForce(new Vector2(0f, jumpForce));
