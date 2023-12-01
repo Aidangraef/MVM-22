@@ -44,6 +44,14 @@ public class PlayerMovement : MonoBehaviour
     bool jump; // becomes true when the player tries to jump
     bool releaseJump; // becomes true when the player lets go of the jump button
 
+    // dashing
+    private bool canDash = true;
+    private bool isDashing;
+    private float dashingPower = 50f;
+    private float dashingTime = 0.3f;
+    private float dashingCooldown = 0.5f;
+    [SerializeField] private TrailRenderer tr;
+
     private void Awake()
     {
         // All normal set up stuff
@@ -69,6 +77,9 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // cannot move when dashing
+        if (isDashing) return;
+
         // cannot move when in map view
         if (mapSwitcher.mapIsActive) return;
 
@@ -84,6 +95,11 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKeyUp("space"))
         {
             releaseJump = true;
+        }
+
+        if(Input.GetKeyDown(KeyCode.LeftShift) && canDash)
+        {
+            StartCoroutine(DoDash());
         }
     }
 
@@ -253,5 +269,30 @@ public class PlayerMovement : MonoBehaviour
         GameOverPanel.SetActive(true);
         speed = 0f;
         jumpForce = 0f;
+    }
+
+    private IEnumerator DoDash()
+    {
+        canDash = false;
+        isDashing = true;
+
+        // don't be affected by gravity during dash
+        float originalGravity = rb.gravityScale;
+        rb.gravityScale = 0;
+
+        // move only horizontally
+        rb.velocity = new Vector2(transform.localScale.x * dashingPower, 0f); // transform.localScale.x is the direction the player is facing
+        tr.emitting = true;
+
+        yield return new WaitForSeconds(dashingTime);
+
+        // end dash
+        rb.gravityScale = originalGravity;
+        isDashing = false;
+        tr.emitting = false;
+
+        // cooldown
+        yield return new WaitForSeconds(dashingCooldown);
+        canDash = true;
     }
 }
