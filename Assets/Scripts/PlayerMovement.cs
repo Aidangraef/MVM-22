@@ -125,6 +125,8 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("isRunning", true);
         }
+        animator.SetFloat("yVelocity", rb.velocity.y);
+        animator.SetBool("grounded", grounded);
 
         // invincibility
         if(invincibleTimer > 0)
@@ -215,6 +217,7 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, 0);
             rb.AddForce(new Vector2(0f, jumpForce));
             jumpBufferCounter = 0;
+            animator.SetTrigger("jump");
 
             // turn on doubleJump
             canDoubleJump = true;
@@ -229,6 +232,7 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, 0);
             rb.AddForce(new Vector2(0f, jumpForce));
             jumpBufferCounter = 0;
+            animator.SetTrigger("jump");
         }
 
         // released jump button, so fall faster
