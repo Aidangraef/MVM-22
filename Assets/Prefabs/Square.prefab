@@ -152,4 +152,4 @@ MonoBehaviour:
   blackHoleLayer:
     serializedVersion: 2
     m_Bits: 128
-  storable: 0
+  storable: 1
