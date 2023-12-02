@@ -5,6 +5,7 @@ using UnityEngine;
 public class BlackHoleMovement : MonoBehaviour
 {
     [SerializeField] private GameObject blackHole;
+    [SerializeField] private GameObject blackHoleSprite;
 
     private bool updatePosition;
 
@@ -30,6 +31,7 @@ public class BlackHoleMovement : MonoBehaviour
         if(Input.GetKeyDown("v") || Input.GetMouseButtonUp(1))
         {
             blackHole.transform.position = new Vector3(-3000, -3000, 0); // "delete" the black hole
+            blackHoleSprite.transform.position = new Vector3(-3000, -3000, 0); // "delete" the black hole sprite
         }
     }
 
@@ -46,6 +48,7 @@ public class BlackHoleMovement : MonoBehaviour
         if (!updatePosition) return; // mouse is not being clicked so nothing needs to happen
 
         blackHole.transform.position = mousePos;
+        blackHoleSprite.transform.position = mousePos;
         updatePosition = false;
     }
 }
