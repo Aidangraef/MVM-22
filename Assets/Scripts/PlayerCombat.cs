@@ -8,6 +8,7 @@ public class PlayerCombat : MonoBehaviour
     float attackTimer = 0f;
     float attackRange = 0.5f;
     [SerializeField] LayerMask enemyLayers;
+    [SerializeField] public int attackDamage;
 
     string currentAttack = "none";
 
@@ -70,8 +71,9 @@ public class PlayerCombat : MonoBehaviour
         // apply damage
         foreach(Collider2D enemy in hitEnemies)
         {
+            enemy.GetComponent<EnemyFlip>().TakeDamage(attackDamage);
             // TODO: write kill code
-            Destroy(enemy.gameObject);
+            //Destroy(enemy.gameObject);
         }
     }
 }

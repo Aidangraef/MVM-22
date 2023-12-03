@@ -7,6 +7,7 @@ using UnityEngine.EventSystems;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed; // how fast the player moves
+    [SerializeField] public int maxHP = 5; 
     [SerializeField] public int hp = 5;
     [SerializeField] private float jumpForce = 400f; // force added when the player jumps
     [SerializeField] private float jumpDecay = 0.33f;
@@ -16,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask whatIsGround; // used to determine when the player touches the ground so they can jump again
     [SerializeField] private Transform groundCheck; // place this gameobject as a child of the player at the bottom of the sprite
     [SerializeField] private GameObject HPUIBar;
+    [SerializeField] private GameObject heartObject; 
     [SerializeField] private GameObject GameOverPanel;
     [SerializeField] private MapSwitcher mapSwitcher;
     const float groundedRadius = 0.2f; // used for checking if the player is on the ground
@@ -61,6 +63,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        hp = maxHP;
         //camera = camera.main
 
         if (OnLandEvent == null)
@@ -289,6 +292,32 @@ public class PlayerMovement : MonoBehaviour
 
         // update UI
         Destroy(HPUIBar.transform.GetChild(0).gameObject);
+    }
+
+    public void IncreaseMaxHP()
+    {
+        maxHP += 1;
+
+    }
+    
+    public void heal(int amount)
+    {
+        Debug.Log("HEALING");
+        //Save the original HP amount
+        int originalHP = hp;
+        //add healing amount 
+        hp += amount; 
+        //make sure that its not over the max health
+        hp = Mathf.Min(hp, maxHP);
+        //Update the UI to refelct the changes using the original difference that was calculated
+        //instantiate the new heart objects amount of times equal to the difference calculated with a seperation on the x axis of 125 to seperate them
+        if (amount + originalHP < maxHP + 1){
+            for(int i = 0; i < amount; i++)
+            {
+                Debug.Log("Inserting: " + amount);
+                Instantiate(heartObject, new Vector2 (HPUIBar.transform.GetChild(originalHP - 1).gameObject.transform.position.x + 125, HPUIBar.transform.GetChild(originalHP - 1).gameObject.transform.position.y), Quaternion.identity, HPUIBar.transform);
+            }
+        }
     }
 
     void GameOver()
