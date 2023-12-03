@@ -16,7 +16,11 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: bbfe7cd95e4fad644bca1959a98996af
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 25e37906a4d0e3b4a9a74adc17b14559
+    m_Address: Assets/Sprites/Main Character/Post Processing/AttackSpriteGlowUnlit.shadergraph
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: c516851382ca209429278370b961927e, type: 2}
   m_SchemaSet:
