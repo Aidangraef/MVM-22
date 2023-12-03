@@ -7,6 +7,7 @@ TagManager:
   - Black Hole
   - Spikes
   - Ground
+  - Dialogue
   layers:
   - Default
   - TransparentFX
