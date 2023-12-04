@@ -156,9 +156,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e74ff82ac6f4b1418bd6db2c9f036c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kbTime: 0
-  kbAmount: 0
-  maxHP: 0
+  kbTime: 0.2
+  kbAmount: 50
+  maxHP: 5
   hp: 0
 --- !u!212 &5690147089462912822
 SpriteRenderer:
