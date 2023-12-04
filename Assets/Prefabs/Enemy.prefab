@@ -158,6 +158,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   kbTime: 0
   kbAmount: 0
+  maxHP: 0
+  hp: 0
 --- !u!212 &5690147089462912822
 SpriteRenderer:
   m_ObjectHideFlags: 0
