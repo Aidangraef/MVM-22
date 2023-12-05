@@ -13,6 +13,16 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID AIRFLUTTER = 1440576575U;
+        static const AkUniqueID AMBIENTSTART = 1818308409U;
+        static const AkUniqueID GRAVEND = 2853039794U;
+        static const AkUniqueID GRAVSTART = 1983228305U;
+        static const AkUniqueID GRAVVAC = 2230252431U;
+        static const AkUniqueID PLAYERJUMP = 4008126242U;
+        static const AkUniqueID PLAYERMOVE = 2267600265U;
+        static const AkUniqueID SWING1 = 2597336422U;
+        static const AkUniqueID SWING2 = 2597336421U;
+        static const AkUniqueID SWING3 = 2597336420U;
         static const AkUniqueID TESTCOMPLETE = 1776921608U;
         static const AkUniqueID TESTFAIL = 1435302941U;
     } // namespace EVENTS
