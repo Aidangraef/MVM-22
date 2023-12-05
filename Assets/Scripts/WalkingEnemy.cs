@@ -11,7 +11,6 @@ public class WalkingEnemy : MonoBehaviour
 
     // sound stuff
     float framesBetweenSound = 360;
-    float offset = Random.Range(2, 60);
     float frameTimer;
 
     // Start is called before the first frame update
@@ -20,7 +19,7 @@ public class WalkingEnemy : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         dirX = 1f;
 
-        frameTimer = framesBetweenSound + offset;
+        frameTimer = framesBetweenSound + Random.Range(2, 60);
     }
 
     // Update is called once per frame
