@@ -233,6 +233,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   linkedObject: {fileID: 0}
+  linkedObject2: {fileID: 0}
+  linkedObject3: {fileID: 0}
   boolName: 
 --- !u!61 &7183138497698368322
 BoxCollider2D:
