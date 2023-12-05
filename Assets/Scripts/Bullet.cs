@@ -30,9 +30,9 @@ public class Bullet : MonoBehaviour
             // enemy do your stuff (die)
             Destroy(gameObject);
         }
-        else
+        else if (collision.gameObject.tag != "Black Hole")
         {
-            Destroy(gameObject); // die if you collide with anything
+            Destroy(gameObject); // die if you collide with anything but the black hole
         }
     }
 }

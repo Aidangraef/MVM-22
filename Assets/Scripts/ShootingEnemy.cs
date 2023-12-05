@@ -6,6 +6,7 @@ public class ShootingEnemy : MonoBehaviour
 {
     [SerializeField] private bool facingLeft;
     [SerializeField] private float framesBetweenShots = 260f;
+    [SerializeField] private float offsetFrames;
     private float shotTimer = 0f;
     [SerializeField] GameObject bulletPrefab;
     private Animator animator;
@@ -24,6 +25,8 @@ public class ShootingEnemy : MonoBehaviour
 
         animator = GetComponent<Animator>();
         shootPoint = transform.GetChild(0);
+
+        shotTimer = offsetFrames + framesBetweenShots;
     }
 
     // Update is called once per frame

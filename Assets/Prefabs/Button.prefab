@@ -233,7 +233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   linkedObject: {fileID: 0}
-  boolName: 
+  boolName: isOpen
 --- !u!61 &7183138497698368322
 BoxCollider2D:
   m_ObjectHideFlags: 0
