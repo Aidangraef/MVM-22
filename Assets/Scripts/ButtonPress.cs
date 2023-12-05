@@ -30,13 +30,17 @@ public class ButtonPress : MonoBehaviour
         animator.SetTrigger("Press");
         on = !on;
 
+
         // affect the triggered object
-        linkedObject.SetBool(boolName, on);
+        linkedObject.gameObject.GetComponent<Door>().isOpen = !linkedObject.gameObject.GetComponent<Door>().isOpen;
+        linkedObject.SetBool(boolName, linkedObject.gameObject.GetComponent<Door>().isOpen);
         if(linkedObject2 != null){
-            linkedObject2.SetBool(boolName, on);
+            linkedObject2.gameObject.GetComponent<Door>().isOpen = !linkedObject2.gameObject.GetComponent<Door>().isOpen;
+            linkedObject2.SetBool(boolName, linkedObject2.gameObject.GetComponent<Door>().isOpen);
         }
         if(linkedObject3 != null){
-            linkedObject3.SetBool(boolName, on);
+            linkedObject3.gameObject.GetComponent<Door>().isOpen = !linkedObject3.gameObject.GetComponent<Door>().isOpen;
+            linkedObject3.SetBool(boolName, linkedObject3.gameObject.GetComponent<Door>().isOpen);
         }
     }
 }
