@@ -116,6 +116,7 @@ public class Attractable : MonoBehaviour
         direction.Normalize();
 
         // shoot towards mouse
+        rb.velocity = Vector2.zero;
         rb.AddForce(direction * shootingForce, ForceMode2D.Impulse);
     }
 
