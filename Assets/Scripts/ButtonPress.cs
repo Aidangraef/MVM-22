@@ -8,6 +8,8 @@ public class ButtonPress : MonoBehaviour
     bool on = false;
 
     [SerializeField] private Animator linkedObject; // the animator of the object the button controls
+    [SerializeField] private Animator linkedObject2;
+    [SerializeField] private Animator linkedObject3;
     [SerializeField] private string boolName; // the name of the bool in the linked object's animator
 
 
@@ -28,7 +30,17 @@ public class ButtonPress : MonoBehaviour
         animator.SetTrigger("Press");
         on = !on;
 
+
         // affect the triggered object
-        linkedObject.SetBool(boolName, on);
+        linkedObject.gameObject.GetComponent<Door>().isOpen = !linkedObject.gameObject.GetComponent<Door>().isOpen;
+        linkedObject.SetBool(boolName, linkedObject.gameObject.GetComponent<Door>().isOpen);
+        if(linkedObject2 != null){
+            linkedObject2.gameObject.GetComponent<Door>().isOpen = !linkedObject2.gameObject.GetComponent<Door>().isOpen;
+            linkedObject2.SetBool(boolName, linkedObject2.gameObject.GetComponent<Door>().isOpen);
+        }
+        if(linkedObject3 != null){
+            linkedObject3.gameObject.GetComponent<Door>().isOpen = !linkedObject3.gameObject.GetComponent<Door>().isOpen;
+            linkedObject3.SetBool(boolName, linkedObject3.gameObject.GetComponent<Door>().isOpen);
+        }
     }
 }

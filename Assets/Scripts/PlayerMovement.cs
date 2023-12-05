@@ -56,6 +56,7 @@ public class PlayerMovement : MonoBehaviour
 
     // double jump
     private bool canDoubleJump = true;
+    private bool doubleJumpUnlocked = false;
 
     private void Awake()
     {
@@ -114,7 +115,7 @@ public class PlayerMovement : MonoBehaviour
         // and actually do the movement in FixedUpdate
 
         // for double jump
-        if(grounded)
+        if(grounded && doubleJumpUnlocked)
         {
             canDoubleJump = true;
         }
@@ -221,6 +222,7 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(new Vector2(0f, jumpForce));
             jumpBufferCounter = 0;
             animator.SetTrigger("jump");
+            //AkSoundEngine.PostEvent("playerJump", this.gameObject);
 
             // turn on doubleJump
             canDoubleJump = true;
@@ -236,6 +238,7 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(new Vector2(0f, jumpForce));
             jumpBufferCounter = 0;
             animator.SetTrigger("jump");
+            //AkSoundEngine.PostEvent("playerJump", this.gameObject);
         }
 
         // released jump button, so fall faster
