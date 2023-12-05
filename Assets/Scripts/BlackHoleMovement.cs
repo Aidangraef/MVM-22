@@ -22,6 +22,7 @@ public class BlackHoleMovement : MonoBehaviour
         if(Input.GetMouseButtonDown(1))
         {
             updatePosition = true;
+            AkSoundEngine.PostEvent("gravStart", this.gameObject);
         }
         else
         {
@@ -32,6 +33,7 @@ public class BlackHoleMovement : MonoBehaviour
         {
             blackHole.transform.position = new Vector3(-3000, -3000, 0); // "delete" the black hole
             blackHoleSprite.transform.position = new Vector3(-3000, -3000, 0); // "delete" the black hole sprite
+            AkSoundEngine.PostEvent("gravEnd", this.gameObject);
         }
     }
 

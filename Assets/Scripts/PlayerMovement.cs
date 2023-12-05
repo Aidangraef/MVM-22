@@ -221,6 +221,7 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(new Vector2(0f, jumpForce));
             jumpBufferCounter = 0;
             animator.SetTrigger("jump");
+            //AkSoundEngine.PostEvent("playerJump", this.gameObject);
 
             // turn on doubleJump
             canDoubleJump = true;
@@ -236,6 +237,7 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(new Vector2(0f, jumpForce));
             jumpBufferCounter = 0;
             animator.SetTrigger("jump");
+            //AkSoundEngine.PostEvent("playerJump", this.gameObject);
         }
 
         // released jump button, so fall faster
