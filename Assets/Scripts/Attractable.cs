@@ -80,6 +80,8 @@ public class Attractable : MonoBehaviour
 
     public IEnumerator DoShrink()
     {
+        AkSoundEngine.PostEvent("gravVac", this.gameObject);
+
         for(int i = 0; i < 20; i++)
         {
             Vector3 newScale = transform.localScale;

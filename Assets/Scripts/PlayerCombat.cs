@@ -11,6 +11,7 @@ public class PlayerCombat : MonoBehaviour
     [SerializeField] public int attackDamage;
 
     string currentAttack = "none";
+    string currentSound = "none";
 
     // Start is called before the first frame update
     void Start()
@@ -54,16 +55,22 @@ public class PlayerCombat : MonoBehaviour
         if (currentAttack == "none" || currentAttack == "Attack3")
         {
             currentAttack = "Attack1";
+            currentSound = "swing1";
         }
         else if (currentAttack == "Attack1")
         {
             currentAttack = "Attack2";
+            currentSound = "swing2";
+
         }
         else if (currentAttack == "Attack2")
         {
             currentAttack = "Attack3";
+            currentSound = "swing3";
+
         }
         attackHitBox.GetComponent<Animator>().SetTrigger(currentAttack);
+        AkSoundEngine.PostEvent(currentSound, this.gameObject);
 
         // detect enemies
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackHitBox.transform.position, attackRange, enemyLayers);

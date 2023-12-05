@@ -9,11 +9,18 @@ public class WalkingEnemy : MonoBehaviour
     private Rigidbody2D rb;
     private bool facingRight = true;
 
+    // sound stuff
+    float framesBetweenSound = 360;
+    float offset = Random.Range(2, 60);
+    float frameTimer;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         dirX = 1f;
+
+        frameTimer = framesBetweenSound + offset;
     }
 
     // Update is called once per frame
@@ -25,6 +32,16 @@ public class WalkingEnemy : MonoBehaviour
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
+
+        if(frameTimer <=0 )
+        {
+            //AkSoundEngine.PostEvent("")
+            frameTimer = framesBetweenSound;
+        }
+        else
+        {
+            frameTimer -= 1;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
