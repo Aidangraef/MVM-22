@@ -56,6 +56,7 @@ public class PlayerMovement : MonoBehaviour
 
     // double jump
     private bool canDoubleJump = true;
+    private bool doubleJumpUnlocked = false;
 
     private void Awake()
     {
@@ -114,7 +115,7 @@ public class PlayerMovement : MonoBehaviour
         // and actually do the movement in FixedUpdate
 
         // for double jump
-        if(grounded)
+        if(grounded && doubleJumpUnlocked)
         {
             canDoubleJump = true;
         }
