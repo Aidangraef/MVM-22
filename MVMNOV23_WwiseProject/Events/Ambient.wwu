@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C9FD24E4-D0C3-47F1-A067-3A76C132B255}" SchemaVersion="110" RootDocumentID="{0FDCE87A-3E1C-4B5A-8A91-CD3C3E4E6159}" ParentDocumentID="{0FDCE87A-3E1C-4B5A-8A91-CD3C3E4E6159}">
 	<Events>
-		<WorkUnit Name="Ambient" ID="{C9FD24E4-D0C3-47F1-A067-3A76C132B255}" OwnerID="{0FDCE87A-3E1C-4B5A-8A91-CD3C3E4E6159}" PersistMode="Nested"/>
+		<WorkUnit Name="Ambient" ID="{C9FD24E4-D0C3-47F1-A067-3A76C132B255}" OwnerID="{0FDCE87A-3E1C-4B5A-8A91-CD3C3E4E6159}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="ambientStart" ID="{EDE3D134-7FD8-4CF7-9932-10396562745B}">
+					<ChildrenList>
+						<Action Name="" ID="{760F5DD4-9313-4CC1-B125-7D8D248ADEE0}" ShortID="430242700">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ambientPH" ID="{21E1D414-98E6-49A7-90CF-FFA62DCF2FB4}" WorkUnitID="{AE487B5E-8469-4E13-BC1F-48A4FBC7CAF4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

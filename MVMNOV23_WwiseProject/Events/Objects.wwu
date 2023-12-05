@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8120CDDE-C03B-49A1-9097-0FB092482B3A}" SchemaVersion="110" RootDocumentID="{0FDCE87A-3E1C-4B5A-8A91-CD3C3E4E6159}" ParentDocumentID="{0FDCE87A-3E1C-4B5A-8A91-CD3C3E4E6159}">
 	<Events>
-		<WorkUnit Name="Objects" ID="{8120CDDE-C03B-49A1-9097-0FB092482B3A}" OwnerID="{0FDCE87A-3E1C-4B5A-8A91-CD3C3E4E6159}" PersistMode="Nested"/>
+		<WorkUnit Name="Objects" ID="{8120CDDE-C03B-49A1-9097-0FB092482B3A}" OwnerID="{0FDCE87A-3E1C-4B5A-8A91-CD3C3E4E6159}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="gravVac" ID="{52802EE1-EA3A-495E-8E3B-7EC5A97726E8}">
+					<ChildrenList>
+						<Action Name="" ID="{5722E4B3-D804-4336-9F7E-220F7D4540C8}" ShortID="750533835">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="gravVac" ID="{E3EABE9F-3EBE-4016-8A91-10CD9B0310CE}" WorkUnitID="{058B7DD2-DCB7-4FB9-AC4D-707E0751F7E8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

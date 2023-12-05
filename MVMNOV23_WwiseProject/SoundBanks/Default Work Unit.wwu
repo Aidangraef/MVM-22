@@ -7,8 +7,18 @@
 					<ChildrenList>
 						<SoundBank Name="GameplayLoop" ID="{392ECBD8-7E57-41C6-8C0E-577DECFA9D7F}">
 							<ObjectInclusionList>
+								<ObjectRef Name="swing2" ID="{58C2F6E8-05A2-4396-AD3D-3DD57A259B04}" WorkUnitID="{A5316B78-3C56-4BA3-B621-613D151278FB}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="testComplete" ID="{B17AF0B5-2F46-43E3-9E3F-9EE0C82EBB29}" WorkUnitID="{AFA36B95-C8E4-4810-A4F2-29F69183D587}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="airFlutter" ID="{40E75039-6C9A-47FF-8FA4-8FDF378C2C13}" WorkUnitID="{65A5EE05-15E9-4608-8C72-AA45659CACF6}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="playerJump" ID="{8FEE2E24-5054-48BF-9737-4AF657B06B16}" WorkUnitID="{A5316B78-3C56-4BA3-B621-613D151278FB}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="gravVac" ID="{52802EE1-EA3A-495E-8E3B-7EC5A97726E8}" WorkUnitID="{8120CDDE-C03B-49A1-9097-0FB092482B3A}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="gravStart" ID="{C1BE0555-07B3-4A7A-AD22-FBE264758E66}" WorkUnitID="{A5316B78-3C56-4BA3-B621-613D151278FB}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="ambientStart" ID="{EDE3D134-7FD8-4CF7-9932-10396562745B}" WorkUnitID="{C9FD24E4-D0C3-47F1-A067-3A76C132B255}" Origin="Manual" Filter="7"/>
 								<ObjectRef Name="testFail" ID="{06366194-163D-4D77-9601-06A041F1D5C5}" WorkUnitID="{AFA36B95-C8E4-4810-A4F2-29F69183D587}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="gravEnd" ID="{35180EB6-AA38-4DB0-9194-45EFF5A7BA17}" WorkUnitID="{A5316B78-3C56-4BA3-B621-613D151278FB}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="swing3" ID="{4EEB08CE-F6EF-4E39-AA37-1003202E1CDD}" WorkUnitID="{A5316B78-3C56-4BA3-B621-613D151278FB}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="playerMove" ID="{BD53E069-F8CF-4F5D-82BC-424FDAFB8DB8}" WorkUnitID="{A5316B78-3C56-4BA3-B621-613D151278FB}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="swing1" ID="{A75745ED-4424-4FC6-BD26-CB9580D46A08}" WorkUnitID="{A5316B78-3C56-4BA3-B621-613D151278FB}" Origin="Manual" Filter="7"/>
 							</ObjectInclusionList>
 							<ObjectExclusionList/>
 							<GameSyncExclusionList/>
