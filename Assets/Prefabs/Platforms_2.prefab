@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 594706648438081139}
   - component: {fileID: 594706648438081136}
   - component: {fileID: 594706648438081137}
+  - component: {fileID: 274351122582552659}
   m_Layer: 6
   m_Name: Platforms_2
   m_TagString: Ground
@@ -131,3 +132,15 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!114 &274351122582552659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 594706648438081150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f60d0b10e94388f4999ecd9cf3da991f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

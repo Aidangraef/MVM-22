@@ -4,14 +4,68 @@
 		<WorkUnit Name="Objects" ID="{058B7DD2-DCB7-4FB9-AC4D-707E0751F7E8}" OwnerID="{F8B0F4E1-B1E3-4CAA-B66D-654B9031B356}" PersistMode="Nested">
 			<ChildrenList>
 				<ActorMixer Name="Objects" ID="{EBBCE42D-FB8D-4763-B868-03035B4E7656}" ShortID="182535119">
+					<PropertyList>
+						<Property Name="OverrideOutput" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+							<ObjectRef Name="Objects" ID="{99FE6F70-A41A-4041-AA02-8FDC4BC8191D}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="gravVac" ID="{E3EABE9F-3EBE-4016-8A91-10CD9B0310CE}" ShortID="531188544">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{86CF2E20-175C-4EAC-A039-0CD076FC6A8E}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="gravityVac" ID="{6BBCAD6A-8D00-4B0C-8A61-FA4D30EEC7FC}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0390411950732357"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0725050765645806"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.145010153129161"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.549365387816245"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>gravityVac.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="965703128"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="gravityVac" ID="{6BBCAD6A-8D00-4B0C-8A61-FA4D30EEC7FC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
