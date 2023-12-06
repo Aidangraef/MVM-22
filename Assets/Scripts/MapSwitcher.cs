@@ -23,13 +23,21 @@ public class MapSwitcher : MonoBehaviour
             {
                 playerCam.SetActive(true);
                 mapDot.SetActive(false);
+                StartCoroutine(ResetTimeScale());
             }
             else if (!mapIsActive)
             {
                 playerCam.SetActive(false);
                 mapDot.SetActive(true);
+                Time.timeScale = 0.05f;
             }
             mapIsActive = !mapIsActive;
         }
+    }
+
+    public IEnumerator ResetTimeScale()
+    {
+        yield return new WaitForSeconds(0.025f);
+        Time.timeScale = 1f;
     }
 }
