@@ -7,8 +7,8 @@ using UnityEngine.EventSystems;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed; // how fast the player moves
-    [SerializeField] public int maxHP = 5; 
-    [SerializeField] public int hp = 5;
+    [SerializeField] public int maxHP = 3; 
+    [SerializeField] public int hp = 3;
     [SerializeField] private float jumpForce = 400f; // force added when the player jumps
     [SerializeField] private float jumpDecay = 0.33f;
     [SerializeField] private float movementSmoothing = 0.05f; // how much to smooth the movement
@@ -94,6 +94,7 @@ public class PlayerMovement : MonoBehaviour
         if(lockTimer > 0)
         {
             lockTimer -= 1;
+            rb.velocity = Vector2.zero;
             return;
         }
 
@@ -295,6 +296,7 @@ public class PlayerMovement : MonoBehaviour
 
             // flinch the player 
             lockTimer = framesToLock;
+            rb.velocity = Vector2.zero;
         }
         else
         {
@@ -342,7 +344,8 @@ public class PlayerMovement : MonoBehaviour
             for(int i = 0; i < amount; i++)
             {
                 Debug.Log("Inserting: " + amount);
-                Instantiate(heartObject, new Vector2 (HPUIBar.transform.GetChild(originalHP - 1).gameObject.transform.position.x + 125, HPUIBar.transform.GetChild(originalHP - 1).gameObject.transform.position.y), Quaternion.identity, HPUIBar.transform);
+                Instantiate(heartObject, HPUIBar.transform);
+                //Instantiate(heartObject, new Vector2 (HPUIBar.transform.GetChild(originalHP - 1).gameObject.transform.position.x + 125, HPUIBar.transform.GetChild(originalHP - 1).gameObject.transform.position.y), Quaternion.identity, HPUIBar.transform);
             }
         }
     }
