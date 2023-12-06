@@ -25,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
     private float jumpBufferCounter;
     public bool grounded;
     Vector3 lastGroundedPosition;
+    private float groundUpdateTimer;
+    private float framesBetweenLastGroundUpdate = 60f;
     private Rigidbody2D rb;
     public bool facingRight = true; // for sprite flipping
     private Vector3 velocity = Vector3.zero;
@@ -32,6 +34,10 @@ public class PlayerMovement : MonoBehaviour
     public UnityEvent OnLandEvent; // pretty straightforward
 
     private float damageTimer = 0f;
+
+    // lock player controls after taking damage
+    private float framesToLock = 60f;
+    private float lockTimer = -1;
 
     [System.Serializable]
     public class BoolEvent : UnityEvent<bool> { }
@@ -56,7 +62,7 @@ public class PlayerMovement : MonoBehaviour
 
     // double jump
     private bool canDoubleJump = true;
-    private bool doubleJumpUnlocked = false;
+    private bool doubleJumpUnlocked = true;
 
     private void Awake()
     {
@@ -78,12 +84,19 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        groundUpdateTimer = framesBetweenLastGroundUpdate;
     }
 
     // Update is called once per frame
     void Update()
     {
+        // cannot move when controls are locked
+        if(lockTimer > 0)
+        {
+            lockTimer -= 1;
+            return;
+        }
+
         // cannot move when dashing
         if (isDashing) return;
 
@@ -165,7 +178,15 @@ public class PlayerMovement : MonoBehaviour
         jumpBufferCounter -= Time.fixedDeltaTime;
 
         // save last grounded position
-        if (grounded) lastGroundedPosition = transform.position;
+        if(groundUpdateTimer <= 0 && grounded)
+        {
+            lastGroundedPosition = transform.position;
+            groundUpdateTimer = framesBetweenLastGroundUpdate;
+        }
+        else
+        {
+            groundUpdateTimer -= 1;
+        }
 
         // determine if the player is grounded
         bool wasGrounded = grounded;
@@ -225,7 +246,7 @@ public class PlayerMovement : MonoBehaviour
             //AkSoundEngine.PostEvent("playerJump", this.gameObject);
 
             // turn on doubleJump
-            canDoubleJump = true;
+            if (doubleJumpUnlocked) canDoubleJump = true;
         }
         else if (canDoubleJump && jump)
         {
@@ -271,6 +292,9 @@ public class PlayerMovement : MonoBehaviour
         {
             // teleport to last ground position
             transform.position = lastGroundedPosition;
+
+            // flinch the player 
+            lockTimer = framesToLock;
         }
         else
         {
