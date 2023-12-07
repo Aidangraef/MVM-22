@@ -64,6 +64,10 @@ public class PlayerMovement : MonoBehaviour
     private bool canDoubleJump = true;
     private bool doubleJumpUnlocked = true;
 
+    // shielding
+    public bool shieldActivated = false;
+    [SerializeField] GameObject shield;
+
     private void Awake()
     {
         // All normal set up stuff
@@ -103,6 +107,26 @@ public class PlayerMovement : MonoBehaviour
 
         // cannot move when in map view
         if (mapSwitcher.mapIsActive) return;
+
+        // shielding
+        if(Input.GetKeyDown("f"))
+        {
+            shieldActivated = true;
+            //animator.SetBool("isShielding", true);
+            shield.SetActive(true);
+            rb.velocity = Vector2.zero;
+            input = 0;
+        }
+
+        if(Input.GetKeyUp("f"))
+        {
+            shieldActivated = false;
+            //animator.SetBool("isShielding", false);
+            shield.SetActive(false);
+        }
+
+        // cannot move when shielding
+        if (shieldActivated) return;
 
         // get player input in Update
         input = Input.GetAxisRaw("Horizontal");

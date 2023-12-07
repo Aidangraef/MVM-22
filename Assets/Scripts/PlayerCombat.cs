@@ -27,6 +27,8 @@ public class PlayerCombat : MonoBehaviour
             return; // do nothing if dead
         }
 
+        if (GetComponent<PlayerMovement>().shieldActivated) return; // cannot attack if shielding
+
         if (Input.GetMouseButtonDown(0) && !Input.GetMouseButton(1))
         {
             Attack();
