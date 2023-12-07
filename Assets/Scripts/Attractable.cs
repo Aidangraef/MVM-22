@@ -65,11 +65,11 @@ public class Attractable : MonoBehaviour
         // only store storable objects
         if (!storable) return;
 
-        // only store if inventory is not full
-        if (inventory.inventory.Count >= 10) return;
-
         // check for collision with black hole
         if (collision.gameObject.tag != "Black Hole") return;
+
+        // only store if inventory is not full
+        if (inventory.inventory.Count >= 10) return;
 
         // don't start the coroutine if it is already happening
         if (shrinking) return;
