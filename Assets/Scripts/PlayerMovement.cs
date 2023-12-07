@@ -53,6 +53,7 @@ public class PlayerMovement : MonoBehaviour
     bool releaseJump; // becomes true when the player lets go of the jump button
 
     // dashing
+    public bool dashUnlocked = false;
     private bool canDash = true;
     private bool isDashing;
     private float dashingPower = 50f;
@@ -61,12 +62,16 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private TrailRenderer tr;
 
     // double jump
-    private bool canDoubleJump = true;
-    private bool doubleJumpUnlocked = true;
+    public bool doubleJumpUnlocked = false;
+    private bool canDoubleJump = false;
 
     // shielding
+    public bool shieldUnlocked = false;
     public bool shieldActivated = false;
     [SerializeField] GameObject shield;
+
+    // absorbing bullets
+    public bool absorbBulletsUnlocked = false;
 
     private void Awake()
     {
@@ -109,7 +114,7 @@ public class PlayerMovement : MonoBehaviour
         if (mapSwitcher.mapIsActive) return;
 
         // shielding
-        if(Input.GetKeyDown("f"))
+        if(Input.GetKeyDown("f") && shieldUnlocked)
         {
             shieldActivated = true;
             //animator.SetBool("isShielding", true);
@@ -142,7 +147,7 @@ public class PlayerMovement : MonoBehaviour
             releaseJump = true;
         }
 
-        if(Input.GetKeyDown(KeyCode.LeftShift) && canDash)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash && dashUnlocked)
         {
             StartCoroutine(DoDash());
         }

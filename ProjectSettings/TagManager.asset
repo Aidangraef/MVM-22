@@ -9,6 +9,9 @@ TagManager:
   - Ground
   - Dialogue
   - Walking Enemy
+  - Shield
+  - Dash Crystal
+  - Bullet
   layers:
   - Default
   - TransparentFX

@@ -44,6 +44,7 @@ public class Attractable : MonoBehaviour
     private void FixedUpdate()
     {
         if (blackHole == null) return; // don't do anything if no black hole
+        if (gameObject.tag == "Bullet" && !inventory.gameObject.GetComponent<PlayerMovement>().absorbBulletsUnlocked) return; // don't get absorbed if you are a bullet and the unlock hasn't been grabbed
 
         float magsqr; // offset squared between object and black hole
         Vector3 offset; // distance to black hole
@@ -70,6 +71,8 @@ public class Attractable : MonoBehaviour
 
         // only store if inventory is not full
         if (inventory.inventory.Count >= 10) return;
+
+        if (gameObject.tag == "Bullet" && !inventory.gameObject.GetComponent<PlayerMovement>().absorbBulletsUnlocked) return; // don't get absorbed if you are a bullet and the unlock hasn't been grabbed
 
         // don't start the coroutine if it is already happening
         if (shrinking) return;
