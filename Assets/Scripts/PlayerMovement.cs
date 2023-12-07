@@ -307,7 +307,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void TakeDamage(Transform enemy, int dmg)
     {
-        if (invincible || hp <= 0)
+        if (invincible || hp <= 0 || shieldActivated)
         {
             return;
         }
