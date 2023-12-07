@@ -135,7 +135,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // animation
-        if(input >= -0.0001 || input <= 0.0001)
+        if(input >= -0.0001 && input <= 0.0001)
         {
             animator.SetBool("isRunning", false);
         }

@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d2dfc6a633713f40b4c860d95d30c95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitializationSettings: {fileID: 11400000, guid: 6392982308f4e134a9cfabb067e0db4b, type: 2}
+  InitializationSettings: {fileID: 0}
   basePath: 
   language: 
   defaultPoolSize: 0
