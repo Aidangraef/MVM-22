@@ -7,6 +7,7 @@ public class MapSwitcher : MonoBehaviour
     [SerializeField] private GameObject playerCam;
     public bool mapIsActive = false;
     [SerializeField] private GameObject mapDot;
+    [SerializeField] private List<GameObject> upgradeDots;
 
     // Start is called before the first frame update
     void Start()
@@ -23,13 +24,23 @@ public class MapSwitcher : MonoBehaviour
             {
                 playerCam.SetActive(true);
                 mapDot.SetActive(false);
-                StartCoroutine(ResetTimeScale());
+
+                foreach(GameObject dot in upgradeDots)
+                {
+                    dot.SetActive(false);
+                }
+
+                //StartCoroutine(ResetTimeScale());
             }
             else if (!mapIsActive)
             {
                 playerCam.SetActive(false);
                 mapDot.SetActive(true);
-                Time.timeScale = 0.05f;
+                foreach (GameObject dot in upgradeDots)
+                {
+                    dot.SetActive(true);
+                }
+                //Time.timeScale = 0.05f;
             }
             mapIsActive = !mapIsActive;
         }
