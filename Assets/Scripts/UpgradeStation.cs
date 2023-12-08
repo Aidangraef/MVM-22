@@ -13,7 +13,9 @@ public class UpgradeStation : MonoBehaviour
     private PlayerMovement playerMovement; 
     private PlayerCombat playerCombat; 
     [SerializeField] private int upgradeAmount; 
-    private bool touchingPlayer; 
+    private bool touchingPlayer;
+
+    GameObject EPrompt;
 
     // Start is called before the first frame update
     void Awake()
@@ -21,6 +23,12 @@ public class UpgradeStation : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         playerMovement = player.GetComponent<PlayerMovement>();
         playerCombat = player.GetComponent<PlayerCombat>();
+        EPrompt = GameObject.FindGameObjectWithTag("EPrompt");
+    }
+
+    private void Start()
+    {
+        EPrompt.SetActive(false);
     }
 
     void Update(){
@@ -43,12 +51,14 @@ public class UpgradeStation : MonoBehaviour
         if(other.gameObject.tag == "Player"){
             Debug.Log("Can Upgrade");
             touchingPlayer = true;
+            EPrompt.SetActive(true);
         }
     }
     void OnTriggerExit2D(Collider2D other)
     {
         if(other.gameObject.tag == "Player"){
-            touchingPlayer = false; 
+            touchingPlayer = false;
+            EPrompt.SetActive(false);
         }
     }
 }

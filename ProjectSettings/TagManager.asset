@@ -12,6 +12,7 @@ TagManager:
   - Shield
   - Dash Crystal
   - Bullet
+  - EPrompt
   layers:
   - Default
   - TransparentFX
