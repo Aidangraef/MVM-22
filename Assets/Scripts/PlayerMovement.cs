@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
     private float damageTimer = 0f;
 
     // lock player controls after taking damage
-    private float framesToLock = 60f;
+    private float framesToLock = 12f;
     private float lockTimer = -1;
 
     [System.Serializable]
