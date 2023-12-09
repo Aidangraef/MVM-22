@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed; // how fast the player moves
     [SerializeField] public int maxHP = 3; 
     [SerializeField] public int hp = 3;
-    [SerializeField] private float jumpForce = 400f; // force added when the player jumps
+    [SerializeField] public float jumpForce = 400f; // force added when the player jumps
     [SerializeField] private float jumpDecay = 0.33f;
     [SerializeField] private float movementSmoothing = 0.05f; // how much to smooth the movement
     [SerializeField] private float coyoteTime = 0.2f; // how much time after running off a ledge the player will float before falling
