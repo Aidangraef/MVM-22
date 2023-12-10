@@ -93,7 +93,7 @@ public class EnemyFlip : MonoBehaviour
     }
 
     void Knockback(){
-        StartCoroutine(ToggleScript());
+        //StartCoroutine(ToggleScript());
         Debug.Log("Taking KB");
         Vector3 direction = transform.position - player.transform.position;
         rb.velocity = Vector2.zero;
