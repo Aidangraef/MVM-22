@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class WalkingEnemy : MonoBehaviour
 {
+    Transform player;
     [SerializeField] private float moveSpeed;
     public float dirX;
     private Rigidbody2D rb;
     private bool facingRight = true;
+
+    [SerializeField] float kbTime = 30f;
+    float kbTimer = 0f;
+    [SerializeField] float kbAmount = 500f;
+    int maxHP = 3;
+    int hp = 3;
 
     // sound stuff
     float framesBetweenSound = 360;
@@ -16,6 +23,7 @@ public class WalkingEnemy : MonoBehaviour
     private void Awake()
     {
         dirX = 1f;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     // Start is called before the first frame update
@@ -78,5 +86,27 @@ public class WalkingEnemy : MonoBehaviour
         Vector3 newScale = transform.localScale;
         newScale.x *= -1;
         transform.localScale = newScale;
+    }
+
+    public void TakeDamage(int amount)
+    {
+        //take damage
+        hp -= amount;
+        //take knockback
+        Knockback();
+        if (hp <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    void Knockback()
+    {
+        kbTimer = kbTime;
+        //StartCoroutine(ToggleScript());
+        Debug.Log("Taking KB");
+        Vector3 direction = transform.position - player.transform.position;
+        rb.velocity = Vector2.zero;
+        rb.AddForce(direction.normalized * kbAmount, ForceMode2D.Impulse);
     }
 }
