@@ -43,7 +43,14 @@ public class WalkingEnemy : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
+        if(kbTimer > 0)
+        {
+            kbTimer -= 1;
+        }
+        else
+        {
+            rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
+        }
 
         if(frameTimer <=0 )
         {
@@ -94,7 +101,7 @@ public class WalkingEnemy : MonoBehaviour
         hp -= amount;
         //take knockback
         Knockback();
-        if (hp <= 0)
+        if (hp < 0)
         {
             Destroy(gameObject);
         }
@@ -106,6 +113,7 @@ public class WalkingEnemy : MonoBehaviour
         //StartCoroutine(ToggleScript());
         Debug.Log("Taking KB");
         Vector3 direction = transform.position - player.transform.position;
+        direction = new Vector3(direction.x, direction.y + 0.75f, direction.z); // pop 'em up a bit
         rb.velocity = Vector2.zero;
         rb.AddForce(direction.normalized * kbAmount, ForceMode2D.Impulse);
     }

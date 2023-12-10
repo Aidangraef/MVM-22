@@ -51,7 +51,7 @@ public class PlayerCombat : MonoBehaviour
     void Attack()
     {
         attackHitBox.SetActive(true);
-        attackTimer = 15f;
+        attackTimer = 20f;
 
         // animation - cycle attacks
         if (currentAttack == "none" || currentAttack == "Attack3")
@@ -69,7 +69,6 @@ public class PlayerCombat : MonoBehaviour
         {
             currentAttack = "Attack3";
             currentSound = "swing3";
-
         }
         attackHitBox.GetComponent<Animator>().SetTrigger(currentAttack);
         AkSoundEngine.PostEvent(currentSound, this.gameObject);
@@ -82,11 +81,26 @@ public class PlayerCombat : MonoBehaviour
         {
             if(enemy.gameObject.GetComponent<FlyingEnemy>() != null)
             {
-                enemy.GetComponent<FlyingEnemy>().TakeDamage(attackDamage);
+                if(currentAttack == "Attack3")
+                {
+                    enemy.GetComponent<FlyingEnemy>().TakeDamage(attackDamage + 1);
+                }
+                else
+                {
+                    enemy.GetComponent<FlyingEnemy>().TakeDamage(attackDamage);
+                }
+                
             }
             else
             {
-                enemy.GetComponent<WalkingEnemy>().TakeDamage(attackDamage);
+                if (currentAttack == "Attack3")
+                {
+                    enemy.GetComponent<WalkingEnemy>().TakeDamage(attackDamage + 1);
+                }
+                else
+                {
+                    enemy.GetComponent<WalkingEnemy>().TakeDamage(attackDamage);
+                }
             }
             // TODO: write kill code
             //Destroy(enemy.gameObject);

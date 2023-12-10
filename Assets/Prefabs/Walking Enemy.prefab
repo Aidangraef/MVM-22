@@ -142,7 +142,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -161,6 +161,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2.5
+  dirX: 0
+  kbTime: 11
+  kbAmount: 30
 --- !u!58 &658387844522211284
 CircleCollider2D:
   m_ObjectHideFlags: 0
