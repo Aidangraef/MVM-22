@@ -39,10 +39,6 @@ public class Room : MonoBehaviour
 
             HomePositions.Add(GrabHomePosition(enemy)); //grab the home positions and store them in the home positions vector 
         }
-
-        foreach(var item in HomePositions){
-            Debug.Log("Home Positions: " + item.position);
-        }
     }
 
     // Update is called once per frame
@@ -127,6 +123,7 @@ public class Room : MonoBehaviour
     }
 
     void StartTimer(){
+        Debug.Log("Start Timer");
         TimeElapsed = 0f;
 
         TimerRunning = true; 
