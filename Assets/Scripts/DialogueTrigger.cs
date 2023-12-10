@@ -66,8 +66,11 @@ public class DialogueTrigger : MonoBehaviour
         {
             dialogueParent.GetComponent<Animator>().SetBool("dialogueOn", false); // hide the dialogue box
             ePrompt.SetActive(false);
-            Player.GetComponent<PlayerMovement>().speed = oldSpeed;
-            Player.GetComponent<PlayerMovement>().jumpForce = OldJumpForce;
+            if(isLock)
+            {
+                Player.GetComponent<PlayerMovement>().speed = oldSpeed;
+                Player.GetComponent<PlayerMovement>().jumpForce = OldJumpForce;
+            }
             Destroy(gameObject);
         }
     }

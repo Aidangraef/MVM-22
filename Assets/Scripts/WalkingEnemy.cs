@@ -5,7 +5,7 @@ using UnityEngine;
 public class WalkingEnemy : MonoBehaviour
 {
     [SerializeField] private float moveSpeed;
-    private float dirX;
+    public float dirX;
     private Rigidbody2D rb;
     private bool facingRight = true;
 
@@ -13,12 +13,17 @@ public class WalkingEnemy : MonoBehaviour
     float framesBetweenSound = 360;
     float frameTimer;
 
+    private void Awake()
+    {
+        dirX = 1f;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        dirX = 1f;
 
+        //dirX = 1f;
         frameTimer = framesBetweenSound + Random.Range(2, 60);
     }
 
@@ -65,7 +70,7 @@ public class WalkingEnemy : MonoBehaviour
         }
     }
 
-    private void Flip()
+    public void Flip()
     {
         // change the direction of the sprite
         facingRight = !facingRight;
