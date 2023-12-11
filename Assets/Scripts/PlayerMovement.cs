@@ -338,6 +338,9 @@ public class PlayerMovement : MonoBehaviour
         // Decrease health
         hp -= dmg;
 
+        // flash red
+        //StartCoroutine(DoFlashRed());
+
         // check for dead
         if(hp <= 0)
         {
@@ -409,5 +412,22 @@ public class PlayerMovement : MonoBehaviour
         // cooldown
         yield return new WaitForSeconds(dashingCooldown);
         canDash = true;
+    }
+
+    IEnumerator DoFlashRed()
+    {
+        // initial setup
+        SpriteRenderer sprite = GetComponent<SpriteRenderer>();
+        Color originalColor = new Color(1, 1, 1, 1);
+        Color redColor = new Color(1, 0, 0, 1);
+
+        // flash and wait and turn back
+        for (int i = 0; i < 3; i++)
+        {
+            sprite.color = redColor;
+            yield return new WaitForSeconds(0.1f);
+            sprite.color = originalColor;
+            yield return new WaitForSeconds(0.1f);
+        }
     }
 }
