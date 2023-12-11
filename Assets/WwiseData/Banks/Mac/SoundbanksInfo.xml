@@ -30,45 +30,97 @@
 				<Bus Id="3991942870" Name="Music"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{FF55F380-344E-94E7-B1C6-1A56D6EEDAE2}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{6D24845D-24BC-1499-9904-A582A81382CD}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
+				<File Id="62813781" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>playerJump-009.wav</ShortName>
+					<CachePath>SFX/playerJump-009_20D1BC9F.wem</CachePath>
+				</File>
 				<File Id="89249921" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Swing2.wav</ShortName>
-					<CachePath>SFX/Swing2_D6EF16C9.wem</CachePath>
+					<CachePath>SFX/Swing2_62C79D4F.wem</CachePath>
 				</File>
 				<File Id="94906913" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dark Drone Intensive Electric Waves.wav</ShortName>
-					<CachePath>SFX/Dark Drone Intensive Electric Waves_44C7135A.wem</CachePath>
+					<CachePath>SFX/Dark Drone Intensive Electric Waves_A1B4EF98.wem</CachePath>
+				</File>
+				<File Id="209439430" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>playerMove.wav</ShortName>
+					<CachePath>SFX/playerMove_18545657.wem</CachePath>
+				</File>
+				<File Id="291242061" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>playerJump-006.wav</ShortName>
+					<CachePath>SFX/playerJump-006_BB69922F.wem</CachePath>
+				</File>
+				<File Id="323749564" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>playerJump-002.wav</ShortName>
+					<CachePath>SFX/playerJump-002_BCA48A51.wem</CachePath>
+				</File>
+				<File Id="377363611" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>playerJump-007.wav</ShortName>
+					<CachePath>SFX/playerJump-007_81F2BD34.wem</CachePath>
 				</File>
 				<File Id="455232651" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>gravHit.wav</ShortName>
-					<CachePath>SFX/gravHit_B9E2E19A.wem</CachePath>
+					<CachePath>SFX/gravHit_F6A62D07.wem</CachePath>
 				</File>
 				<File Id="516606022" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_UI_PickUp.wav</ShortName>
 					<CachePath>SFX/SFX_UI_PickUp_835714D9.wem</CachePath>
 				</File>
+				<File Id="543010835" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>playerJump-003.wav</ShortName>
+					<CachePath>SFX/playerJump-003_3E03347F.wem</CachePath>
+				</File>
+				<File Id="601345182" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>playerJump-008.wav</ShortName>
+					<CachePath>SFX/playerJump-008_A63BD693.wem</CachePath>
+				</File>
+				<File Id="605511097" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>playerJump-010.wav</ShortName>
+					<CachePath>SFX/playerJump-010_C168396F.wem</CachePath>
+				</File>
+				<File Id="625987113" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>playerJump-011.wav</ShortName>
+					<CachePath>SFX/playerJump-011_6B3E3A0B.wem</CachePath>
+				</File>
 				<File Id="632490103" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>gravityOut.wav</ShortName>
-					<CachePath>SFX/gravityOut_BA668542.wem</CachePath>
+					<CachePath>SFX/gravityOut_5FF71F67.wem</CachePath>
+				</File>
+				<File Id="736254446" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player Dash.wav</ShortName>
+					<CachePath>SFX/Player Dash_C57A638A.wem</CachePath>
+				</File>
+				<File Id="748464119" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>playerShield.wav</ShortName>
+					<CachePath>SFX/playerShield_13EF52DC.wem</CachePath>
 				</File>
 				<File Id="769169157" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>gravityIn.wav</ShortName>
-					<CachePath>SFX/gravityIn_15B78D19.wem</CachePath>
+					<CachePath>SFX/gravityIn_C5CB3C95.wem</CachePath>
+				</File>
+				<File Id="774271815" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>playerLand.wav</ShortName>
+					<CachePath>SFX/playerLand_54BFC324.wem</CachePath>
+				</File>
+				<File Id="831640051" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>playerJump-005.wav</ShortName>
+					<CachePath>SFX/playerJump-005_2C940DE4.wem</CachePath>
 				</File>
 				<File Id="875044222" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Swing1.wav</ShortName>
-					<CachePath>SFX/Swing1_59E21C0C.wem</CachePath>
+					<CachePath>SFX/Swing1_32252AF7.wem</CachePath>
 				</File>
 				<File Id="965703128" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>gravityVac.wav</ShortName>
-					<CachePath>SFX/gravityVac_C6284E6C.wem</CachePath>
+					<CachePath>SFX/gravityVac_1BD85066.wem</CachePath>
 				</File>
 				<File Id="987025329" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>gravitySustain.wav</ShortName>
-					<CachePath>SFX/gravitySustain_D073D61F.wem</CachePath>
+					<CachePath>SFX/gravitySustain_6BED68B8.wem</CachePath>
 				</File>
 				<File Id="1012192840" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_UI_Start.wav</ShortName>
@@ -76,12 +128,14 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="1440576575" Name="airFlutter" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1818308409" Name="ambientStart" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="94906913"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1292600457" Name="flyerAttack" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="325523121" Name="flyerDie" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="4120941918" Name="flyerHurt" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2853039794" Name="gravEnd" DurationType="OneShot" DurationMin="1.9301293" DurationMax="2.1048207">
 					<MediaRefs>
 						<MediaRef Id="632490103"/>
@@ -98,8 +152,39 @@
 						<MediaRef Id="965703128"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="4008126242" Name="playerJump" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="2267600265" Name="playerMove" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2525052962" Name="playerDash" DurationType="OneShot" DurationMin="0.3862901" DurationMax="0.4212523">
+					<MediaRefs>
+						<MediaRef Id="736254446"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4008126242" Name="playerJump" DurationType="OneShot" DurationMin="0.38857856" DurationMax="0.41642797">
+					<MediaRefs>
+						<MediaRef Id="62813781"/>
+						<MediaRef Id="291242061"/>
+						<MediaRef Id="323749564"/>
+						<MediaRef Id="377363611"/>
+						<MediaRef Id="543010835"/>
+						<MediaRef Id="601345182"/>
+						<MediaRef Id="605511097"/>
+						<MediaRef Id="625987113"/>
+						<MediaRef Id="831640051"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="846198821" Name="playerLand" DurationType="OneShot" DurationMin="0.28536022" DurationMax="0.3393524">
+					<MediaRefs>
+						<MediaRef Id="774271815"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2267600265" Name="playerMove" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="209439430"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2594838977" Name="playerShield" DurationType="OneShot" DurationMin="1.4816775" DurationMax="1.5250939">
+					<MediaRefs>
+						<MediaRef Id="748464119"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2597336422" Name="swing1" DurationType="OneShot" DurationMin="0.26580006" DurationMax="0.27358857">
 					<MediaRefs>
 						<MediaRef Id="875044222"/>
@@ -125,8 +210,11 @@
 						<MediaRef Id="1012192840"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="819226263" Name="walkerAttack" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="4099529891" Name="walkerDie" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3105797008" Name="walkerHurt" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B731FCDD-1817-7C0F-4BF3-329312F30ECC}</FileHash>
+	<FileHash>{5797316E-40CC-9341-7F34-DBCECD64A11F}</FileHash>
 </SoundBanksInfo>

@@ -13,18 +13,26 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID AIRFLUTTER = 1440576575U;
         static const AkUniqueID AMBIENTSTART = 1818308409U;
+        static const AkUniqueID FLYERATTACK = 1292600457U;
+        static const AkUniqueID FLYERDIE = 325523121U;
+        static const AkUniqueID FLYERHURT = 4120941918U;
         static const AkUniqueID GRAVEND = 2853039794U;
         static const AkUniqueID GRAVSTART = 1983228305U;
         static const AkUniqueID GRAVVAC = 2230252431U;
+        static const AkUniqueID PLAYERDASH = 2525052962U;
         static const AkUniqueID PLAYERJUMP = 4008126242U;
+        static const AkUniqueID PLAYERLAND = 846198821U;
         static const AkUniqueID PLAYERMOVE = 2267600265U;
+        static const AkUniqueID PLAYERSHIELD = 2594838977U;
         static const AkUniqueID SWING1 = 2597336422U;
         static const AkUniqueID SWING2 = 2597336421U;
         static const AkUniqueID SWING3 = 2597336420U;
         static const AkUniqueID TESTCOMPLETE = 1776921608U;
         static const AkUniqueID TESTFAIL = 1435302941U;
+        static const AkUniqueID WALKERATTACK = 819226263U;
+        static const AkUniqueID WALKERDIE = 4099529891U;
+        static const AkUniqueID WALKERHURT = 3105797008U;
     } // namespace EVENTS
 
     namespace BANKS

@@ -1,26 +1,47 @@
 Event	ID	Name			Wwise Object Path	Notes
+	325523121	flyerDie			\Default Work Unit\NPCs\Enemies\Flyer\flyerDie	
+	819226263	walkerAttack			\Default Work Unit\NPCs\Enemies\Walker\walkerAttack	
+	846198821	playerLand			\Default Work Unit\Player\Movement\playerLand	
+	1292600457	flyerAttack			\Default Work Unit\NPCs\Enemies\Flyer\flyerAttack	
 	1435302941	testFail			\Default Work Unit\UI\testFail	
-	1440576575	airFlutter			\Default Work Unit\NPCs\Enemies\airFlutter	
 	1776921608	testComplete			\Default Work Unit\UI\testComplete	
 	1818308409	ambientStart			\Default Work Unit\Ambient\ambientStart	
 	1983228305	gravStart			\Default Work Unit\Player\Gravity\gravStart	
 	2230252431	gravVac			\Default Work Unit\Objects\gravVac	
 	2267600265	playerMove			\Default Work Unit\Player\Movement\playerMove	
+	2525052962	playerDash			\Default Work Unit\Player\Movement\playerDash	
+	2594838977	playerShield			\Default Work Unit\Player\Movement\playerShield	
 	2597336420	swing3			\Default Work Unit\Player\Attacks\swing3	
 	2597336421	swing2			\Default Work Unit\Player\Attacks\swing2	
 	2597336422	swing1			\Default Work Unit\Player\Attacks\swing1	
 	2853039794	gravEnd			\Default Work Unit\Player\Gravity\gravEnd	
+	3105797008	walkerHurt			\Default Work Unit\NPCs\Enemies\Walker\walkerHurt	
 	4008126242	playerJump			\Default Work Unit\Player\Movement\playerJump	
+	4099529891	walkerDie			\Default Work Unit\NPCs\Enemies\Walker\walkerDie	
+	4120941918	flyerHurt			\Default Work Unit\NPCs\Enemies\Flyer\flyerHurt	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	89249921	swing2	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\Swing2_D6EF16C9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Attacks\Melee\swing2		5749
-	94906913	ambientPH	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\Dark Drone Intensive Electric Waves_44C7135A.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient\Ambient\ambientPH		5542514
-	455232651	swing3	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\gravHit_B9E2E19A.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Attacks\Melee\swing3		16629
+	62813781	playerJump-009	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\playerJump-009_20D1BC9F.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerJump\playerJump-009		16125
+	89249921	swing2	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\Swing2_62C79D4F.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Attacks\Melee\swing2		5749
+	94906913	ambientPH	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\Dark Drone Intensive Electric Waves_A1B4EF98.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient\Ambient\ambientPH		5542514
+	209439430	playerMove	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\playerMove_18545657.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerMove		406393
+	291242061	playerJump-006	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\playerJump-006_BB69922F.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerJump\playerJump-006		15468
+	323749564	playerJump-002	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\playerJump-002_BCA48A51.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerJump\playerJump-002		15137
+	377363611	playerJump-007	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\playerJump-007_81F2BD34.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerJump\playerJump-007		15501
+	455232651	swing3	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\gravHit_F6A62D07.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Attacks\Melee\swing3		16629
 	516606022	testComplete	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\SFX_UI_PickUp_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\testSounds\testComplete		28971
-	632490103	gravWarpOut	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\gravityOut_BA668542.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Gravity\gravWarpOut		51521
-	769169157	gravWarpIn	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\gravityIn_15B78D19.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Gravity\gravWarpIn		21027
-	875044222	swing1	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\Swing1_59E21C0C.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Attacks\Melee\swing1		6681
-	965703128	gravVac	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\gravityVac_C6284E6C.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\gravVac		10094
-	987025329	gravSustain	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\gravitySustain_D073D61F.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Gravity\gravSustain		477064
+	543010835	playerJump-003	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\playerJump-003_3E03347F.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerJump\playerJump-003		16540
+	601345182	playerJump-008	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\playerJump-008_A63BD693.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerJump\playerJump-008		15858
+	605511097	playerJump-010	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\playerJump-010_C168396F.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerJump\playerJump-010		13523
+	625987113	playerJump-011	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\playerJump-011_6B3E3A0B.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerJump\playerJump-011		14322
+	632490103	gravWarpOut	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\gravityOut_5FF71F67.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Gravity\gravWarpOut		51521
+	736254446	playerDash	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\Player Dash_C57A638A.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Abilities\playerDash		10810
+	748464119	playerShield	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\playerShield_13EF52DC.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Abilities\playerShield		49681
+	769169157	gravWarpIn	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\gravityIn_C5CB3C95.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Gravity\gravWarpIn		21027
+	774271815	playerLand	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\playerLand_54BFC324.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerLand		12284
+	831640051	playerJump-005	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\playerJump-005_2C940DE4.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerJump\playerJump-005		14561
+	875044222	swing1	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\Swing1_32252AF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Attacks\Melee\swing1		6681
+	965703128	gravVac	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\gravityVac_1BD85066.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\gravVac		10094
+	987025329	gravSustain	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\gravitySustain_6BED68B8.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Gravity\gravSustain		477064
 	1012192840	testFail	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\SFX_UI_Start_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\testSounds\testFail		72538
 
