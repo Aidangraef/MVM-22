@@ -5,7 +5,21 @@
 			<ChildrenList>
 				<Folder Name="Enemies" ID="{D95917D2-27A2-42B4-9273-F593E21FE335}" ShortID="724512094">
 					<ChildrenList>
-						<Event Name="airFlutter" ID="{40E75039-6C9A-47FF-8FA4-8FDF378C2C13}"/>
+						<Folder Name="Walker" ID="{4E7454BC-FBA2-405C-9967-882932094876}" ShortID="878284861">
+							<ChildrenList>
+								<Event Name="walkerAttack" ID="{07636617-9C16-4BB5-8E1A-A5916D7BAE6A}"/>
+								<Event Name="walkerHurt" ID="{C3D5B43C-9392-4A50-9E03-6A075285D262}"/>
+								<Event Name="walkerDie" ID="{06EC8E98-862E-490B-B2B8-9FA0A268FD85}"/>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Flyer" ID="{F36B75D1-CD35-487F-9E5E-3452FE91DCB9}" ShortID="446283088">
+							<ChildrenList>
+								<Event Name="flyerAttack" ID="{F1884ECE-6A8E-4C79-A298-1733176AF2B6}"/>
+								<Event Name="flyerHurt" ID="{0A88C148-26FD-4BDF-84CD-5C971A688B12}"/>
+								<Event Name="flyerDie" ID="{8B3025D3-469A-4638-BC83-A3E1B7568C8E}"/>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Boss" ID="{673782DA-EA75-473C-90CA-0382392A681A}" ShortID="567491398"/>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

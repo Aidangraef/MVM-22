@@ -89,8 +89,61 @@
 				</Folder>
 				<Folder Name="Movement" ID="{5A47081F-1863-4EB8-91C3-3755E9876C8C}" ShortID="686608200">
 					<ChildrenList>
-						<Event Name="playerJump" ID="{8FEE2E24-5054-48BF-9737-4AF657B06B16}"/>
-						<Event Name="playerMove" ID="{BD53E069-F8CF-4F5D-82BC-424FDAFB8DB8}"/>
+						<Event Name="playerJump" ID="{8FEE2E24-5054-48BF-9737-4AF657B06B16}">
+							<ChildrenList>
+								<Action Name="" ID="{FAA37758-ACFC-4216-9733-B8DB7D8F64C0}" ShortID="996408858">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="playerJump" ID="{E01F3FA9-AB35-4838-B831-7D5F3FC97168}" WorkUnitID="{461DD406-5E4B-4854-B2D4-130E64075729}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="playerMove" ID="{BD53E069-F8CF-4F5D-82BC-424FDAFB8DB8}">
+							<ChildrenList>
+								<Action Name="" ID="{456DBCD8-B609-4BA0-9765-4C02C0041F59}" ShortID="651566427">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="playerMove" ID="{9B32AABF-ADF1-4AC0-8103-59CA68D8346D}" WorkUnitID="{461DD406-5E4B-4854-B2D4-130E64075729}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="playerDash" ID="{170BB0DE-BE58-4162-8233-F9FF74032D71}">
+							<ChildrenList>
+								<Action Name="" ID="{512BDAE4-B65C-4DC2-86CF-FC11E2A275F6}" ShortID="585519234">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="playerDash" ID="{E2B3F5A2-5AF1-4EA8-83F2-8C720D790076}" WorkUnitID="{461DD406-5E4B-4854-B2D4-130E64075729}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="playerShield" ID="{4D140FF8-8336-42E4-9485-A978C5DDBD8A}">
+							<ChildrenList>
+								<Action Name="" ID="{F177AC9A-F033-4E54-A108-A7BF87939238}" ShortID="295153789">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="playerShield" ID="{CA9ABF3D-DCDC-47FD-9B24-B5B175F0A814}" WorkUnitID="{461DD406-5E4B-4854-B2D4-130E64075729}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="playerLand" ID="{018F1FFB-DFF7-4492-B9B8-EBFB0E3176DE}">
+							<ChildrenList>
+								<Action Name="" ID="{E1CAEFB8-452A-48C0-9F80-0A19C4751D3A}" ShortID="249316456">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="playerLand" ID="{88BC0E57-BB2A-4BB3-9BD4-DEA3FEAF0768}" WorkUnitID="{461DD406-5E4B-4854-B2D4-130E64075729}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
