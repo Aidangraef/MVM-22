@@ -25,6 +25,8 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="buttonClick" ID="{745FF593-05D0-4BEF-89E5-6DAC3C061061}"/>
+				<Event Name="upgradeGet" ID="{1B7342D6-D6E0-4FC2-99BD-10FF4ED59D5B}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

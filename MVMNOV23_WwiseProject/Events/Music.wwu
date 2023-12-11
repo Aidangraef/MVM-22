@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A711D942-7CDD-48AD-B558-6ABA2E148970}" SchemaVersion="110" RootDocumentID="{0FDCE87A-3E1C-4B5A-8A91-CD3C3E4E6159}" ParentDocumentID="{0FDCE87A-3E1C-4B5A-8A91-CD3C3E4E6159}">
+	<Events>
+		<WorkUnit Name="Music" ID="{A711D942-7CDD-48AD-B558-6ABA2E148970}" OwnerID="{0FDCE87A-3E1C-4B5A-8A91-CD3C3E4E6159}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="musicStart" ID="{0CD4458F-1184-46DD-9CBC-674C3F4DBD55}">
+					<ChildrenList>
+						<Action Name="" ID="{AC3995CC-DB66-495E-A328-39F36820ACF5}" ShortID="571381326">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="musicSwitcher" ID="{98B2DDC8-38DB-408C-85F4-0BD2C06E64F2}" WorkUnitID="{39959547-F85D-43D0-8E81-38867B5CBC0D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{BAC83EC3-3377-4CF7-AA60-5A4DEE1EC261}" ShortID="634679463">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="menu" ID="{F6D66972-4EA5-47FB-8416-6B2244084E37}" WorkUnitID="{56A7E976-BB50-4BE0-BCB8-390B7BC4DE47}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{61E8826F-9487-4D8B-AE54-B65C4E5F4BB1}" ShortID="1066266709">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="zeroUpgrade" ID="{2C00ED9C-AB4E-49E6-B937-E5E01C426DEE}" WorkUnitID="{56A7E976-BB50-4BE0-BCB8-390B7BC4DE47}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{66825EE5-9C38-4D16-836B-AB3CFEF24B58}" ShortID="111272689">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="musicSwitcher" ID="{98B2DDC8-38DB-408C-85F4-0BD2C06E64F2}" WorkUnitID="{39959547-F85D-43D0-8E81-38867B5CBC0D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="firstUpgrade" ID="{AEE703B6-2FE7-45A9-856F-6571A48D8B9F}">
+					<ChildrenList>
+						<Action Name="" ID="{D6B538E7-7C5E-49D0-AA0F-2EAC652563A5}" ShortID="1045281188">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="firstUpgrade" ID="{149EC2EE-5F3E-48AB-9C4E-F7390ECB4094}" WorkUnitID="{56A7E976-BB50-4BE0-BCB8-390B7BC4DE47}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="secondUpgrade" ID="{F95CBFA6-86B5-48B5-ABA6-B1760DFF1A17}">
+					<ChildrenList>
+						<Action Name="" ID="{339C79CA-A404-4F3D-93D5-D4F660C13660}" ShortID="406138274">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="secondUpgrade" ID="{C1787AB4-840D-476D-99CF-024EB2BED8F7}" WorkUnitID="{56A7E976-BB50-4BE0-BCB8-390B7BC4DE47}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="thirdUpgrade" ID="{124CF2BC-B688-434D-AD27-2573E22520AD}">
+					<ChildrenList>
+						<Action Name="" ID="{7D7FBFF5-DE77-4D29-A483-AB787100772B}" ShortID="434943297">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="thirdUpgrade" ID="{E31519A8-197A-402D-8238-B599A8E4EE9F}" WorkUnitID="{56A7E976-BB50-4BE0-BCB8-390B7BC4DE47}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="fourthUpgrade" ID="{4F842104-D434-4A7B-A692-764342F8416B}">
+					<ChildrenList>
+						<Action Name="" ID="{5555F392-FF83-435F-8C3A-830A7450BB4C}" ShortID="639890994">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="fourthUpgrade" ID="{E2700F4A-E8B3-4926-BFD3-73DA29CB0D41}" WorkUnitID="{56A7E976-BB50-4BE0-BCB8-390B7BC4DE47}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="bossStart" ID="{F396B2DE-1688-4C53-81C9-8F25FF838AF3}">
+					<ChildrenList>
+						<Action Name="" ID="{C79C830F-A92C-4679-BCF6-4836AB4B97E5}" ShortID="72637910">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="firstBoss" ID="{54B8B071-18D7-4BFB-BABD-DE098247327C}" WorkUnitID="{56A7E976-BB50-4BE0-BCB8-390B7BC4DE47}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="bossDefeated" ID="{0BA93F73-8177-42CA-9805-753BCF267995}">
+					<ChildrenList>
+						<Action Name="" ID="{EAA74E6E-E02A-46F4-A7A2-DE28BBFCF2CB}" ShortID="457041549">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="credits" ID="{02F58429-F827-4C4D-9265-FF116A3AEEEE}" WorkUnitID="{56A7E976-BB50-4BE0-BCB8-390B7BC4DE47}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="toMenu" ID="{56163725-2B50-4A21-B1F1-69F353DA9988}">
+					<ChildrenList>
+						<Action Name="" ID="{AD58FA1A-CFA3-4DE7-BE6B-5E1459A8D311}" ShortID="700754155">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="menu" ID="{F6D66972-4EA5-47FB-8416-6B2244084E37}" WorkUnitID="{56A7E976-BB50-4BE0-BCB8-390B7BC4DE47}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="gameStart" ID="{0825C903-879B-42E2-956C-B956F1C74270}">
+					<ChildrenList>
+						<Action Name="" ID="{99D647BC-0463-4B74-B5A1-7518D39ABE5D}" ShortID="713956364">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="firstZone" ID="{1E9F33A5-378A-4085-AEAD-3059CBDF0D58}" WorkUnitID="{56A7E976-BB50-4BE0-BCB8-390B7BC4DE47}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{CEA4D81F-56ED-4A35-A927-14E4830545D0}" ShortID="913751945">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="zeroUpgrade" ID="{2C00ED9C-AB4E-49E6-B937-E5E01C426DEE}" WorkUnitID="{56A7E976-BB50-4BE0-BCB8-390B7BC4DE47}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

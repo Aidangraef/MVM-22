@@ -10,12 +10,72 @@
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="musicStart" ID="{0CD4458F-1184-46DD-9CBC-674C3F4DBD55}" WorkUnitID="{A711D942-7CDD-48AD-B558-6ABA2E148970}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="gameStart" ID="{0825C903-879B-42E2-956C-B956F1C74270}" WorkUnitID="{A711D942-7CDD-48AD-B558-6ABA2E148970}"/>
+							<Position X="0" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="bossStart" ID="{F396B2DE-1688-4C53-81C9-8F25FF838AF3}" WorkUnitID="{A711D942-7CDD-48AD-B558-6ABA2E148970}"/>
+							<Position X="0" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="toMenu" ID="{56163725-2B50-4A21-B1F1-69F353DA9988}" WorkUnitID="{A711D942-7CDD-48AD-B558-6ABA2E148970}"/>
+							<Position X="0" Y="6"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="gravEnd" ID="{35180EB6-AA38-4DB0-9194-45EFF5A7BA17}" WorkUnitID="{A5316B78-3C56-4BA3-B621-613D151278FB}"/>
 							<Position X="1" Y="1"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="firstUpgrade" ID="{AEE703B6-2FE7-45A9-856F-6571A48D8B9F}" WorkUnitID="{A711D942-7CDD-48AD-B558-6ABA2E148970}"/>
+							<Position X="1" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="bossDefeated" ID="{0BA93F73-8177-42CA-9805-753BCF267995}" WorkUnitID="{A711D942-7CDD-48AD-B558-6ABA2E148970}"/>
+							<Position X="1" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="secondUpgrade" ID="{F95CBFA6-86B5-48B5-ABA6-B1760DFF1A17}" WorkUnitID="{A711D942-7CDD-48AD-B558-6ABA2E148970}"/>
+							<Position X="2" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="playerMove" ID="{BD53E069-F8CF-4F5D-82BC-424FDAFB8DB8}" WorkUnitID="{A5316B78-3C56-4BA3-B621-613D151278FB}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="thirdUpgrade" ID="{124CF2BC-B688-434D-AD27-2573E22520AD}" WorkUnitID="{A711D942-7CDD-48AD-B558-6ABA2E148970}"/>
+							<Position X="3" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="playerStopMove" ID="{8BB68082-8BCB-4487-A198-F101A77B4370}" WorkUnitID="{A5316B78-3C56-4BA3-B621-613D151278FB}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="fourthUpgrade" ID="{4F842104-D434-4A7B-A692-764342F8416B}" WorkUnitID="{A711D942-7CDD-48AD-B558-6ABA2E148970}"/>
+							<Position X="4" Y="4"/>
+						</Module>
 					</ModuleList>
-					<RTPCValueList ShowAll="true"/>
-					<CurrentStateList ShowAll="true"/>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="gameSFXVolume" ID="{E08F4791-892B-41E3-8055-CB6373E04DB1}"/>
+							<Value>80</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="gameMusicVolume" ID="{82B72C21-3E0C-4D62-A742-0BFB4EF901A7}"/>
+							<Value>80</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="gameMasterVolume" ID="{BFFE7354-B7B4-4FDE-BC57-7A426CBD11AB}"/>
+							<Value>80</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="credits" ID="{02F58429-F827-4C4D-9265-FF116A3AEEEE}"/>
+						<CurrentStateRef Name="fourthUpgrade" ID="{E2700F4A-E8B3-4926-BFD3-73DA29CB0D41}"/>
+					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
 			</ChildrenList>

@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{56A7E976-BB50-4BE0-BCB8-390B7BC4DE47}" SchemaVersion="110">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{56A7E976-BB50-4BE0-BCB8-390B7BC4DE47}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{56A7E976-BB50-4BE0-BCB8-390B7BC4DE47}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="playerUpgrades" ID="{4CAC91E9-3E86-431E-81C4-8019472629CE}">
+					<ChildrenList>
+						<State Name="None" ID="{E3845439-044B-4087-B923-D6EF035F3B77}"/>
+						<State Name="zeroUpgrade" ID="{2C00ED9C-AB4E-49E6-B937-E5E01C426DEE}"/>
+						<State Name="firstUpgrade" ID="{149EC2EE-5F3E-48AB-9C4E-F7390ECB4094}"/>
+						<State Name="secondUpgrade" ID="{C1787AB4-840D-476D-99CF-024EB2BED8F7}"/>
+						<State Name="thirdUpgrade" ID="{E31519A8-197A-402D-8238-B599A8E4EE9F}"/>
+						<State Name="fourthUpgrade" ID="{E2700F4A-E8B3-4926-BFD3-73DA29CB0D41}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="gameZone" ID="{41A9B221-2736-4151-B2D8-1077A1F40B0F}">
+					<ChildrenList>
+						<State Name="None" ID="{33049C88-DDA9-4FF1-9A01-B4A13C5B0799}"/>
+						<State Name="menu" ID="{F6D66972-4EA5-47FB-8416-6B2244084E37}"/>
+						<State Name="firstZone" ID="{1E9F33A5-378A-4085-AEAD-3059CBDF0D58}"/>
+						<State Name="firstBoss" ID="{54B8B071-18D7-4BFB-BABD-DE098247327C}"/>
+						<State Name="credits" ID="{02F58429-F827-4C4D-9265-FF116A3AEEEE}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

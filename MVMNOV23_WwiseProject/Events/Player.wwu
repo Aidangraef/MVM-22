@@ -103,6 +103,9 @@
 						<Event Name="playerMove" ID="{BD53E069-F8CF-4F5D-82BC-424FDAFB8DB8}">
 							<ChildrenList>
 								<Action Name="" ID="{456DBCD8-B609-4BA0-9765-4C02C0041F59}" ShortID="651566427">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="playerMove" ID="{9B32AABF-ADF1-4AC0-8103-59CA68D8346D}" WorkUnitID="{461DD406-5E4B-4854-B2D4-130E64075729}"/>
@@ -139,6 +142,21 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="playerLand" ID="{88BC0E57-BB2A-4BB3-9BD4-DEA3FEAF0768}" WorkUnitID="{461DD406-5E4B-4854-B2D4-130E64075729}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="playerStopMove" ID="{8BB68082-8BCB-4487-A198-F101A77B4370}">
+							<ChildrenList>
+								<Action Name="" ID="{01C05B84-45B3-42C1-B458-7732874793B3}" ShortID="152235296">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="playerMove" ID="{9B32AABF-ADF1-4AC0-8103-59CA68D8346D}" WorkUnitID="{461DD406-5E4B-4854-B2D4-130E64075729}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
