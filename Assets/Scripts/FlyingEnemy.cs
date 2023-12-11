@@ -99,12 +99,12 @@ public class FlyingEnemy : MonoBehaviour
     IEnumerator DoFlashRed()
     {
         // initial setup
-        SpriteRenderer sprite = GetComponent<SpriteRenderer>();
+        SpriteRenderer sprite = transform.GetChild(0).GetComponent<SpriteRenderer>();
         Color originalColor = new Color(1, 1, 1, 1);
         Color redColor = new Color(1, 0, 0, 1);
 
         // flash and wait and turn back
-        for (int i = 0; i < 3; i++)
+        for(int i = 0; i < 3; i++)
         {
             sprite.color = redColor;
             yield return new WaitForSeconds(0.1f);
