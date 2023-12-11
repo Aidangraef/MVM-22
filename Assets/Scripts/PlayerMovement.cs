@@ -121,6 +121,7 @@ public class PlayerMovement : MonoBehaviour
             shield.SetActive(true);
             rb.velocity = Vector2.zero;
             input = 0;
+            AkSoundEngine.PostEvent("playerShield", this.gameObject);
         }
 
         if(Input.GetKeyUp("f"))
@@ -151,6 +152,14 @@ public class PlayerMovement : MonoBehaviour
         {
             StartCoroutine(DoDash());
         }
+
+        // audio
+        /*
+        if(Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
+        {
+            AkSoundEngine.PostEvent("PlayerMove", gameObject);
+        }
+        */
     }
 
     private void FixedUpdate()
@@ -273,7 +282,7 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(new Vector2(0f, jumpForce));
             jumpBufferCounter = 0;
             animator.SetTrigger("jump");
-            //AkSoundEngine.PostEvent("playerJump", this.gameObject);
+            AkSoundEngine.PostEvent("playerJump", this.gameObject);
 
             // turn on doubleJump
             if (doubleJumpUnlocked) canDoubleJump = true;
@@ -289,7 +298,7 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(new Vector2(0f, jumpForce));
             jumpBufferCounter = 0;
             animator.SetTrigger("jump");
-            //AkSoundEngine.PostEvent("playerJump", this.gameObject);
+            AkSoundEngine.PostEvent("playerJump", this.gameObject);
         }
 
         // released jump button, so fall faster
@@ -337,6 +346,9 @@ public class PlayerMovement : MonoBehaviour
 
         // Decrease health
         hp -= dmg;
+
+        // flash red
+        //StartCoroutine(DoFlashRed());
 
         // check for dead
         if(hp <= 0)
@@ -391,6 +403,9 @@ public class PlayerMovement : MonoBehaviour
         canDash = false;
         isDashing = true;
 
+        // play sound
+        AkSoundEngine.PostEvent("playerDash", this.gameObject);
+
         // don't be affected by gravity during dash
         float originalGravity = rb.gravityScale;
         rb.gravityScale = 0;
@@ -409,5 +424,27 @@ public class PlayerMovement : MonoBehaviour
         // cooldown
         yield return new WaitForSeconds(dashingCooldown);
         canDash = true;
+    }
+
+    IEnumerator DoFlashRed()
+    {
+        // initial setup
+        SpriteRenderer sprite = GetComponent<SpriteRenderer>();
+        Color originalColor = new Color(1, 1, 1, 1);
+        Color redColor = new Color(1, 0, 0, 1);
+
+        // flash and wait and turn back
+        for (int i = 0; i < 3; i++)
+        {
+            sprite.color = redColor;
+            yield return new WaitForSeconds(0.1f);
+            sprite.color = originalColor;
+            yield return new WaitForSeconds(0.1f);
+        }
+    }
+
+    public void playLandSound()
+    {
+        AkSoundEngine.PostEvent("playerLand", this.gameObject);
     }
 }
