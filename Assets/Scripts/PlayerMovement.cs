@@ -121,6 +121,7 @@ public class PlayerMovement : MonoBehaviour
             shield.SetActive(true);
             rb.velocity = Vector2.zero;
             input = 0;
+            AkSoundEngine.PostEvent("playerShield", this.gameObject);
         }
 
         if(Input.GetKeyUp("f"))
