@@ -6,7 +6,7 @@ public class PlayerCombat : MonoBehaviour
 {
     GameObject attackHitBox;
     float attackTimer = 0f;
-    float attackRange = 0.5f;
+    float attackRange = 0.8f;
     [SerializeField] LayerMask enemyLayers;
     [SerializeField] public int attackDamage;
 
@@ -51,7 +51,7 @@ public class PlayerCombat : MonoBehaviour
     void Attack()
     {
         attackHitBox.SetActive(true);
-        attackTimer = 15f;
+        attackTimer = 20f;
 
         // animation - cycle attacks
         if (currentAttack == "none" || currentAttack == "Attack3")
@@ -69,7 +69,6 @@ public class PlayerCombat : MonoBehaviour
         {
             currentAttack = "Attack3";
             currentSound = "swing3";
-
         }
         attackHitBox.GetComponent<Animator>().SetTrigger(currentAttack);
         AkSoundEngine.PostEvent(currentSound, this.gameObject);
@@ -80,7 +79,29 @@ public class PlayerCombat : MonoBehaviour
         // apply damage
         foreach(Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<EnemyFlip>().TakeDamage(attackDamage);
+            if(enemy.gameObject.GetComponent<FlyingEnemy>() != null)
+            {
+                if(currentAttack == "Attack3")
+                {
+                    enemy.GetComponent<FlyingEnemy>().TakeDamage(attackDamage + 1);
+                }
+                else
+                {
+                    enemy.GetComponent<FlyingEnemy>().TakeDamage(attackDamage);
+                }
+                
+            }
+            else
+            {
+                if (currentAttack == "Attack3")
+                {
+                    enemy.GetComponent<WalkingEnemy>().TakeDamage(attackDamage + 1);
+                }
+                else
+                {
+                    enemy.GetComponent<WalkingEnemy>().TakeDamage(attackDamage);
+                }
+            }
             // TODO: write kill code
             //Destroy(enemy.gameObject);
         }

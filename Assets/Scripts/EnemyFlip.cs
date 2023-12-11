@@ -42,9 +42,10 @@ public class EnemyFlip : MonoBehaviour
     void Switch(){
         if(aiPath != null){
             if (aiPath.desiredVelocity.x > 0.1){
-            transform.localScale = new Vector3(1, -1, 1);
+            transform.localScale = new Vector3(-1, 1, 1);
             }
-            else{
+            else if (aiPath.desiredVelocity.x < 0.1)
+            {
                 transform.localScale = new Vector3(1, 1, 1);
             }
         }
@@ -52,6 +53,7 @@ public class EnemyFlip : MonoBehaviour
         
     }
 
+    /*
     // check for player collision
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -63,6 +65,7 @@ public class EnemyFlip : MonoBehaviour
             Knockback();
         }
     }
+    */
 
     IEnumerator ToggleScript()
     {
@@ -82,6 +85,7 @@ public class EnemyFlip : MonoBehaviour
         }      
     }
 
+    /*
     public void TakeDamage(int amount){
         //take damage
         hp -= amount;
@@ -99,6 +103,7 @@ public class EnemyFlip : MonoBehaviour
         rb.velocity = Vector2.zero;
         rb.AddForce(direction.normalized * kbAmount, ForceMode2D.Impulse);
     }
+    */
 
     void Die(){
         //if we want animations heres where to put it
