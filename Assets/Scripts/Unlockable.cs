@@ -26,18 +26,22 @@ public class Unlockable : MonoBehaviour
             if(whatToUnlock == "dash")
             {
                 pm.dashUnlocked = true;
+                AkSoundEngine.PostEvent("firstUpgrade", gameObject);
             }
             else if(whatToUnlock == "double jump")
             {
                 pm.doubleJumpUnlocked = true;
+                AkSoundEngine.PostEvent("secondUpgrade", gameObject);
             }
             else if (whatToUnlock == "shield")
             {
                 pm.shieldUnlocked = true;
+                AkSoundEngine.PostEvent("thirdUpgrade", gameObject);
             }
             else if(whatToUnlock == "absorb bullets")
             {
                 pm.absorbBulletsUnlocked = true;
+                AkSoundEngine.PostEvent("fourthUpgrade", gameObject);
             }
 
             Destroy(gameObject);
