@@ -502,10 +502,10 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.0037842952
-    y: 0
-    width: 0.9923263
-    height: 1
+    x: 0
+    y: 0.10169491
+    width: 0.6054872
+    height: 0.6101695
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
@@ -823,7 +823,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -50}
-  m_SizeDelta: {x: 650, y: 198.6447}
+  m_SizeDelta: {x: 801.6436, y: 198.6447}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1123039444
 MonoBehaviour:
@@ -845,12 +845,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Graphics & Animation: Astral
+  m_text: 'Art & Animation: Jacob Mo
 
     Programming: Aidan Graef, Fiery
 
     Level
-    Design: Aidan Graef, Astral, Fiery
+    Design: Aidan Graef, Jacob Mo, Fiery
 
     Sound & Wwise Design: Evan Seamans
 
