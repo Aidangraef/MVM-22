@@ -154,12 +154,14 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // audio
-        /*
         if(Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
         {
             AkSoundEngine.PostEvent("PlayerMove", gameObject);
         }
-        */
+        if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
+        {
+            AkSoundEngine.PostEvent("PlayerStopMove", gameObject);
+        }
     }
 
     private void FixedUpdate()

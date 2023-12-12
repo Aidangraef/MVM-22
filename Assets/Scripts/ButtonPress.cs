@@ -30,6 +30,7 @@ public class ButtonPress : MonoBehaviour
         if (collision.gameObject.tag == "Black Hole") return;
 
         animator.SetTrigger("Press");
+        AkSoundEngine.PostEvent("buttonClick", gameObject);
         on = !on;
 
 
