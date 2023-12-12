@@ -56,7 +56,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{E2902064-E5BE-6564-2E90-3415AA9E5D47}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{18A1D3A0-B4B1-61F9-3060-A8BEEBB66733}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -148,6 +148,10 @@
 					<ShortName>gravityOut.wav</ShortName>
 					<CachePath>SFX/gravityOut_5FF71F67.wem</CachePath>
 				</File>
+				<File Id="706566862" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_UI_Slider_End.wav</ShortName>
+					<CachePath>SFX/SFX_UI_Slider_End_7F59CB09.wem</CachePath>
+				</File>
 				<File Id="736254446" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player Dash.wav</ShortName>
 					<CachePath>SFX/Player Dash_C57A638A.wem</CachePath>
@@ -176,6 +180,10 @@
 					<ShortName>Swing1.wav</ShortName>
 					<CachePath>SFX/Swing1_32252AF7.wem</CachePath>
 				</File>
+				<File Id="934752606" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_UI_Hover.wav</ShortName>
+					<CachePath>SFX/SFX_UI_Hover_5AF7753B.wem</CachePath>
+				</File>
 				<File Id="965703128" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>gravityVac.wav</ShortName>
 					<CachePath>SFX/gravityVac_1BD85066.wem</CachePath>
@@ -187,6 +195,10 @@
 				<File Id="1012192840" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_UI_Start.wav</ShortName>
 					<CachePath>SFX/SFX_UI_Start_835714D9.wem</CachePath>
+				</File>
+				<File Id="1070207331" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_UI_Slider_Start.wav</ShortName>
+					<CachePath>SFX/SFX_UI_Slider_Start_C5097C7F.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -395,6 +407,21 @@
 						<ActionSetStateEntry GroupId="3105312269" Id="2826329895" Name="secondUpgrade"/>
 					</ActionSetState>
 				</Event>
+				<Event Id="4271478305" Name="sliderEnd" DurationType="OneShot" DurationMin="0.073568575" DurationMax="0.073568575">
+					<MediaRefs>
+						<MediaRef Id="706566862"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2671641362" Name="sliderStart" DurationType="OneShot" DurationMin="0.0982024" DurationMax="0.0982024">
+					<MediaRefs>
+						<MediaRef Id="1070207331"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3847507249" Name="sliderTick" DurationType="OneShot" DurationMin="0.08954727" DurationMax="0.08954727">
+					<MediaRefs>
+						<MediaRef Id="934752606"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2597336422" Name="swing1" DurationType="OneShot" DurationMin="0.26580006" DurationMax="0.27358857">
 					<MediaRefs>
 						<MediaRef Id="875044222"/>
@@ -458,5 +485,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B13C313A-083B-7500-2A08-4852B4AB6FE6}</FileHash>
+	<FileHash>{E3102DD6-9E7C-10B3-B6BD-ACE67C6F2361}</FileHash>
 </SoundBanksInfo>

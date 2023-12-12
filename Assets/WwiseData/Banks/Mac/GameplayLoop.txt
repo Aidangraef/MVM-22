@@ -21,6 +21,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2597336422	swing1			\Default Work Unit\Player\Attacks\swing1	
 	2612649333	upgradeGet			\Default Work Unit\UI\upgradeGet	
 	2663107407	fourthUpgrade			\Default Work Unit\Music\fourthUpgrade	
+	2671641362	sliderStart			\Default Work Unit\UI\sliderStart	
 	2826329895	secondUpgrade			\Default Work Unit\Music\secondUpgrade	
 	2853039794	gravEnd			\Default Work Unit\Player\Gravity\gravEnd	
 	2978173602	bossStart			\Default Work Unit\Music\bossStart	
@@ -28,6 +29,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3216143520	playerHeal			\Default Work Unit\Player\Health\playerHeal	
 	3387993871	toMenu			\Default Work Unit\Music\toMenu	
 	3537581393	playerHurt			\Default Work Unit\Player\Health\playerHurt	
+	3847507249	sliderTick			\Default Work Unit\UI\sliderTick	
 	3966601280	playerDie			\Default Work Unit\Player\Health\playerDie	
 	4008126242	playerJump			\Default Work Unit\Player\Movement\playerJump	
 	4051332235	buttonClick			\Default Work Unit\UI\buttonClick	
@@ -35,6 +37,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	4099529891	walkerDie			\Default Work Unit\NPCs\Enemies\Walker\walkerDie	
 	4120941918	flyerHurt			\Default Work Unit\NPCs\Enemies\Flyer\flyerHurt	
 	4143628668	thirdUpgrade			\Default Work Unit\Music\thirdUpgrade	
+	4271478305	sliderEnd			\Default Work Unit\UI\sliderEnd	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1687686957	gameZone			\Default Work Unit\gameZone	
@@ -76,6 +79,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	618925761	buttonClick	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\buttonClick_9FF8D317.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\buttonClick		1697
 	625987113	playerJump-011	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\playerJump-011_6B3E3A0B.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerJump\playerJump-011		14322
 	632490103	gravWarpOut	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\gravityOut_5FF71F67.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Gravity\gravWarpOut		51521
+	706566862	SFX_UI_Slider_End	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\SFX_UI_Slider_End_7F59CB09.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\SFX_UI_Slider_End		3222
 	736254446	playerDash	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\Player Dash_C57A638A.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Abilities\playerDash		10810
 	748464119	playerShield	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\playerShield_13EF52DC.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Abilities\playerShield		49681
 	769169157	gravWarpIn	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\gravityIn_C5CB3C95.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Gravity\gravWarpIn		21027
@@ -83,7 +87,9 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	831640051	playerJump-005	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\playerJump-005_2C940DE4.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerJump\playerJump-005		14561
 	860451314	Level Theme Layer 5_Metroidvania Month Jam_11Dec2023	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\Level Theme Layer 5_Metroidvania Month Jam_11Dec2023_179463A7.wem		\Interactive Music Hierarchy\Default Work Unit\musicSwitcher\mainThemeU4\Level Theme Layer 5_Metroidvania Month Jam_11Dec2023\Level Theme Layer 5_Metroidvania Month Jam_11Dec2023		3376509
 	875044222	swing1	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\Swing1_32252AF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Attacks\Melee\swing1		6681
+	934752606	sliderTick	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\SFX_UI_Hover_5AF7753B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\sliderTick		3276
 	965703128	gravVac	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\gravityVac_1BD85066.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\gravVac		10094
 	987025329	gravSustain	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\gravitySustain_6BED68B8.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Gravity\gravSustain		477064
 	1012192840	testFail	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\SFX_UI_Start_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\testSounds\testFail		72538
+	1070207331	SFX_UI_Slider_Start	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\SFX_UI_Slider_Start_C5097C7F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\SFX_UI_Slider_Start		4588
 

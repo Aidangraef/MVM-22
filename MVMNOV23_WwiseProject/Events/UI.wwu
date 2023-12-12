@@ -37,6 +37,39 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="upgradeGet" ID="{1B7342D6-D6E0-4FC2-99BD-10FF4ED59D5B}"/>
+				<Event Name="sliderStart" ID="{9D09EA18-3983-4CDF-AA3E-E3B19B4A5E50}">
+					<ChildrenList>
+						<Action Name="" ID="{0FA3D364-3CF2-425F-96D9-1E243590732D}" ShortID="152182886">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_UI_Slider_Start" ID="{ABACDD9B-6287-4A5B-96C1-12356CFE6D23}" WorkUnitID="{CB787123-DEB4-4217-BA3A-6ED3F50ADA76}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="sliderEnd" ID="{A19284EE-06C1-4803-9AC5-38399EE159AA}">
+					<ChildrenList>
+						<Action Name="" ID="{55B56C1B-393D-4E1E-82FC-DB657364E917}" ShortID="520870792">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_UI_Slider_End" ID="{C097F989-22FC-44E3-AE6E-F36EA5E0C363}" WorkUnitID="{CB787123-DEB4-4217-BA3A-6ED3F50ADA76}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="sliderTick" ID="{EA418D18-463A-40E3-90BC-907529D2A44F}">
+					<ChildrenList>
+						<Action Name="" ID="{8AB84533-F32B-4795-A24B-B3F3AE4BACE2}" ShortID="554137629">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sliderTick" ID="{C5A0F46C-5944-43B2-9B87-FF02A11F1F60}" WorkUnitID="{CB787123-DEB4-4217-BA3A-6ED3F50ADA76}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

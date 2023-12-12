@@ -38,6 +38,9 @@ namespace AK
         static const AkUniqueID PLAYERSHIELD = 2594838977U;
         static const AkUniqueID PLAYERSTOPMOVE = 1563041841U;
         static const AkUniqueID SECONDUPGRADE = 2826329895U;
+        static const AkUniqueID SLIDEREND = 4271478305U;
+        static const AkUniqueID SLIDERSTART = 2671641362U;
+        static const AkUniqueID SLIDERTICK = 3847507249U;
         static const AkUniqueID SWING1 = 2597336422U;
         static const AkUniqueID SWING2 = 2597336421U;
         static const AkUniqueID SWING3 = 2597336420U;
