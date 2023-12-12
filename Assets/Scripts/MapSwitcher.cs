@@ -27,7 +27,10 @@ public class MapSwitcher : MonoBehaviour
 
                 foreach(GameObject dot in upgradeDots)
                 {
-                    dot.SetActive(false);
+                    if(dot != null)
+                    {
+                        dot.SetActive(false);
+                    }
                 }
 
                 //StartCoroutine(ResetTimeScale());
@@ -38,9 +41,11 @@ public class MapSwitcher : MonoBehaviour
                 mapDot.SetActive(true);
                 foreach (GameObject dot in upgradeDots)
                 {
-                    dot.SetActive(true);
+                    if (dot != null)
+                    {
+                        dot.SetActive(true);
+                    }
                 }
-                //Time.timeScale = 0.05f;
             }
             mapIsActive = !mapIsActive;
         }
