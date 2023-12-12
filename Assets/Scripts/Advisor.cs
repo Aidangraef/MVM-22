@@ -20,10 +20,13 @@ public class Advisor : MonoBehaviour
     {
         Vector3 direction = (target.position - transform.position).normalized;
         moveDirection = direction;
+        
     }
 
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(moveDirection.x, moveDirection.y) * speed;
+        //Debug.Log("move direction: " + moveDirection.x + ", " + moveDirection.y);
+        Debug.Log("velocity: " + rb.velocity);
     }
 }
