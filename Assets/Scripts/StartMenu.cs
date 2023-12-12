@@ -73,7 +73,7 @@ public class StartMenu : MonoBehaviour
     {
         menu.SetActive(true);
         AkSoundEngine.PostEvent("buttonClick", this.gameObject);
-        //credits.SetActive(false);
+        credits.SetActive(false);
         settings.SetActive(false);
         //howToPlay.SetActive(false);
     }
