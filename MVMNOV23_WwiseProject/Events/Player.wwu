@@ -164,6 +164,13 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Health" ID="{793001E1-BA97-4907-804B-174C62072121}" ShortID="251383947">
+					<ChildrenList>
+						<Event Name="playerDie" ID="{DC10A190-CE09-48FE-85C6-77198737FE9F}"/>
+						<Event Name="playerHurt" ID="{B56AA9DA-DFB2-4C24-820D-3321855AFFC6}"/>
+						<Event Name="playerHeal" ID="{35942B8B-F076-4C85-8D2F-446B518BCD5E}"/>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
