@@ -25,7 +25,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="buttonClick" ID="{745FF593-05D0-4BEF-89E5-6DAC3C061061}"/>
+				<Event Name="buttonClick" ID="{745FF593-05D0-4BEF-89E5-6DAC3C061061}">
+					<ChildrenList>
+						<Action Name="" ID="{44A5C497-EA6C-4A71-9C3D-4CDE964EDC2A}" ShortID="905300850">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="buttonClick" ID="{15EBD9B8-AE5B-478A-A449-540A7C5C0343}" WorkUnitID="{CB787123-DEB4-4217-BA3A-6ED3F50ADA76}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 				<Event Name="upgradeGet" ID="{1B7342D6-D6E0-4FC2-99BD-10FF4ED59D5B}"/>
 			</ChildrenList>
 		</WorkUnit>

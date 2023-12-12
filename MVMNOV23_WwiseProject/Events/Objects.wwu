@@ -14,6 +14,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="doorOpen" ID="{F96B761C-D637-42EF-A3E4-65A2896C162E}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

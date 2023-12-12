@@ -7,7 +7,7 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-4</Value>
+								<Value>-6</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -106,7 +106,7 @@
 													<MusicCue Name="Exit Cue" ID="{67276EAA-F2F2-4A16-8DAF-71620AAC3984}">
 														<PropertyList>
 															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="51340.6292749658"/>
+															<Property Name="TimeMs" Type="Real64" Value="50158.6867305062"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>
@@ -315,7 +315,6 @@
 													<PropertyList>
 														<Property Name="IsFolder" Type="bool" Value="True"/>
 													</PropertyList>
-													<ReferenceList/>
 													<TransitionInfo/>
 												</MusicTransition>
 											</TransitionList>
@@ -377,10 +376,8 @@
 									<PropertyList>
 										<Property Name="IsFolder" Type="bool" Value="True"/>
 									</PropertyList>
-									<ReferenceList/>
 									<ChildrenList>
 										<MusicTransition Name="Transition" ID="{C1CEA4F1-8B2F-4C6E-8AEB-5801948B1F03}">
-											<ReferenceList/>
 											<TransitionInfo/>
 										</MusicTransition>
 									</ChildrenList>
@@ -796,6 +793,92 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="Bossfight_Metroidvania Month Jam_11Dec2023" ID="{1540AAF7-AACA-44CD-9216-65B9D361E470}" ShortID="195298953">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="75000"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Bossfight_Metroidvania Month Jam_11Dec2023" ID="{CCC2BE1A-3CED-43F3-8D4B-9EF90E9848F8}" ShortID="1073441720">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Bossfight_Metroidvania Month Jam_11Dec2023" ID="{20FC7D46-CEE7-47E6-A59F-1C86AD706643}">
+													<Language>SFX</Language>
+													<AudioFile>Bossfight_Metroidvania Month Jam_11Dec2023.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="20275627"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{4380F9B5-4385-41BE-8386-DD532C812C38}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{EF04435F-FB16-4432-AB87-DADCB9836C10}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Bossfight_Metroidvania Month Jam_11Dec2023" ID="{4C3B49CF-5B6A-4491-87DF-9637FCD0871F}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="75000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Bossfight_Metroidvania Month Jam_11Dec2023" ID="{20FC7D46-CEE7-47E6-A59F-1C86AD706643}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{5BE2D2F4-1341-432D-B4E8-BAEFA56D1106}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{C953872F-2CF9-4326-B4AF-4E6F48FE3DE4}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="74028.1690140845"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
 							<TransitionList>
 								<MusicTransition Name="Root" ID="{2B6F5F9F-EE70-49B9-B116-9E3034847541}">
 									<PropertyList>
@@ -810,7 +893,19 @@
 								</MusicTransition>
 							</TransitionList>
 							<Playlist>
-								<MusicPlaylistItem Name="" ID="{983C98AA-7500-4A73-8AE8-FE7AC2006F91}" ShortID="350450616"/>
+								<MusicPlaylistItem Name="" ID="{983C98AA-7500-4A73-8AE8-FE7AC2006F91}" ShortID="350450616">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{AEA458A5-22AE-49F5-8AB6-8DE90D7E24AF}" ShortID="957133585">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="Bossfight_Metroidvania Month Jam_11Dec2023" ID="{1540AAF7-AACA-44CD-9216-65B9D361E470}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
 						<MusicPlaylistContainer Name="creditsTheme" ID="{B1249D99-76BA-4D82-9B8B-B36689C6ABC3}" ShortID="318021703">
@@ -822,6 +917,96 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="Credits_Metroidvania Month Jam_11Dec2023" ID="{BA96EAE6-6143-4BF6-ADD0-34455AFF2335}" ShortID="1047462054">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="33000"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Credits_Metroidvania Month Jam_11Dec2023" ID="{82CDDFCB-21CF-454B-81B6-5C513F3BB913}" ShortID="882391625">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Credits_Metroidvania Month Jam_11Dec2023" ID="{01289755-2A6D-412E-99C3-C4DF9C3C57CC}">
+													<Language>SFX</Language>
+													<AudioFile>Credits_Metroidvania Month Jam_11Dec2023.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="93873590"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{1DF8CE21-8157-4586-9D74-97B2834FCE75}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{00C8508A-B6D1-4FE1-9861-7B9479D7BBB0}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Credits_Metroidvania Month Jam_11Dec2023" ID="{DEE3102E-8C0E-464B-98D5-1EA14E0C71EC}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="33000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Credits_Metroidvania Month Jam_11Dec2023" ID="{01289755-2A6D-412E-99C3-C4DF9C3C57CC}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{915CE8B7-7C13-4264-946A-3954C40B2E45}">
+														<PropertyList>
+															<Property Name="TimeMs" Type="Real64" Value="1227.04225352113"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{2DC5443C-6F9A-461F-A0E9-87FBAAAE7592}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="29244.5070422535"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
 							<TransitionList>
 								<MusicTransition Name="Root" ID="{916186C9-F7DE-43CB-91FD-86A89A97312A}">
 									<PropertyList>
@@ -836,7 +1021,19 @@
 								</MusicTransition>
 							</TransitionList>
 							<Playlist>
-								<MusicPlaylistItem Name="" ID="{821E1C40-7A1E-4E86-B82E-94101039FC66}" ShortID="299906585"/>
+								<MusicPlaylistItem Name="" ID="{821E1C40-7A1E-4E86-B82E-94101039FC66}" ShortID="299906585">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{9E2E8B07-1C1C-4C5D-B0B8-6A37EC94147E}" ShortID="764263432">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="Credits_Metroidvania Month Jam_11Dec2023" ID="{BA96EAE6-6143-4BF6-ADD0-34455AFF2335}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
 					</ChildrenList>

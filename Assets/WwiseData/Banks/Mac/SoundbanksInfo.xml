@@ -56,13 +56,17 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{FAB0EAB2-1254-900A-B3A2-C87BC3A4FE91}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{E2902064-E5BE-6564-2E90-3415AA9E5D47}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
 				<File Id="16813949" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Level Theme Layer 3_Metroidvania Month Jam_11Dec2023.wav</ShortName>
 					<CachePath>SFX/Level Theme Layer 3_Metroidvania Month Jam_11Dec2023_179463A7.wem</CachePath>
+				</File>
+				<File Id="20275627" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Bossfight_Metroidvania Month Jam_11Dec2023.wav</ShortName>
+					<CachePath>SFX/Bossfight_Metroidvania Month Jam_11Dec2023_179463A7.wem</CachePath>
 				</File>
 				<File Id="62813781" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerJump-009.wav</ShortName>
@@ -75,6 +79,10 @@
 				<File Id="89249921" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Swing2.wav</ShortName>
 					<CachePath>SFX/Swing2_62C79D4F.wem</CachePath>
+				</File>
+				<File Id="93873590" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Credits_Metroidvania Month Jam_11Dec2023.wav</ShortName>
+					<CachePath>SFX/Credits_Metroidvania Month Jam_11Dec2023_179463A7.wem</CachePath>
 				</File>
 				<File Id="94906913" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dark Drone Intensive Electric Waves.wav</ShortName>
@@ -127,6 +135,10 @@
 				<File Id="605511097" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerJump-010.wav</ShortName>
 					<CachePath>SFX/playerJump-010_C168396F.wem</CachePath>
+				</File>
+				<File Id="618925761" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>buttonClick.wav</ShortName>
+					<CachePath>SFX/buttonClick_9FF8D317.wem</CachePath>
 				</File>
 				<File Id="625987113" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerJump-011.wav</ShortName>
@@ -193,7 +205,12 @@
 						<ActionSetStateEntry GroupId="1687686957" Id="3080698126" Name="firstBoss"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="4051332235" Name="buttonClick" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="4051332235" Name="buttonClick" DurationType="OneShot" DurationMin="0.05702697" DurationMax="0.05702697">
+					<MediaRefs>
+						<MediaRef Id="618925761"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1404805401" Name="doorOpen" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="492523291" Name="firstUpgrade" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<ActionSetState>
 						<ActionSetStateEntry GroupId="3105312269" Id="492523291" Name="firstUpgrade"/>
@@ -310,11 +327,25 @@
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="1687686957" Id="3080698126"/>
-							<Children/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="3105312269" Id="0"/>
+									<MediaRefs>
+										<MediaRef Id="20275627"/>
+									</MediaRefs>
+								</SwitchContainer>
+							</Children>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="1687686957" Id="2201105581"/>
-							<Children/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="3105312269" Id="0"/>
+									<MediaRefs>
+										<MediaRef Id="93873590"/>
+									</MediaRefs>
+								</SwitchContainer>
+							</Children>
 						</SwitchContainer>
 					</SwitchContainers>
 					<ActionSetState>
@@ -327,6 +358,9 @@
 						<MediaRef Id="736254446"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3966601280" Name="playerDie" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3216143520" Name="playerHeal" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3537581393" Name="playerHurt" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="4008126242" Name="playerJump" DurationType="OneShot" DurationMin="0.38857856" DurationMax="0.41642797">
 					<MediaRefs>
 						<MediaRef Id="62813781"/>
@@ -424,5 +458,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5F70AD8C-02F0-01CC-A1C9-4D1B5DF97137}</FileHash>
+	<FileHash>{B13C313A-083B-7500-2A08-4852B4AB6FE6}</FileHash>
 </SoundBanksInfo>

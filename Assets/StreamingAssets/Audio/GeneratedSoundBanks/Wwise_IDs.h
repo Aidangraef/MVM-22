@@ -17,6 +17,7 @@ namespace AK
         static const AkUniqueID BOSSDEFEATED = 2305261964U;
         static const AkUniqueID BOSSSTART = 2978173602U;
         static const AkUniqueID BUTTONCLICK = 4051332235U;
+        static const AkUniqueID DOOROPEN = 1404805401U;
         static const AkUniqueID FIRSTUPGRADE = 492523291U;
         static const AkUniqueID FLYERATTACK = 1292600457U;
         static const AkUniqueID FLYERDIE = 325523121U;
@@ -28,6 +29,9 @@ namespace AK
         static const AkUniqueID GRAVVAC = 2230252431U;
         static const AkUniqueID MUSICSTART = 1122283870U;
         static const AkUniqueID PLAYERDASH = 2525052962U;
+        static const AkUniqueID PLAYERDIE = 3966601280U;
+        static const AkUniqueID PLAYERHEAL = 3216143520U;
+        static const AkUniqueID PLAYERHURT = 3537581393U;
         static const AkUniqueID PLAYERJUMP = 4008126242U;
         static const AkUniqueID PLAYERLAND = 846198821U;
         static const AkUniqueID PLAYERMOVE = 2267600265U;
