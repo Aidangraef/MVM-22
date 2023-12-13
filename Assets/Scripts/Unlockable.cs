@@ -5,11 +5,12 @@ using UnityEngine;
 public class Unlockable : MonoBehaviour
 {
     public string whatToUnlock;
+    DoorToBoss doorToBoss;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        doorToBoss = GameObject.FindGameObjectWithTag("DoorToBoss").GetComponent<DoorToBoss>();
     }
 
     // Update is called once per frame
@@ -43,7 +44,7 @@ public class Unlockable : MonoBehaviour
                 pm.absorbBulletsUnlocked = true;
                 AkSoundEngine.PostEvent("fourthUpgrade", gameObject);
             }
-
+            doorToBoss.collectedCrystals += 1;
             Destroy(gameObject);
         }
     }

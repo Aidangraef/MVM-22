@@ -20,7 +20,7 @@ public class BlackHoleMovement : MonoBehaviour
     void Update()
     {
         // cannot move black hole in map mode
-        if (map.mapIsActive) return;
+        if (map != null && map.mapIsActive) return;
 
         // only move the black hole if the mouse button is held down
         if(Input.GetMouseButtonDown(1))
