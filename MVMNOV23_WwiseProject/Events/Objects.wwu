@@ -14,7 +14,39 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="doorOpen" ID="{F96B761C-D637-42EF-A3E4-65A2896C162E}"/>
+				<Event Name="doorOpen" ID="{F96B761C-D637-42EF-A3E4-65A2896C162E}">
+					<ChildrenList>
+						<Action Name="" ID="{6941B055-8AF1-41A5-829E-85D0321E5FD2}" ShortID="684334925">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="doorOpen" ID="{D0DC142B-54A2-45AC-BE0C-73FA00F8EA30}" WorkUnitID="{058B7DD2-DCB7-4FB9-AC4D-707E0751F7E8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="bossDoorOpen" ID="{0A668A59-BC9C-4F80-AE81-A80605DE6A0D}">
+					<ChildrenList>
+						<Action Name="" ID="{97142851-7790-41A6-89BE-E4C1740616CC}" ShortID="741483811">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="firstBossDoorOpen" ID="{558056B4-3037-4CEE-AE70-478D48C3E5F4}" WorkUnitID="{058B7DD2-DCB7-4FB9-AC4D-707E0751F7E8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="boxCollide" ID="{2694F4F3-D5C4-42BD-A260-D73186108F02}">
+					<ChildrenList>
+						<Action Name="" ID="{6024674E-FDB7-4461-9E10-5B78D212B8A0}" ShortID="683370862">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="boxCollision" ID="{DA0316AC-D4DF-4A44-A04F-B1A2C2DA7BAD}" WorkUnitID="{058B7DD2-DCB7-4FB9-AC4D-707E0751F7E8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

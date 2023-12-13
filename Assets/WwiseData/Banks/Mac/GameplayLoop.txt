@@ -1,12 +1,18 @@
 Event	ID	Name			Wwise Object Path	Notes
 	325523121	flyerDie			\Default Work Unit\NPCs\Enemies\Flyer\flyerDie	
 	492523291	firstUpgrade			\Default Work Unit\Music\firstUpgrade	
+	689081418	bossDash			\Default Work Unit\NPCs\Enemies\Boss\bossDash	
 	819226263	walkerAttack			\Default Work Unit\NPCs\Enemies\Walker\walkerAttack	
 	846198821	playerLand			\Default Work Unit\Player\Movement\playerLand	
+	1021320922	boxCollide			\Default Work Unit\Objects\boxCollide	
+	1110175000	bossDie			\Default Work Unit\NPCs\Enemies\Boss\bossDie	
 	1122283870	musicStart			\Default Work Unit\Music\musicStart	
+	1186261430	bossDoorOpen			\Default Work Unit\Objects\bossDoorOpen	
+	1284320407	bossShoot			\Default Work Unit\NPCs\Enemies\Boss\bossShoot	
 	1292600457	flyerAttack			\Default Work Unit\NPCs\Enemies\Flyer\flyerAttack	
 	1404805401	doorOpen			\Default Work Unit\Objects\doorOpen	
 	1435302941	testFail			\Default Work Unit\UI\testFail	
+	1437879705	bossHurt			\Default Work Unit\NPCs\Enemies\Boss\bossHurt	
 	1563041841	playerStopMove			\Default Work Unit\Player\Movement\playerStopMove	
 	1776921608	testComplete			\Default Work Unit\UI\testComplete	
 	1782206281	dialoguePlay			\Default Work Unit\NPCs\dialoguePlay	
@@ -19,7 +25,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	2597336420	swing3			\Default Work Unit\Player\Attacks\swing3	
 	2597336421	swing2			\Default Work Unit\Player\Attacks\swing2	
 	2597336422	swing1			\Default Work Unit\Player\Attacks\swing1	
-	2612649333	upgradeGet			\Default Work Unit\UI\upgradeGet	
 	2663107407	fourthUpgrade			\Default Work Unit\Music\fourthUpgrade	
 	2671641362	sliderStart			\Default Work Unit\UI\sliderStart	
 	2826329895	secondUpgrade			\Default Work Unit\Music\secondUpgrade	
@@ -29,6 +34,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3216143520	playerHeal			\Default Work Unit\Player\Health\playerHeal	
 	3387993871	toMenu			\Default Work Unit\Music\toMenu	
 	3537581393	playerHurt			\Default Work Unit\Player\Health\playerHurt	
+	3561958532	gravShoot			\Default Work Unit\Player\Gravity\gravShoot	
 	3847507249	sliderTick			\Default Work Unit\UI\sliderTick	
 	3966601280	playerDie			\Default Work Unit\Player\Health\playerDie	
 	4008126242	playerJump			\Default Work Unit\Player\Movement\playerJump	
@@ -60,36 +66,42 @@ State	ID	Name	State Group			Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	16813949	Level Theme Layer 3_Metroidvania Month Jam_11Dec2023	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\Level Theme Layer 3_Metroidvania Month Jam_11Dec2023_179463A7.wem		\Interactive Music Hierarchy\Default Work Unit\musicSwitcher\mainThemeU2\Level Theme Layer 3_Metroidvania Month Jam_11Dec2023\Level Theme Layer 3_Metroidvania Month Jam_11Dec2023		3402945
 	20275627	Bossfight_Metroidvania Month Jam_11Dec2023	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\Bossfight_Metroidvania Month Jam_11Dec2023_179463A7.wem		\Interactive Music Hierarchy\Default Work Unit\musicSwitcher\firstBossTheme\Bossfight_Metroidvania Month Jam_11Dec2023\Bossfight_Metroidvania Month Jam_11Dec2023		2197966
-	62813781	playerJump-009	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\playerJump-009_20D1BC9F.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerJump\playerJump-009		16125
 	80689404	Level Theme Layer 4_Metroidvania Month Jam_11Dec2023	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\Level Theme Layer 4_Metroidvania Month Jam_11Dec2023_179463A7.wem		\Interactive Music Hierarchy\Default Work Unit\musicSwitcher\mainThemeU3\Level Theme Layer 4_Metroidvania Month Jam_11Dec2023\Level Theme Layer 4_Metroidvania Month Jam_11Dec2023		3333658
 	89249921	swing2	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\Swing2_62C79D4F.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Attacks\Melee\swing2		5749
 	93873590	Credits_Metroidvania Month Jam_11Dec2023	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\Credits_Metroidvania Month Jam_11Dec2023_179463A7.wem		\Interactive Music Hierarchy\Default Work Unit\musicSwitcher\creditsTheme\Credits_Metroidvania Month Jam_11Dec2023\Credits_Metroidvania Month Jam_11Dec2023		735422
 	94906913	ambientPH	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\Dark Drone Intensive Electric Waves_A1B4EF98.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient\Ambient\ambientPH		5542514
 	141013452	Menu Theme_Metroidvania Month Jam_11Dec2023	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\Menu Theme_Metroidvania Month Jam_11Dec2023_179463A7.wem		\Interactive Music Hierarchy\Default Work Unit\musicSwitcher\menuTheme\Menu Theme_Metroidvania Month Jam_11Dec2023\Menu Theme_Metroidvania Month Jam_11Dec2023		1136284
+	148448738	doorOpen	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\doorOpen_B7B6EBE2.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\doorOpen		13328
+	150633360	playerJump-001	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\playerJump-001_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerJump\playerJump-001		13316
+	174623387	firstBossDoorOpen	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\stoneDoorOpen_EED2C530.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\firstBossDoorOpen		79547
 	209439430	playerMove	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\playerMove_18545657.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerMove		400041
-	291242061	playerJump-006	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\playerJump-006_BB69922F.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerJump\playerJump-006		15468
-	323749564	playerJump-002	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\playerJump-002_BCA48A51.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerJump\playerJump-002		15137
+	224951551	boxCollisions-001	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\boxCollisions-001_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\boxCollision\boxCollisions-001		11388
+	291242061	playerJump-006	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\playerJump-006_2BDF181F.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerJump\playerJump-006		13353
+	323749564	playerJump-002	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\playerJump-002_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerJump\playerJump-002		9509
 	323964908	Level Theme Layer 1_Metroidvania Month Jam_11Dec2023	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\Level Theme Layer 1_Metroidvania Month Jam_11Dec2023_179463A7.wem		\Interactive Music Hierarchy\Default Work Unit\musicSwitcher\mainThemeU0\Level Theme Layer 1_Metroidvania Month Jam_11Dec2023\Level Theme Layer 1_Metroidvania Month Jam_11Dec2023		3115356
-	377363611	playerJump-007	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\playerJump-007_81F2BD34.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerJump\playerJump-007		15501
+	371192611	playerJump-004	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\playerJump-004_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerJump\playerJump-004		15905
 	455232651	swing3	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\gravHit_F6A62D07.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Attacks\Melee\swing3		16629
+	491653558	boxCollisions-003	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\boxCollisions-003_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\boxCollision\boxCollisions-003		12149
 	498598429	Level Theme Layer 2_Metroidvania Month Jam_11Dec2023	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\Level Theme Layer 2_Metroidvania Month Jam_11Dec2023_179463A7.wem		\Interactive Music Hierarchy\Default Work Unit\musicSwitcher\mainThemeU1\Level Theme Layer 2_Metroidvania Month Jam_11Dec2023\Level Theme Layer 2_Metroidvania Month Jam_11Dec2023		3274696
 	516606022	testComplete	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\SFX_UI_PickUp_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\testSounds\testComplete		28971
-	543010835	playerJump-003	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\playerJump-003_3E03347F.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerJump\playerJump-003		16540
-	601345182	playerJump-008	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\playerJump-008_A63BD693.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerJump\playerJump-008		15858
-	605511097	playerJump-010	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\playerJump-010_C168396F.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerJump\playerJump-010		13523
+	543010835	playerJump-003	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\playerJump-003_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerJump\playerJump-003		11968
+	615125432	playerHeal	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\playerHeal_F5343514.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Health\playerHeal		23567
 	618925761	buttonClick	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\buttonClick_FBB90AC3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\buttonClick		1697
-	625987113	playerJump-011	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\playerJump-011_6B3E3A0B.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerJump\playerJump-011		14322
+	629620136	getUpgrade	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\getUpgrade_9D294EC6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\getUpgrade		81799
 	632490103	gravWarpOut	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\gravityOut_5FF71F67.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Gravity\gravWarpOut		51521
+	690293906	startGame	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\startGameWind_980C7394.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\startGame		133681
 	706566862	SFX_UI_Slider_End	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\SFX_UI_Slider_End_BF9C572F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\SFX_UI_Slider_End		3222
 	736254446	playerDash	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\Player Dash_C57A638A.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Abilities\playerDash		10810
-	748464119	playerShield	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\playerShield_13EF52DC.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Abilities\playerShield		49681
+	748464119	playerShield	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\playerShield_0474648B.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Abilities\playerShield		41284
 	769169157	gravWarpIn	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\gravityIn_C5CB3C95.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Gravity\gravWarpIn		21027
-	774271815	playerLand	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\playerLand_54BFC324.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerLand		12284
-	831640051	playerJump-005	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\playerJump-005_2C940DE4.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerJump\playerJump-005		14561
+	774271815	playerLand	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\playerLand_BB5E7C1A.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerLand		5467
+	780479273	boxCollisions-002	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\boxCollisions-002_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\boxCollision\boxCollisions-002		11588
+	831640051	playerJump-005	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\playerJump-005_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerJump\playerJump-005		13094
 	860451314	Level Theme Layer 5_Metroidvania Month Jam_11Dec2023	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\Level Theme Layer 5_Metroidvania Month Jam_11Dec2023_179463A7.wem		\Interactive Music Hierarchy\Default Work Unit\musicSwitcher\mainThemeU4\Level Theme Layer 5_Metroidvania Month Jam_11Dec2023\Level Theme Layer 5_Metroidvania Month Jam_11Dec2023		3376509
 	875044222	swing1	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\Swing1_32252AF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Attacks\Melee\swing1		6681
 	934752606	sliderTick	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\SFX_UI_Hover_977FEE3A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\sliderTick		3276
 	965703128	gravVac	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\gravityVac_1BD85066.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\gravVac		10094
+	973245307	boxCollisions-004	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\boxCollisions-004_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\boxCollision\boxCollisions-004		12577
 	987025329	gravSustain	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\gravitySustain_6BED68B8.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Gravity\gravSustain		477064
 	1012192840	testFail	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\SFX_UI_Start_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\testSounds\testFail		72538
 	1070207331	SFX_UI_Slider_Start	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Mac\SFX\SFX_UI_Slider_Start_335E1103.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\UI\UI\SFX_UI_Slider_Start		4588

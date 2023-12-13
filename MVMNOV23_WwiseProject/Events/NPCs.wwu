@@ -19,7 +19,14 @@
 								<Event Name="flyerDie" ID="{8B3025D3-469A-4638-BC83-A3E1B7568C8E}"/>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="Boss" ID="{673782DA-EA75-473C-90CA-0382392A681A}" ShortID="567491398"/>
+						<Folder Name="Boss" ID="{673782DA-EA75-473C-90CA-0382392A681A}" ShortID="567491398">
+							<ChildrenList>
+								<Event Name="bossDash" ID="{A40A8CED-20D1-4951-B514-3B07A7E29995}"/>
+								<Event Name="bossShoot" ID="{9F8E5130-BD81-4643-99CF-1449BD10D7E4}"/>
+								<Event Name="bossHurt" ID="{BA34EDFC-21DD-4163-A22E-B95366496E84}"/>
+								<Event Name="bossDie" ID="{28BC75AC-85D2-4272-BF1E-C2906ECD5BE1}"/>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Event Name="dialoguePlay" ID="{4B313DA8-A270-41D3-B985-CEBA8B830F5B}"/>

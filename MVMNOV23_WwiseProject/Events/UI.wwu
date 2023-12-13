@@ -36,7 +36,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="upgradeGet" ID="{1B7342D6-D6E0-4FC2-99BD-10FF4ED59D5B}"/>
 				<Event Name="sliderStart" ID="{9D09EA18-3983-4CDF-AA3E-E3B19B4A5E50}">
 					<ChildrenList>
 						<Action Name="" ID="{0FA3D364-3CF2-425F-96D9-1E243590732D}" ShortID="152182886">

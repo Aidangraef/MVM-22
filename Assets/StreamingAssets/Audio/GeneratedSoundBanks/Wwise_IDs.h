@@ -14,7 +14,13 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID AMBIENTSTART = 1818308409U;
+        static const AkUniqueID BOSSDASH = 689081418U;
+        static const AkUniqueID BOSSDIE = 1110175000U;
+        static const AkUniqueID BOSSDOOROPEN = 1186261430U;
+        static const AkUniqueID BOSSHURT = 1437879705U;
+        static const AkUniqueID BOSSSHOOT = 1284320407U;
         static const AkUniqueID BOSSSTART = 2978173602U;
+        static const AkUniqueID BOXCOLLIDE = 1021320922U;
         static const AkUniqueID BUTTONCLICK = 4051332235U;
         static const AkUniqueID DIALOGUEPLAY = 1782206281U;
         static const AkUniqueID DOOROPEN = 1404805401U;
@@ -25,6 +31,7 @@ namespace AK
         static const AkUniqueID FOURTHUPGRADE = 2663107407U;
         static const AkUniqueID GAMESTART = 4058101365U;
         static const AkUniqueID GRAVEND = 2853039794U;
+        static const AkUniqueID GRAVSHOOT = 3561958532U;
         static const AkUniqueID GRAVSTART = 1983228305U;
         static const AkUniqueID GRAVVAC = 2230252431U;
         static const AkUniqueID MUSICSTART = 1122283870U;
@@ -49,7 +56,6 @@ namespace AK
         static const AkUniqueID THIRDUPGRADE = 4143628668U;
         static const AkUniqueID TOCREDITS = 4201788452U;
         static const AkUniqueID TOMENU = 3387993871U;
-        static const AkUniqueID UPGRADEGET = 2612649333U;
         static const AkUniqueID WALKERATTACK = 819226263U;
         static const AkUniqueID WALKERDIE = 4099529891U;
         static const AkUniqueID WALKERHURT = 3105797008U;

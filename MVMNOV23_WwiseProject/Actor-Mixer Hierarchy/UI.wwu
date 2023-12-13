@@ -126,6 +126,25 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="startGameWind" ID="{293CFFB0-1846-48A9-8C42-D464C0D9846F}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.904127829560586"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0978695073235691"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.484687083888149"/>
+										<Property Name="TrimEnd" Type="Real64" Value="6.00732356857523"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>startGameWind.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="690293906"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="startGameWind" ID="{293CFFB0-1846-48A9-8C42-D464C0D9846F}" Platform="Linked"/>
+							</ActiveSourceList>
 						</Sound>
 						<Sound Name="getUpgrade" ID="{41A7643A-2577-420A-99DD-0681AD742E98}" ShortID="1053638437">
 							<ReferenceList>
@@ -136,6 +155,24 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="getUpgrade" ID="{E2ADE894-18C5-4B29-8481-AE9B5F5FBF68}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0492901131824234"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.0005892976032"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="3.02148393808256"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>getUpgrade.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="629620136"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="getUpgrade" ID="{E2ADE894-18C5-4B29-8481-AE9B5F5FBF68}" Platform="Linked"/>
+							</ActiveSourceList>
 						</Sound>
 						<Sound Name="sliderTick" ID="{C5A0F46C-5944-43B2-9B87-FF02A11F1F60}" ShortID="103014756">
 							<PropertyList>
@@ -172,6 +209,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="SFX_UI_Slider_Start" ID="{ABACDD9B-6287-4A5B-96C1-12356CFE6D23}" ShortID="491895062">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
@@ -199,6 +243,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="SFX_UI_Slider_End" ID="{C097F989-22FC-44E3-AE6E-F36EA5E0C363}" ShortID="1019824612">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>

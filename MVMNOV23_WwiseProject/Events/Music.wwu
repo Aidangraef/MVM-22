@@ -56,6 +56,13 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{445E7CB4-7177-4CF4-9A54-B13C476CCD68}" ShortID="867272553">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="getUpgrade" ID="{41A7643A-2577-420A-99DD-0681AD742E98}" WorkUnitID="{CB787123-DEB4-4217-BA3A-6ED3F50ADA76}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="secondUpgrade" ID="{F95CBFA6-86B5-48B5-ABA6-B1760DFF1A17}">
@@ -67,6 +74,13 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="secondUpgrade" ID="{C1787AB4-840D-476D-99CF-024EB2BED8F7}" WorkUnitID="{56A7E976-BB50-4BE0-BCB8-390B7BC4DE47}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{2970429C-186D-4917-A1BD-515095BE40AA}" ShortID="440676445">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="getUpgrade" ID="{41A7643A-2577-420A-99DD-0681AD742E98}" WorkUnitID="{CB787123-DEB4-4217-BA3A-6ED3F50ADA76}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -84,6 +98,13 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{80BB8831-53E4-43C9-A5CB-32090BE7882B}" ShortID="645061330">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="getUpgrade" ID="{41A7643A-2577-420A-99DD-0681AD742E98}" WorkUnitID="{CB787123-DEB4-4217-BA3A-6ED3F50ADA76}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="fourthUpgrade" ID="{4F842104-D434-4A7B-A692-764342F8416B}">
@@ -95,6 +116,13 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="fourthUpgrade" ID="{E2700F4A-E8B3-4926-BFD3-73DA29CB0D41}" WorkUnitID="{56A7E976-BB50-4BE0-BCB8-390B7BC4DE47}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F73ABB15-0B6B-4349-B29B-F108847F20D2}" ShortID="186861322">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="getUpgrade" ID="{41A7643A-2577-420A-99DD-0681AD742E98}" WorkUnitID="{CB787123-DEB4-4217-BA3A-6ED3F50ADA76}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -161,6 +189,13 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="zeroUpgrade" ID="{2C00ED9C-AB4E-49E6-B937-E5E01C426DEE}" WorkUnitID="{56A7E976-BB50-4BE0-BCB8-390B7BC4DE47}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{FF137A1D-4980-4E82-934F-FE5FBEA202DD}" ShortID="170252047">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="startGame" ID="{2723D58A-419F-4921-8892-FFD2A6422294}" WorkUnitID="{CB787123-DEB4-4217-BA3A-6ED3F50ADA76}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

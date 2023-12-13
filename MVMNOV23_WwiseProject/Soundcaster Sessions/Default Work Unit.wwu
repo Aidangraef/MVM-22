@@ -73,7 +73,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="credits" ID="{02F58429-F827-4C4D-9265-FF116A3AEEEE}"/>
+						<CurrentStateRef Name="menu" ID="{F6D66972-4EA5-47FB-8416-6B2244084E37}"/>
 						<CurrentStateRef Name="fourthUpgrade" ID="{E2700F4A-E8B3-4926-BFD3-73DA29CB0D41}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
