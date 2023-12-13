@@ -34,7 +34,7 @@
 							<Position X="1" Y="4"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="bossDefeated" ID="{0BA93F73-8177-42CA-9805-753BCF267995}" WorkUnitID="{A711D942-7CDD-48AD-B558-6ABA2E148970}"/>
+							<ObjectRef Name="toCredits" ID="{0BA93F73-8177-42CA-9805-753BCF267995}" WorkUnitID="{A711D942-7CDD-48AD-B558-6ABA2E148970}"/>
 							<Position X="1" Y="5"/>
 						</Module>
 						<Module>

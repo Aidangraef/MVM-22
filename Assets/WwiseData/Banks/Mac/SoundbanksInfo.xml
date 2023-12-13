@@ -56,7 +56,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{18A1D3A0-B4B1-61F9-3060-A8BEEBB66733}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{13B23719-62E9-C8FC-D794-2A44B614C9FF}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -138,7 +138,7 @@
 				</File>
 				<File Id="618925761" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>buttonClick.wav</ShortName>
-					<CachePath>SFX/buttonClick_9FF8D317.wem</CachePath>
+					<CachePath>SFX/buttonClick_FBB90AC3.wem</CachePath>
 				</File>
 				<File Id="625987113" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerJump-011.wav</ShortName>
@@ -150,7 +150,7 @@
 				</File>
 				<File Id="706566862" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_UI_Slider_End.wav</ShortName>
-					<CachePath>SFX/SFX_UI_Slider_End_7F59CB09.wem</CachePath>
+					<CachePath>SFX/SFX_UI_Slider_End_BF9C572F.wem</CachePath>
 				</File>
 				<File Id="736254446" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player Dash.wav</ShortName>
@@ -182,7 +182,7 @@
 				</File>
 				<File Id="934752606" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_UI_Hover.wav</ShortName>
-					<CachePath>SFX/SFX_UI_Hover_5AF7753B.wem</CachePath>
+					<CachePath>SFX/SFX_UI_Hover_977FEE3A.wem</CachePath>
 				</File>
 				<File Id="965703128" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>gravityVac.wav</ShortName>
@@ -198,7 +198,7 @@
 				</File>
 				<File Id="1070207331" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_UI_Slider_Start.wav</ShortName>
-					<CachePath>SFX/SFX_UI_Slider_Start_C5097C7F.wem</CachePath>
+					<CachePath>SFX/SFX_UI_Slider_Start_335E1103.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -206,11 +206,6 @@
 					<MediaRefs>
 						<MediaRef Id="94906913"/>
 					</MediaRefs>
-				</Event>
-				<Event Id="2305261964" Name="bossDefeated" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
-					<ActionSetState>
-						<ActionSetStateEntry GroupId="1687686957" Id="2201105581" Name="credits"/>
-					</ActionSetState>
 				</Event>
 				<Event Id="2978173602" Name="bossStart" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<ActionSetState>
@@ -222,6 +217,7 @@
 						<MediaRef Id="618925761"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1782206281" Name="dialoguePlay" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1404805401" Name="doorOpen" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="492523291" Name="firstUpgrade" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<ActionSetState>
@@ -452,6 +448,11 @@
 						<ActionSetStateEntry GroupId="3105312269" Id="4143628668" Name="thirdUpgrade"/>
 					</ActionSetState>
 				</Event>
+				<Event Id="4201788452" Name="toCredits" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="1687686957" Id="2201105581" Name="credits"/>
+					</ActionSetState>
+				</Event>
 				<Event Id="3387993871" Name="toMenu" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<ActionSetState>
 						<ActionSetStateEntry GroupId="1687686957" Id="2607556080" Name="menu"/>
@@ -485,5 +486,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E3102DD6-9E7C-10B3-B6BD-ACE67C6F2361}</FileHash>
+	<FileHash>{B9D352CB-BFBD-D773-62B6-C392F27A00AA}</FileHash>
 </SoundBanksInfo>

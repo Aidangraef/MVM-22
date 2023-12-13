@@ -2243,7 +2243,6 @@ MonoBehaviour:
   menu: {fileID: 315101815}
   credits: {fileID: 1981002475}
   settings: {fileID: 1751219780}
-  howToPlay: {fileID: 0}
   fadeEffect: {fileID: 1752160504}
 --- !u!1 &614591691
 GameObject:
@@ -5290,7 +5289,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1981002476
 RectTransform:
   m_ObjectHideFlags: 0

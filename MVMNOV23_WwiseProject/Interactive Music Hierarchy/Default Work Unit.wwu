@@ -1316,14 +1316,10 @@
 										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
-										<Property Name="SourceContextType" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
 											<ObjectRef Name="creditsTheme" ID="{B1249D99-76BA-4D82-9B8B-B36689C6ABC3}" WorkUnitID="{39959547-F85D-43D0-8E81-38867B5CBC0D}"/>
-										</Reference>
-										<Reference Name="SourceContextObject">
-											<ObjectRef Name="firstBossTheme" ID="{ECD41F28-EC5B-4C32-8A1F-27B8E41BD161}" WorkUnitID="{39959547-F85D-43D0-8E81-38867B5CBC0D}"/>
 										</Reference>
 									</ReferenceList>
 									<TransitionInfo>

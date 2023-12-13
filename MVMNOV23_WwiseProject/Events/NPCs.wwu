@@ -22,6 +22,7 @@
 						<Folder Name="Boss" ID="{673782DA-EA75-473C-90CA-0382392A681A}" ShortID="567491398"/>
 					</ChildrenList>
 				</Folder>
+				<Event Name="dialoguePlay" ID="{4B313DA8-A270-41D3-B985-CEBA8B830F5B}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

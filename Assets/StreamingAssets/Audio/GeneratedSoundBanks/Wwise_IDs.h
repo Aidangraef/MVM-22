@@ -14,9 +14,9 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID AMBIENTSTART = 1818308409U;
-        static const AkUniqueID BOSSDEFEATED = 2305261964U;
         static const AkUniqueID BOSSSTART = 2978173602U;
         static const AkUniqueID BUTTONCLICK = 4051332235U;
+        static const AkUniqueID DIALOGUEPLAY = 1782206281U;
         static const AkUniqueID DOOROPEN = 1404805401U;
         static const AkUniqueID FIRSTUPGRADE = 492523291U;
         static const AkUniqueID FLYERATTACK = 1292600457U;
@@ -47,6 +47,7 @@ namespace AK
         static const AkUniqueID TESTCOMPLETE = 1776921608U;
         static const AkUniqueID TESTFAIL = 1435302941U;
         static const AkUniqueID THIRDUPGRADE = 4143628668U;
+        static const AkUniqueID TOCREDITS = 4201788452U;
         static const AkUniqueID TOMENU = 3387993871U;
         static const AkUniqueID UPGRADEGET = 2612649333U;
         static const AkUniqueID WALKERATTACK = 819226263U;

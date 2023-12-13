@@ -114,7 +114,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="bossDefeated" ID="{0BA93F73-8177-42CA-9805-753BCF267995}">
+				<Event Name="toCredits" ID="{0BA93F73-8177-42CA-9805-753BCF267995}">
 					<ChildrenList>
 						<Action Name="" ID="{EAA74E6E-E02A-46F4-A7A2-DE28BBFCF2CB}" ShortID="457041549">
 							<PropertyList>

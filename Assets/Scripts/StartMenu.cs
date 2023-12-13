@@ -12,7 +12,7 @@ public class StartMenu : MonoBehaviour
     public GameObject menu;
     public GameObject credits;
     public GameObject settings;
-    public GameObject howToPlay;
+    //public GameObject howToPlay;
 
     [SerializeField]
     ImageFadeEffect fadeEffect;
@@ -23,7 +23,7 @@ public class StartMenu : MonoBehaviour
         menu.SetActive(true);
         credits.SetActive(false);
         settings.SetActive(false);
-        howToPlay.SetActive(false);
+        //howToPlay.SetActive(false);
     }
 
     public void Play()
@@ -53,6 +53,7 @@ public class StartMenu : MonoBehaviour
         menu.SetActive(false);
         AkSoundEngine.PostEvent("buttonClick", this.gameObject);
         credits.SetActive(true);
+        AkSoundEngine.PostEvent("toCredits", this.gameObject);
     }
 
     public void Settings()
@@ -62,12 +63,12 @@ public class StartMenu : MonoBehaviour
         settings.SetActive(true);
     }
 
-    public void HowToPlay()
+    /*public void HowToPlay()
     {
         menu.SetActive(false);
         AkSoundEngine.PostEvent("buttonClick", this.gameObject);
         howToPlay.SetActive(true);
-    }
+    }*/
 
     public void Back()
     {
@@ -75,6 +76,7 @@ public class StartMenu : MonoBehaviour
         AkSoundEngine.PostEvent("buttonClick", this.gameObject);
         credits.SetActive(false);
         settings.SetActive(false);
+        AkSoundEngine.PostEvent("toMenu", this.gameObject);
         //howToPlay.SetActive(false);
     }
 
