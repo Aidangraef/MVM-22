@@ -111,7 +111,7 @@ public class PlayerMovement : MonoBehaviour
         if (isDashing) return;
 
         // cannot move when in map view
-        if (mapSwitcher.mapIsActive) return;
+        if (mapSwitcher != null && mapSwitcher.mapIsActive) return;
 
         // shielding
         if(Input.GetKeyDown("f") && shieldUnlocked)
