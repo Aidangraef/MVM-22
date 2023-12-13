@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Boss : MonoBehaviour
 {
+    int hp = 100;
+
     float attackTimer; // used to put time delays between attacks
     public bool inAttack = false;
     float inAttackTimer; // used to make sure we don't stay in an attack so long
