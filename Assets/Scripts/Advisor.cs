@@ -27,6 +27,6 @@ public class Advisor : MonoBehaviour
     {
         rb.velocity = new Vector2(moveDirection.x, moveDirection.y) * speed;
         //Debug.Log("move direction: " + moveDirection.x + ", " + moveDirection.y);
-        Debug.Log("velocity: " + rb.velocity);
+        //Debug.Log("velocity: " + rb.velocity);
     }
 }
