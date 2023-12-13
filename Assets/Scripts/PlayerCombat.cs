@@ -79,7 +79,18 @@ public class PlayerCombat : MonoBehaviour
         // apply damage
         foreach(Collider2D enemy in hitEnemies)
         {
-            if(enemy.gameObject.GetComponent<FlyingEnemy>() != null)
+            if(enemy.gameObject.GetComponent<Boss>() != null)
+            {
+                if (currentAttack == "Attack3")
+                {
+                    enemy.GetComponent<Boss>().TakeDamage(attackDamage + 1);
+                }
+                else
+                {
+                    enemy.GetComponent<Boss>().TakeDamage(attackDamage);
+                }
+            }
+            else if(enemy.gameObject.GetComponent<FlyingEnemy>() != null)
             {
                 if(currentAttack == "Attack3")
                 {

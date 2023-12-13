@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Boss : MonoBehaviour
 {
@@ -39,6 +40,8 @@ public class Boss : MonoBehaviour
             if(inAttackTimer <= 0)
             {
                 inAttack = false;
+                attack1Collider.SetActive(false);
+                idleCollider.enabled = true;
             }
         }
 
@@ -76,11 +79,42 @@ public class Boss : MonoBehaviour
     {
         inAttack = false;
         attack1Collider.SetActive(false);
+        idleCollider.enabled = true;
     }
 
     public void ShootBullet()
     {
         Instantiate(BulletPrefab);
+    }
+
+    public void TakeDamage(int damage)
+    {
+        hp -= damage;
+        StartCoroutine(DoFlashRed());
+
+        if (hp < 0)
+        {
+            SceneManager.LoadScene(3);
+            //Destroy(gameObject);
+        }
+
+    }
+
+    IEnumerator DoFlashRed()
+    {
+        // initial setup
+        SpriteRenderer sprite = GetComponent<SpriteRenderer>();
+        Color originalColor = new Color(1, 1, 1, 1);
+        Color redColor = new Color(1, 0, 0, 1);
+
+        // flash and wait and turn back
+        for (int i = 0; i < 3; i++)
+        {
+            sprite.color = redColor;
+            yield return new WaitForSeconds(0.1f);
+            sprite.color = originalColor;
+            yield return new WaitForSeconds(0.1f);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
