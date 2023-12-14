@@ -1863,10 +1863,10 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
-    y: 0.102389075
-    width: 0.61420345
-    height: 0.61433446
+    x: 0.011349306
+    y: 0
+    width: 0.97744155
+    height: 0.99999994
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
@@ -2182,6 +2182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed39f2b237e573f4f85990bb5d1440ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InitBank: {fileID: 11400000, guid: 208d3d6d9b7f1bb4c927b97a624020c7, type: 2}
 --- !u!114 &590790732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3552,7 +3553,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: According to all know laws of aviation, there is no way a bee should be
+  m_text: According to all known laws of aviation, there is no way a bee should be
     able to fly. Its wings are too small to get its fat little body off the ground.
     The bee, of course, flies anyway, because
   m_isRightToLeft: 0
