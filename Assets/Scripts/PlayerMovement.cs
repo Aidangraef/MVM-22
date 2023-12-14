@@ -150,6 +150,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftShift) && canDash && dashUnlocked)
         {
+            animator.SetTrigger("dash");
             StartCoroutine(DoDash());
         }
 
