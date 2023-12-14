@@ -56,7 +56,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{BEEC92F2-B246-1457-02B1-58C8502134F0}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{815DB7D6-F2B8-D44A-82D0-49AAB461E3F8}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -126,7 +126,7 @@
 				</File>
 				<File Id="433944148" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerHurt.wav</ShortName>
-					<CachePath>SFX/playerHurt_50D0A669.wem</CachePath>
+					<CachePath>SFX/playerHurt_D9248A58.wem</CachePath>
 				</File>
 				<File Id="455232651" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>gravHit.wav</ShortName>
@@ -150,7 +150,7 @@
 				</File>
 				<File Id="575887785" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>gravShot.wav</ShortName>
-					<CachePath>SFX/gravShot_8341AB29.wem</CachePath>
+					<CachePath>SFX/gravShot_0F91FE10.wem</CachePath>
 				</File>
 				<File Id="615125432" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerHeal.wav</ShortName>
@@ -182,7 +182,7 @@
 				</File>
 				<File Id="741087322" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerDeath.wav</ShortName>
-					<CachePath>SFX/playerDeath_65AAF763.wem</CachePath>
+					<CachePath>SFX/playerDeath_AFD1E190.wem</CachePath>
 				</File>
 				<File Id="748464119" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerShield.wav</ShortName>
@@ -560,5 +560,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{BBD759AA-8F28-A869-AB42-E397977E803B}</FileHash>
+	<FileHash>{843AEA44-B00C-A984-AF9D-8D12518A82A4}</FileHash>
 </SoundBanksInfo>
