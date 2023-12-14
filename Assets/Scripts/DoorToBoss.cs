@@ -57,6 +57,7 @@ public class DoorToBoss : MonoBehaviour
             {
                 dialogueParent.transform.GetChild(1).GetChild(0).GetComponent<TextMeshProUGUI>().text = "We have all the crystals! Let's go!";
                 currentText += 1;
+                AkSoundEngine.PostEvent("bossDoorOpen", gameObject);
             }
             else if (currentText == 2 && collectedCrystals < 4)
             {

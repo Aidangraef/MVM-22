@@ -356,7 +356,12 @@ public class PlayerMovement : MonoBehaviour
         // check for dead
         if(hp <= 0)
         {
+            AkSoundEngine.PostEvent("playerDie", this.gameObject);
             GameOver();
+        }
+        else
+        {
+            AkSoundEngine.PostEvent("playerHurt", this.gameObject);
         }
 
         // set invincible
@@ -375,6 +380,9 @@ public class PlayerMovement : MonoBehaviour
     
     public void heal(int amount)
     {
+        //play sound
+        AkSoundEngine.PostEvent("playerHeal", this.gameObject);
+
         Debug.Log("HEALING");
         //Save the original HP amount
         int originalHP = hp;
