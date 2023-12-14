@@ -56,7 +56,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{E4DC971A-5951-952E-7D91-E10B7CE1274F}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{FB34A277-2B77-B4AC-C701-DA465C5CFA50}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -90,7 +90,7 @@
 				</File>
 				<File Id="148448738" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>doorOpen.wav</ShortName>
-					<CachePath>SFX/doorOpen_B7B6EBE2.wem</CachePath>
+					<CachePath>SFX/doorOpen_1654C0F6.wem</CachePath>
 				</File>
 				<File Id="150633360" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerJump-001.wav</ShortName>
@@ -98,7 +98,7 @@
 				</File>
 				<File Id="174623387" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>stoneDoorOpen.wav</ShortName>
-					<CachePath>SFX/stoneDoorOpen_EED2C530.wem</CachePath>
+					<CachePath>SFX/stoneDoorOpen_07338537.wem</CachePath>
 				</File>
 				<File Id="209439430" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerMove.wav</ShortName>
@@ -110,7 +110,7 @@
 				</File>
 				<File Id="291242061" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerJump-006.wav</ShortName>
-					<CachePath>SFX/playerJump-006_2BDF181F.wem</CachePath>
+					<CachePath>SFX/playerJump-006_D05BCF85.wem</CachePath>
 				</File>
 				<File Id="323749564" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerJump-002.wav</ShortName>
@@ -146,7 +146,7 @@
 				</File>
 				<File Id="615125432" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerHeal.wav</ShortName>
-					<CachePath>SFX/playerHeal_F5343514.wem</CachePath>
+					<CachePath>SFX/playerHeal_3D5DE584.wem</CachePath>
 				</File>
 				<File Id="618925761" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>buttonClick.wav</ShortName>
@@ -154,7 +154,7 @@
 				</File>
 				<File Id="629620136" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>getUpgrade.wav</ShortName>
-					<CachePath>SFX/getUpgrade_9D294EC6.wem</CachePath>
+					<CachePath>SFX/getUpgrade_C6009455.wem</CachePath>
 				</File>
 				<File Id="632490103" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>gravityOut.wav</ShortName>
@@ -162,7 +162,7 @@
 				</File>
 				<File Id="690293906" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>startGameWind.wav</ShortName>
-					<CachePath>SFX/startGameWind_980C7394.wem</CachePath>
+					<CachePath>SFX/startGameWind_E251215D.wem</CachePath>
 				</File>
 				<File Id="706566862" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_UI_Slider_End.wav</ShortName>
@@ -174,7 +174,7 @@
 				</File>
 				<File Id="748464119" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerShield.wav</ShortName>
-					<CachePath>SFX/playerShield_0474648B.wem</CachePath>
+					<CachePath>SFX/playerShield_7AF2FDE1.wem</CachePath>
 				</File>
 				<File Id="769169157" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>gravityIn.wav</ShortName>
@@ -182,7 +182,7 @@
 				</File>
 				<File Id="774271815" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerLand.wav</ShortName>
-					<CachePath>SFX/playerLand_BB5E7C1A.wem</CachePath>
+					<CachePath>SFX/playerLand_F4D61117.wem</CachePath>
 				</File>
 				<File Id="780479273" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>boxCollisions-002.wav</ShortName>
@@ -272,7 +272,6 @@
 						<ActionSetStateEntry GroupId="3105312269" Id="492523291" Name="firstUpgrade"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="1292600457" Name="flyerAttack" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="325523121" Name="flyerDie" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="4120941918" Name="flyerHurt" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2663107407" Name="fourthUpgrade" DurationType="OneShot" DurationMin="3.021484" DurationMax="3.021484">
@@ -520,7 +519,6 @@
 						<ActionSetStateEntry GroupId="1687686957" Id="2607556080" Name="menu"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="819226263" Name="walkerAttack" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="4099529891" Name="walkerDie" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3105797008" Name="walkerHurt" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
@@ -547,5 +545,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A91B6CFF-0786-FBE9-99C0-AA39B6F6CE23}</FileHash>
+	<FileHash>{5D431E68-54DA-F3E9-71AB-DB849C22A31A}</FileHash>
 </SoundBanksInfo>

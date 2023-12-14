@@ -36,16 +36,6 @@
 										</Reference>
 									</ReferenceList>
 								</Sound>
-								<Sound Name="flyerAttack" ID="{3FF44F82-046D-48AB-82BF-4B979BBCB8A6}" ShortID="218797742">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
-										</Reference>
-									</ReferenceList>
-								</Sound>
 								<Sound Name="flyerDie" ID="{19337F19-9501-4C0C-B9FE-0E7846CA7A75}" ShortID="283738434">
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -131,16 +121,6 @@
 									</ReferenceList>
 								</Sound>
 								<Sound Name="walkerHurt" ID="{157DE0BB-43A6-4373-9934-DC187ACC81A1}" ShortID="243352606">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
-										</Reference>
-									</ReferenceList>
-								</Sound>
-								<Sound Name="walkerAttack" ID="{A66929E3-1674-4D6D-B7D3-BBD6B1651FF4}" ShortID="38784440">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>

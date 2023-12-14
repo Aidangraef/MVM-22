@@ -25,7 +25,6 @@ namespace AK
         static const AkUniqueID DIALOGUEPLAY = 1782206281U;
         static const AkUniqueID DOOROPEN = 1404805401U;
         static const AkUniqueID FIRSTUPGRADE = 492523291U;
-        static const AkUniqueID FLYERATTACK = 1292600457U;
         static const AkUniqueID FLYERDIE = 325523121U;
         static const AkUniqueID FLYERHURT = 4120941918U;
         static const AkUniqueID FOURTHUPGRADE = 2663107407U;
@@ -56,7 +55,6 @@ namespace AK
         static const AkUniqueID THIRDUPGRADE = 4143628668U;
         static const AkUniqueID TOCREDITS = 4201788452U;
         static const AkUniqueID TOMENU = 3387993871U;
-        static const AkUniqueID WALKERATTACK = 819226263U;
         static const AkUniqueID WALKERDIE = 4099529891U;
         static const AkUniqueID WALKERHURT = 3105797008U;
     } // namespace EVENTS
