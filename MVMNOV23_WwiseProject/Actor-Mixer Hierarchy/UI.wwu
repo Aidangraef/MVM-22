@@ -174,40 +174,6 @@
 								<ActiveSource Name="getUpgrade" ID="{E2ADE894-18C5-4B29-8481-AE9B5F5FBF68}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="sliderTick" ID="{C5A0F46C-5944-43B2-9B87-FF02A11F1F60}" ShortID="103014756">
-							<PropertyList>
-								<Property Name="Highpass" Type="int16">
-									<ValueList>
-										<Value>80</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="SFX_UI_Hover" ID="{B8A2EF7D-FA0D-484A-B194-D33923CB5CAE}">
-									<PropertyList>
-										<Property Name="LoopBegin" Type="Real64" Value="0"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimEnd" Type="Real64" Value="0.0895472703062583"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>SFX_UI_Hover.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="934752606"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="SFX_UI_Hover" ID="{B8A2EF7D-FA0D-484A-B194-D33923CB5CAE}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="SFX_UI_Slider_Start" ID="{ABACDD9B-6287-4A5B-96C1-12356CFE6D23}" ShortID="491895062">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">

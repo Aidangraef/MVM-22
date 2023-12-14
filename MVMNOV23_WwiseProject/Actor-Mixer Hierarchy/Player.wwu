@@ -343,6 +343,26 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="gravShoot" ID="{9E9303B7-5BBE-4983-893A-FF5C205CD145}" ShortID="70261760">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{BF050579-C92D-48AE-86BA-E692835D941E}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="75"/>
+															<Property Name="Min" Type="Real64" Value="-75"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
@@ -351,6 +371,25 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="gravShot" ID="{314FC2B3-87C4-45DF-8E8F-6BEBB3E71503}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0375138010430537"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.114961648357745"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.125852751886374"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.880969263204616"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>gravShot.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="575887785"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="gravShot" ID="{314FC2B3-87C4-45DF-8E8F-6BEBB3E71503}" Platform="Linked"/>
+									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 						</ActorMixer>
@@ -774,6 +813,21 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="playerHurt" ID="{8179D673-684E-41F7-87CA-F02A6D3830A2}" ShortID="479373177">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{1E7EDE8F-54DC-4906-A974-A92BF494EFCD}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="75"/>
+															<Property Name="Min" Type="Real64" Value="-75"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
@@ -782,12 +836,29 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="playerHurt" ID="{112C3C98-D2D4-4CE5-9C0C-F4ED6F69049B}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0891879299822459"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.398659301486906"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>playerHurt.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="433944148"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="playerHurt" ID="{112C3C98-D2D4-4CE5-9C0C-F4ED6F69049B}" Platform="Linked"/>
+									</ActiveSourceList>
 								</Sound>
 								<Sound Name="playerHeal" ID="{04A89B92-E09C-46FB-B8A7-549AC5D3E9C3}" ShortID="940734869">
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>4</Value>
+												<Value>6</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -821,6 +892,21 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="playerDie" ID="{DDCC7D2F-D01C-443C-BC55-37B53CF1BC05}" ShortID="804164637">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{1A8EC41B-47D7-4247-801B-C0394C504782}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="75"/>
+															<Property Name="Min" Type="Real64" Value="-75"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
@@ -829,6 +915,25 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="playerDeath" ID="{10C80E03-FBAF-4F3E-A7F0-ADEA58956507}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.207902629826898"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.506429482911674"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.25807745228584"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.99499395250777"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>playerDeath.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="741087322"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="playerDeath" ID="{10C80E03-FBAF-4F3E-A7F0-ADEA58956507}" Platform="Linked"/>
+									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 						</ActorMixer>

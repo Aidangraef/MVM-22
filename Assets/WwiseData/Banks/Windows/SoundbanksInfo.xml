@@ -56,7 +56,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{FB34A277-2B77-B4AC-C701-DA465C5CFA50}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{BEEC92F2-B246-1457-02B1-58C8502134F0}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -124,6 +124,10 @@
 					<ShortName>playerJump-004.wav</ShortName>
 					<CachePath>SFX/playerJump-004_835714D9.wem</CachePath>
 				</File>
+				<File Id="433944148" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>playerHurt.wav</ShortName>
+					<CachePath>SFX/playerHurt_50D0A669.wem</CachePath>
+				</File>
 				<File Id="455232651" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>gravHit.wav</ShortName>
 					<CachePath>SFX/gravHit_F6A62D07.wem</CachePath>
@@ -143,6 +147,10 @@
 				<File Id="543010835" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerJump-003.wav</ShortName>
 					<CachePath>SFX/playerJump-003_835714D9.wem</CachePath>
+				</File>
+				<File Id="575887785" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>gravShot.wav</ShortName>
+					<CachePath>SFX/gravShot_8341AB29.wem</CachePath>
 				</File>
 				<File Id="615125432" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerHeal.wav</ShortName>
@@ -172,6 +180,10 @@
 					<ShortName>Player Dash.wav</ShortName>
 					<CachePath>SFX/Player Dash_C57A638A.wem</CachePath>
 				</File>
+				<File Id="741087322" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>playerDeath.wav</ShortName>
+					<CachePath>SFX/playerDeath_65AAF763.wem</CachePath>
+				</File>
 				<File Id="748464119" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerShield.wav</ShortName>
 					<CachePath>SFX/playerShield_7AF2FDE1.wem</CachePath>
@@ -199,10 +211,6 @@
 				<File Id="875044222" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Swing1.wav</ShortName>
 					<CachePath>SFX/Swing1_32252AF7.wem</CachePath>
-				</File>
-				<File Id="934752606" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SFX_UI_Hover.wav</ShortName>
-					<CachePath>SFX/SFX_UI_Hover_977FEE3A.wem</CachePath>
 				</File>
 				<File Id="965703128" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>gravityVac.wav</ShortName>
@@ -296,7 +304,11 @@
 						<MediaRef Id="632490103"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3561958532" Name="gravShoot" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3561958532" Name="gravShoot" DurationType="OneShot" DurationMin="0.7231021" DurationMax="0.78854835">
+					<MediaRefs>
+						<MediaRef Id="575887785"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1983228305" Name="gravStart" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="769169157"/>
@@ -420,13 +432,21 @@
 						<MediaRef Id="736254446"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3966601280" Name="playerDie" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3966601280" Name="playerDie" DurationType="OneShot" DurationMin="3.5784838" DurationMax="3.9023638">
+					<MediaRefs>
+						<MediaRef Id="741087322"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3216143520" Name="playerHeal" DurationType="OneShot" DurationMin="0.96455663" DurationMax="0.96455663">
 					<MediaRefs>
 						<MediaRef Id="615125432"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3537581393" Name="playerHurt" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3537581393" Name="playerHurt" DurationType="OneShot" DurationMin="0.38175747" DurationMax="0.41630942">
+					<MediaRefs>
+						<MediaRef Id="433944148"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="4008126242" Name="playerJump" DurationType="OneShot" DurationMin="0.55372566" DurationMax="1.5631242">
 					<MediaRefs>
 						<MediaRef Id="150633360"/>
@@ -469,11 +489,6 @@
 				<Event Id="2671641362" Name="sliderStart" DurationType="OneShot" DurationMin="0.0982024" DurationMax="0.0982024">
 					<MediaRefs>
 						<MediaRef Id="1070207331"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="3847507249" Name="sliderTick" DurationType="OneShot" DurationMin="0.08954727" DurationMax="0.08954727">
-					<MediaRefs>
-						<MediaRef Id="934752606"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2597336422" Name="swing1" DurationType="OneShot" DurationMin="0.26580006" DurationMax="0.27358857">
@@ -545,5 +560,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5D431E68-54DA-F3E9-71AB-DB849C22A31A}</FileHash>
+	<FileHash>{BBD759AA-8F28-A869-AB42-E397977E803B}</FileHash>
 </SoundBanksInfo>

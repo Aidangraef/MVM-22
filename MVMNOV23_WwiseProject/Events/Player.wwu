@@ -85,7 +85,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="gravShoot" ID="{321EABB2-39AB-4BF8-87DE-11018E440C41}"/>
+						<Event Name="gravShoot" ID="{321EABB2-39AB-4BF8-87DE-11018E440C41}">
+							<ChildrenList>
+								<Action Name="" ID="{38CA8528-494B-4B92-88C7-D00F67B35D2A}" ShortID="864095188">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="gravShoot" ID="{9E9303B7-5BBE-4983-893A-FF5C205CD145}" WorkUnitID="{461DD406-5E4B-4854-B2D4-130E64075729}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Movement" ID="{5A47081F-1863-4EB8-91C3-3755E9876C8C}" ShortID="686608200">
@@ -167,8 +177,28 @@
 				</Folder>
 				<Folder Name="Health" ID="{793001E1-BA97-4907-804B-174C62072121}" ShortID="251383947">
 					<ChildrenList>
-						<Event Name="playerDie" ID="{DC10A190-CE09-48FE-85C6-77198737FE9F}"/>
-						<Event Name="playerHurt" ID="{B56AA9DA-DFB2-4C24-820D-3321855AFFC6}"/>
+						<Event Name="playerDie" ID="{DC10A190-CE09-48FE-85C6-77198737FE9F}">
+							<ChildrenList>
+								<Action Name="" ID="{F625E752-448C-430A-891B-D338070CAAC1}" ShortID="756501957">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="playerDie" ID="{DDCC7D2F-D01C-443C-BC55-37B53CF1BC05}" WorkUnitID="{461DD406-5E4B-4854-B2D4-130E64075729}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="playerHurt" ID="{B56AA9DA-DFB2-4C24-820D-3321855AFFC6}">
+							<ChildrenList>
+								<Action Name="" ID="{A1B457F5-49C0-419D-873F-269B28E508CD}" ShortID="261608446">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="playerHurt" ID="{8179D673-684E-41F7-87CA-F02A6D3830A2}" WorkUnitID="{461DD406-5E4B-4854-B2D4-130E64075729}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Event Name="playerHeal" ID="{35942B8B-F076-4C85-8D2F-446B518BCD5E}">
 							<ChildrenList>
 								<Action Name="" ID="{47004F89-A8A1-49BD-BD65-6EF2D973F4ED}" ShortID="854412445">

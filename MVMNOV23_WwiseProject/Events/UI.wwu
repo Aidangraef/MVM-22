@@ -58,17 +58,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="sliderTick" ID="{EA418D18-463A-40E3-90BC-907529D2A44F}">
-					<ChildrenList>
-						<Action Name="" ID="{8AB84533-F32B-4795-A24B-B3F3AE4BACE2}" ShortID="554137629">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="sliderTick" ID="{C5A0F46C-5944-43B2-9B87-FF02A11F1F60}" WorkUnitID="{CB787123-DEB4-4217-BA3A-6ED3F50ADA76}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
