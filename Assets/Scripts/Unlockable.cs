@@ -27,24 +27,43 @@ public class Unlockable : MonoBehaviour
             if(whatToUnlock == "dash")
             {
                 pm.dashUnlocked = true;
-                AkSoundEngine.PostEvent("firstUpgrade", gameObject);
+                //AkSoundEngine.PostEvent("firstUpgrade", gameObject);
             }
             else if(whatToUnlock == "double jump")
             {
                 pm.doubleJumpUnlocked = true;
-                AkSoundEngine.PostEvent("secondUpgrade", gameObject);
+                //AkSoundEngine.PostEvent("secondUpgrade", gameObject);
             }
             else if (whatToUnlock == "shield")
             {
                 pm.shieldUnlocked = true;
-                AkSoundEngine.PostEvent("thirdUpgrade", gameObject);
+                //AkSoundEngine.PostEvent("thirdUpgrade", gameObject);
             }
             else if(whatToUnlock == "absorb bullets")
             {
                 pm.absorbBulletsUnlocked = true;
-                AkSoundEngine.PostEvent("fourthUpgrade", gameObject);
+                //AkSoundEngine.PostEvent("fourthUpgrade", gameObject);
             }
             doorToBoss.collectedCrystals += 1;
+
+            // determine which sound to play
+            if(doorToBoss.collectedCrystals == 1)
+            {
+                AkSoundEngine.PostEvent("firstUpgrade", gameObject);
+            }
+            else if (doorToBoss.collectedCrystals == 2)
+            {
+                AkSoundEngine.PostEvent("secondUpgrade", gameObject);
+            }
+            else if (doorToBoss.collectedCrystals == 3)
+            {
+                AkSoundEngine.PostEvent("thirdUpgrade", gameObject);
+            }
+            if (doorToBoss.collectedCrystals == 4)
+            {
+                AkSoundEngine.PostEvent("fourthUpgrade", gameObject);
+            }
+
             Destroy(gameObject);
         }
     }
