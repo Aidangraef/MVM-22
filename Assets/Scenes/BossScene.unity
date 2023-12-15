@@ -7152,7 +7152,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1546684674}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 59.65, y: 23.45, z: -16.75514}
+  m_LocalPosition: {x: 59.65, y: 23.45, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15830,7 +15830,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
-  pauseReference: {fileID: 0}
+  pauseReference: {fileID: 72289223}
   maxHP: 3
   hp: 3
   jumpForce: 650

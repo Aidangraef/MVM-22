@@ -70,7 +70,7 @@ public class Boss : MonoBehaviour
             {
                 inAttack = true;
                 attackTimer = Random.Range(1f, 3f);
-                inAttackTimer = 3f;
+                inAttackTimer = 2f;
 
                 // pick a random attack
                 float attackNum = Random.Range(0, 100);
@@ -148,6 +148,11 @@ public class Boss : MonoBehaviour
         {
             // make player do their stuff
             collision.gameObject.GetComponent<PlayerMovement>().TakeDamage(transform, 1);
+        }
+        else if (collision.gameObject.tag == "Boss Bullet")
+        {
+            TakeDamage(1);
+            Destroy(collision.gameObject);
         }
     }
 }

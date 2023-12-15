@@ -26,6 +26,14 @@ public class BossBullet : MonoBehaviour
             // enemy do your stuff (die)
             Destroy(gameObject);
         }
+        else if (collision.gameObject.tag == "Boss")
+        {
+            // make boss do their stuff
+            collision.gameObject.GetComponent<Boss>().TakeDamage(1);
+
+            // enemy do your stuff (die)
+            Destroy(gameObject);
+        }
         else if (collision.gameObject.tag != "Black Hole")
         {
             Destroy(gameObject); // die if you collide with anything but the black hole

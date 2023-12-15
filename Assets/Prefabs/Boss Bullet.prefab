@@ -95,9 +95,10 @@ GameObject:
   - component: {fileID: 4416533776449731440}
   - component: {fileID: 4767576293590045712}
   - component: {fileID: -2057897503097200020}
+  - component: {fileID: 1369399066402658686}
   m_Layer: 0
   m_Name: Boss Bullet
-  m_TagString: Untagged
+  m_TagString: Boss Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -219,3 +220,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfef6a34341bb5f4fbf6c5a7f3813a0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1369399066402658686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213562688942777674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b566b33531e240546b0b2496225a9a58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attractableRadius: 12
+  attractionStrength: 25
+  shootingForce: 25
+  blackHoleLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  storable: 1
