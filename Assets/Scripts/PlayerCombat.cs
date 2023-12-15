@@ -9,6 +9,7 @@ public class PlayerCombat : MonoBehaviour
     float attackRange = 0.8f;
     [SerializeField] LayerMask enemyLayers;
     [SerializeField] public int attackDamage;
+    public PauseMenu pauseReference;
 
     string currentAttack = "none";
     string currentSound = "none";
@@ -71,10 +72,13 @@ public class PlayerCombat : MonoBehaviour
             currentSound = "swing3";
         }
         attackHitBox.GetComponent<Animator>().SetTrigger(currentAttack);
-        AkSoundEngine.PostEvent(currentSound, this.gameObject);
+        if (pauseReference.isPaused == false)
+        {
+            AkSoundEngine.PostEvent(currentSound, this.gameObject);
+        }
 
-        // detect enemies
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackHitBox.transform.position, attackRange, enemyLayers);
+            // detect enemies
+            Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackHitBox.transform.position, attackRange, enemyLayers);
 
         // apply damage
         foreach(Collider2D enemy in hitEnemies)

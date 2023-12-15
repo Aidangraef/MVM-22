@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 658387844522211283}
   - component: {fileID: 658387844522211284}
   - component: {fileID: -8069236886028088181}
+  - component: {fileID: -636976089629987634}
   m_Layer: 9
   m_Name: Walking Enemy
   m_TagString: Walking Enemy
@@ -196,3 +197,27 @@ MonoBehaviour:
   kbAmount: 50
   maxHP: 5
   hp: 0
+--- !u!114 &-636976089629987634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658387844522211274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1079bbbb847220c47840c7f6d0c6d37b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MyEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f308e21d0c5d01f4a9a45910dace4c04, type: 2}
+  MyEvent2:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  MyEvent3:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}

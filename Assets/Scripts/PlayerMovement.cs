@@ -7,6 +7,7 @@ using UnityEngine.EventSystems;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed; // how fast the player moves
+    public PauseMenu pauseReference;
     [SerializeField] public int maxHP = 3; 
     [SerializeField] public int hp = 3;
     [SerializeField] public float jumpForce = 400f; // force added when the player jumps
@@ -121,10 +122,13 @@ public class PlayerMovement : MonoBehaviour
             shield.SetActive(true);
             rb.velocity = Vector2.zero;
             input = 0;
-            AkSoundEngine.PostEvent("playerShield", this.gameObject);
-        }
+            if (pauseReference.isPaused == false)
+            {
+                AkSoundEngine.PostEvent("playerShield", this.gameObject);
+            }
+            }
 
-        if(Input.GetKeyUp("f"))
+            if (Input.GetKeyUp("f"))
         {
             shieldActivated = false;
             //animator.SetBool("isShielding", false);
@@ -155,7 +159,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // audio
-        if(Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
+        if((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))&pauseReference.isPaused == false)
         {
             AkSoundEngine.PostEvent("PlayerMove", gameObject);
         }
@@ -285,10 +289,13 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(new Vector2(0f, jumpForce));
             jumpBufferCounter = 0;
             animator.SetTrigger("jump");
-            AkSoundEngine.PostEvent("playerJump", this.gameObject);
+            if (pauseReference.isPaused == false)
+            {
+                AkSoundEngine.PostEvent("playerJump", this.gameObject);
+            }
 
-            // turn on doubleJump
-            if (doubleJumpUnlocked) canDoubleJump = true;
+                // turn on doubleJump
+                if (doubleJumpUnlocked) canDoubleJump = true;
         }
         else if (canDoubleJump && jump)
         {
@@ -301,7 +308,10 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(new Vector2(0f, jumpForce));
             jumpBufferCounter = 0;
             animator.SetTrigger("jump");
-            AkSoundEngine.PostEvent("playerJump", this.gameObject);
+            if (pauseReference.isPaused == false)
+            {
+                AkSoundEngine.PostEvent("playerJump", this.gameObject);
+            }
         }
 
         // released jump button, so fall faster
@@ -415,7 +425,11 @@ public class PlayerMovement : MonoBehaviour
         isDashing = true;
 
         // play sound
-        AkSoundEngine.PostEvent("playerDash", this.gameObject);
+        if (pauseReference.isPaused == false)
+        {
+            AkSoundEngine.PostEvent("playerDash", this.gameObject);
+        }
+      
 
         // don't be affected by gravity during dash
         float originalGravity = rb.gravityScale;

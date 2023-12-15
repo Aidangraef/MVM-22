@@ -8,10 +8,22 @@
 						<Action Name="" ID="{AC3995CC-DB66-495E-A328-39F36820ACF5}" ShortID="571381326">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="musicSwitcher" ID="{98B2DDC8-38DB-408C-85F4-0BD2C06E64F2}" WorkUnitID="{39959547-F85D-43D0-8E81-38867B5CBC0D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{6E5A6425-0C0E-4229-A56F-B6390066FB7B}" ShortID="635313201">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ambientPH" ID="{21E1D414-98E6-49A7-90CF-FFA62DCF2FB4}" WorkUnitID="{AE487B5E-8469-4E13-BC1F-48A4FBC7CAF4}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

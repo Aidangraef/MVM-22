@@ -74,19 +74,25 @@ public class FlyingEnemy : MonoBehaviour
     {
         //take damage
         hp -= amount;
-
-        // flash red
-        StartCoroutine(DoFlashRed());
-
+        
         //take knockback
+        Knockback();
+
+        //if dead, die
         if (hp <= 0)
         {
+            AkSoundEngine.PostEvent("flyerDie", this.gameObject);
             Destroy(gameObject);
         }
-        Knockback();
-    }
+        //else, flash red+hurt
+        else
+        {
+            AkSoundEngine.PostEvent("flyerHurt", this.gameObject);
+            StartCoroutine(DoFlashRed());
+        }
+        }
 
-    void Knockback()
+        void Knockback()
     {
         kbTimer = kbTime;
         //StartCoroutine(ToggleScript());
@@ -99,7 +105,7 @@ public class FlyingEnemy : MonoBehaviour
     IEnumerator DoFlashRed()
     {
         // initial setup
-        SpriteRenderer sprite = transform.GetChild(0).GetComponent<SpriteRenderer>();
+        SpriteRenderer sprite = GetComponent<SpriteRenderer>();
         Color originalColor = new Color(1, 1, 1, 1);
         Color redColor = new Color(1, 0, 0, 1);
 

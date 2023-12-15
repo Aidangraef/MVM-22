@@ -261,7 +261,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-6</Value>
+												<Value>-2</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -856,9 +856,14 @@
 								</Sound>
 								<Sound Name="playerHeal" ID="{04A89B92-E09C-46FB-B8A7-549AC5D3E9C3}" ShortID="940734869">
 									<PropertyList>
-										<Property Name="Volume" Type="Real64">
+										<Property Name="Highpass" Type="int16">
 											<ValueList>
-												<Value>6</Value>
+												<Value>50</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>26</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -875,9 +880,8 @@
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.0151237100532623"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.147876276076343"/>
-												<Property Name="LoopBegin" Type="Real64" Value="0.0420103057035064"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.0285670078783844"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.297432964380825"/>
 												<Property Name="TrimEnd" Type="Real64" Value="0.993123626830893"/>
 											</PropertyList>
 											<Language>SFX</Language>

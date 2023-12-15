@@ -100,18 +100,25 @@ public class WalkingEnemy : MonoBehaviour
         //take damage
         hp -= amount;
 
-        // flash red
-        StartCoroutine(DoFlashRed());
-
         //take knockback
         Knockback();
+
+        //if dead, die
         if (hp < 0)
         {
+            AkSoundEngine.PostEvent("walkerDie", this.gameObject);
             Destroy(gameObject);
         }
-    }
 
-    void Knockback()
+        //else, flash red+hurt
+        else
+        {
+            StartCoroutine(DoFlashRed());
+            AkSoundEngine.PostEvent("walkerHurt", this.gameObject);
+        }
+        }
+
+        void Knockback()
     {
         kbTimer = kbTime;
         //StartCoroutine(ToggleScript());

@@ -6,11 +6,13 @@
 				<ActorMixer Name="Objects" ID="{EBBCE42D-FB8D-4763-B868-03035B4E7656}" ShortID="182535119">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="1"/>
-						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 						<Property Name="OverrideOutput" Type="bool" Value="True"/>
 						<Property Name="OverridePositioning" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Enemy Attenuation" ID="{16DB033E-7878-43AF-8891-B3083B15A7F2}" WorkUnitID="{ED9B7BF8-2B0F-4475-AE0F-19ACD2EA5937}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
 						</Reference>
@@ -36,7 +38,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>3</Value>
+										<Value>7</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -144,6 +146,7 @@
 						</Sound>
 						<RandomSequenceContainer Name="boxCollision" ID="{DA0316AC-D4DF-4A44-A04F-B1A2C2DA7BAD}" ShortID="173467340">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="Lowpass" Type="int16">
 									<ValueList>
 										<Value>35</Value>
