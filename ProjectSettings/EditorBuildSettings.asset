@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/FullMapv3.unity
     guid: c84c16ca805fe7947acb4fa4858e5f6e
   - enabled: 1
+    path: Assets/Scenes/BossScene.unity
+    guid: 324cdd8d88982fb4da67dee84f5dbee2
+  - enabled: 1
     path: Assets/Scenes/EndCredits.unity
     guid: 144733835bc40cc4f862b19dbfcfd31f
   m_configObjects:

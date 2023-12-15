@@ -20,6 +20,8 @@ public class Boss : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        AkSoundEngine.PostEvent("bossStart", gameObject);
+
         attackTimer = Random.Range(1f, 3f);
         animator = GetComponent<Animator>();
         idleCollider = GetComponent<Collider2D>();

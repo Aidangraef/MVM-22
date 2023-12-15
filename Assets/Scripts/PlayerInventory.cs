@@ -31,6 +31,9 @@ public class PlayerInventory : MonoBehaviour
                 // remove from inventory
                 inventory.RemoveAt(0);
                 Destroy(UIBar.GetChild(0).gameObject);
+
+                // play sound
+                AkSoundEngine.PostEvent("gravShoot", this.gameObject);
             }           
         }
     }
