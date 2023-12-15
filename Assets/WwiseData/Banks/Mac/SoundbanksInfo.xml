@@ -56,7 +56,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{41F54946-2F03-B23A-277C-BBD94ABF74CB}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{17F39F3A-62BC-F285-4EDF-183F2A04074F}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -67,6 +67,10 @@
 				<File Id="20275627" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bossfight_Metroidvania Month Jam_11Dec2023.wav</ShortName>
 					<CachePath>SFX/Bossfight_Metroidvania Month Jam_11Dec2023_179463A7.wem</CachePath>
+				</File>
+				<File Id="47590072" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>pewShoot.wav</ShortName>
+					<CachePath>SFX/pewShoot_FF6D3A5E.wem</CachePath>
 				</File>
 				<File Id="80689404" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Level Theme Layer 4_Metroidvania Month Jam_11Dec2023.wav</ShortName>
@@ -451,6 +455,11 @@
 						<ActionSetStateEntry GroupId="3105312269" Id="3089372025" Name="zeroUpgrade"/>
 					</ActionSetState>
 				</Event>
+				<Event Id="3746566024" Name="pewShoot" DurationType="OneShot" DurationMin="0.79909384" DurationMax="0.79909384">
+					<MediaRefs>
+						<MediaRef Id="47590072"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2525052962" Name="playerDash" DurationType="OneShot" DurationMin="0.3862901" DurationMax="0.4212523">
 					<MediaRefs>
 						<MediaRef Id="736254446"/>
@@ -585,5 +594,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{892161C7-A8E1-9500-1C6F-B1A6E67692D8}</FileHash>
+	<FileHash>{271D8C8B-AB86-1264-53E1-BC753816DBE3}</FileHash>
 </SoundBanksInfo>

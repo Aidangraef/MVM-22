@@ -35,6 +35,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3387993871	toMenu			\Default Work Unit\Music\toMenu	
 	3537581393	playerHurt			\Default Work Unit\Player\Health\playerHurt	
 	3561958532	gravShoot			\Default Work Unit\Player\Gravity\gravShoot	
+	3746566024	pewShoot			\Default Work Unit\NPCs\Enemies\Shooter\pewShoot	
 	3966601280	playerDie			\Default Work Unit\Player\Health\playerDie	
 	4008126242	playerJump			\Default Work Unit\Player\Movement\playerJump	
 	4051332235	buttonClick			\Default Work Unit\UI\buttonClick	
@@ -65,6 +66,7 @@ State	ID	Name	State Group			Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	16813949	Level Theme Layer 3_Metroidvania Month Jam_11Dec2023	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Windows\SFX\Level Theme Layer 3_Metroidvania Month Jam_11Dec2023_179463A7.wem		\Interactive Music Hierarchy\Default Work Unit\musicSwitcher\mainThemeU2\Level Theme Layer 3_Metroidvania Month Jam_11Dec2023\Level Theme Layer 3_Metroidvania Month Jam_11Dec2023		3402945
 	20275627	Bossfight_Metroidvania Month Jam_11Dec2023	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Windows\SFX\Bossfight_Metroidvania Month Jam_11Dec2023_179463A7.wem		\Interactive Music Hierarchy\Default Work Unit\musicSwitcher\firstBossTheme\Bossfight_Metroidvania Month Jam_11Dec2023\Bossfight_Metroidvania Month Jam_11Dec2023		2197966
+	47590072	bulletShot	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Windows\SFX\pewShoot_FF6D3A5E.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\NPCs\NPCs\enemyShooter\bulletShot		17734
 	80689404	Level Theme Layer 4_Metroidvania Month Jam_11Dec2023	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Windows\SFX\Level Theme Layer 4_Metroidvania Month Jam_11Dec2023_179463A7.wem		\Interactive Music Hierarchy\Default Work Unit\musicSwitcher\mainThemeU3\Level Theme Layer 4_Metroidvania Month Jam_11Dec2023\Level Theme Layer 4_Metroidvania Month Jam_11Dec2023		3333658
 	89249921	swing2	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Windows\SFX\Swing2_62C79D4F.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Attacks\Melee\swing2		5749
 	93873590	Credits_Metroidvania Month Jam_11Dec2023	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Windows\SFX\Credits_Metroidvania Month Jam_11Dec2023_179463A7.wem		\Interactive Music Hierarchy\Default Work Unit\musicSwitcher\creditsTheme\Credits_Metroidvania Month Jam_11Dec2023\Credits_Metroidvania Month Jam_11Dec2023		735422

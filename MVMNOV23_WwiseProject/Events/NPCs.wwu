@@ -27,6 +27,21 @@
 								<Event Name="bossDie" ID="{28BC75AC-85D2-4272-BF1E-C2906ECD5BE1}"/>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Shooter" ID="{0B2785AD-8309-4D77-ABEB-FEC430A83340}" ShortID="468082894">
+							<ChildrenList>
+								<Event Name="pewShoot" ID="{D06B361A-6FBE-4ED2-9348-0F8D1EEF3098}">
+									<ChildrenList>
+										<Action Name="" ID="{220F3836-421E-4A0D-8ABA-4CDC683BBED3}" ShortID="483484877">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="bulletShot" ID="{9E2AB0EE-1544-4CFC-96CD-504784E6B3F4}" WorkUnitID="{B8BA10E1-B5D3-4F09-B274-CF08CAB885D4}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Event Name="dialoguePlay" ID="{4B313DA8-A270-41D3-B985-CEBA8B830F5B}">

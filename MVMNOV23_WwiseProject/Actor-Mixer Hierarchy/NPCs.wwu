@@ -174,6 +174,23 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="pewShoot" ID="{9F1497AC-680F-4409-8B1C-433DA6C3C1F5}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.208167304704838"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.799093847092763"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>pewShoot.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="47590072"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="pewShoot" ID="{9F1497AC-680F-4409-8B1C-433DA6C3C1F5}" Platform="Linked"/>
+									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 						</ActorMixer>
