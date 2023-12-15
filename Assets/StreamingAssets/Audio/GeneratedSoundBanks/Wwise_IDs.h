@@ -27,6 +27,7 @@ namespace AK
         static const AkUniqueID FIRSTUPGRADE = 492523291U;
         static const AkUniqueID FLYERDIE = 325523121U;
         static const AkUniqueID FLYERHURT = 4120941918U;
+        static const AkUniqueID FLYERIDLE = 2359603827U;
         static const AkUniqueID FOURTHUPGRADE = 2663107407U;
         static const AkUniqueID GAMESTART = 4058101365U;
         static const AkUniqueID GRAVEND = 2853039794U;
@@ -34,6 +35,7 @@ namespace AK
         static const AkUniqueID GRAVSTART = 1983228305U;
         static const AkUniqueID GRAVVAC = 2230252431U;
         static const AkUniqueID MUSICSTART = 1122283870U;
+        static const AkUniqueID PEWSHOOT = 3746566024U;
         static const AkUniqueID PLAYERDASH = 2525052962U;
         static const AkUniqueID PLAYERDIE = 3966601280U;
         static const AkUniqueID PLAYERHEAL = 3216143520U;
@@ -56,6 +58,7 @@ namespace AK
         static const AkUniqueID TOMENU = 3387993871U;
         static const AkUniqueID WALKERDIE = 4099529891U;
         static const AkUniqueID WALKERHURT = 3105797008U;
+        static const AkUniqueID WALKERIDLE = 1315085369U;
     } // namespace EVENTS
 
     namespace STATES

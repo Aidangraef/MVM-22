@@ -5,7 +5,10 @@
 			<ChildrenList>
 				<ActorMixer Name="NPCs" ID="{E4F5BFFE-8203-43FA-A08F-3D6D97EE6224}" ShortID="963323835">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 						<Property Name="OverrideOutput" Type="bool" Value="True"/>
+						<Property Name="OverridePositioning" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -37,6 +40,16 @@
 									</ReferenceList>
 								</Sound>
 								<Sound Name="flyerDie" ID="{19337F19-9501-4C0C-B9FE-0E7846CA7A75}" ShortID="283738434">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+										</Reference>
+									</ReferenceList>
+								</Sound>
+								<Sound Name="flyerIdle" ID="{D3B00EB4-D484-4741-BDAB-57D5B1030CBE}" ShortID="254250653">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
@@ -130,9 +143,19 @@
 										</Reference>
 									</ReferenceList>
 								</Sound>
+								<Sound Name="walkerIdle" ID="{CF2C6298-9835-4436-A6AC-763F3F53A164}" ShortID="212281732">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+										</Reference>
+									</ReferenceList>
+								</Sound>
 							</ChildrenList>
 						</ActorMixer>
-						<ActorMixer Name="helperBoi" ID="{0C8BF256-05D2-4E04-B78A-9D183BA06AF5}" ShortID="420785939">
+						<ActorMixer Name="enemyShooter" ID="{4BF52256-421E-45B2-96A9-F3259D2227C5}" ShortID="137395823">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
@@ -142,7 +165,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="dialogueBark" ID="{ED3371D3-C25F-4B44-8A21-26F7657DF7E5}" ShortID="297476685">
+								<Sound Name="bulletShot" ID="{9E2AB0EE-1544-4CFC-96CD-504784E6B3F4}" ShortID="354489809">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
@@ -151,6 +174,23 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="pewShoot" ID="{9F1497AC-680F-4409-8B1C-433DA6C3C1F5}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.208167304704838"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.799093847092763"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>pewShoot.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="47590072"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="pewShoot" ID="{9F1497AC-680F-4409-8B1C-433DA6C3C1F5}" Platform="Linked"/>
+									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 						</ActorMixer>

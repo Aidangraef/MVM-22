@@ -9,12 +9,14 @@
 							<ChildrenList>
 								<Event Name="walkerHurt" ID="{C3D5B43C-9392-4A50-9E03-6A075285D262}"/>
 								<Event Name="walkerDie" ID="{06EC8E98-862E-490B-B2B8-9FA0A268FD85}"/>
+								<Event Name="walkerIdle" ID="{3B85E574-5887-498F-86BF-F2ED2E294D71}"/>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Flyer" ID="{F36B75D1-CD35-487F-9E5E-3452FE91DCB9}" ShortID="446283088">
 							<ChildrenList>
 								<Event Name="flyerHurt" ID="{0A88C148-26FD-4BDF-84CD-5C971A688B12}"/>
 								<Event Name="flyerDie" ID="{8B3025D3-469A-4638-BC83-A3E1B7568C8E}"/>
+								<Event Name="flyerIdle" ID="{0DF85BC3-6193-489B-84D9-F8A01E726259}"/>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Boss" ID="{673782DA-EA75-473C-90CA-0382392A681A}" ShortID="567491398">
@@ -25,9 +27,34 @@
 								<Event Name="bossDie" ID="{28BC75AC-85D2-4272-BF1E-C2906ECD5BE1}"/>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Shooter" ID="{0B2785AD-8309-4D77-ABEB-FEC430A83340}" ShortID="468082894">
+							<ChildrenList>
+								<Event Name="pewShoot" ID="{D06B361A-6FBE-4ED2-9348-0F8D1EEF3098}">
+									<ChildrenList>
+										<Action Name="" ID="{220F3836-421E-4A0D-8ABA-4CDC683BBED3}" ShortID="483484877">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="bulletShot" ID="{9E2AB0EE-1544-4CFC-96CD-504784E6B3F4}" WorkUnitID="{B8BA10E1-B5D3-4F09-B274-CF08CAB885D4}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
-				<Event Name="dialoguePlay" ID="{4B313DA8-A270-41D3-B985-CEBA8B830F5B}"/>
+				<Event Name="dialoguePlay" ID="{4B313DA8-A270-41D3-B985-CEBA8B830F5B}">
+					<ChildrenList>
+						<Action Name="" ID="{FE416A10-573C-4D84-A13B-715961D0E804}" ShortID="304482738">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="dialogueBark" ID="{3BDF5E10-8A7C-4B2A-A814-B63896512E26}" WorkUnitID="{461DD406-5E4B-4854-B2D4-130E64075729}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -56,7 +56,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{BEEC92F2-B246-1457-02B1-58C8502134F0}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{17F39F3A-62BC-F285-4EDF-183F2A04074F}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -67,6 +67,10 @@
 				<File Id="20275627" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bossfight_Metroidvania Month Jam_11Dec2023.wav</ShortName>
 					<CachePath>SFX/Bossfight_Metroidvania Month Jam_11Dec2023_179463A7.wem</CachePath>
+				</File>
+				<File Id="47590072" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>pewShoot.wav</ShortName>
+					<CachePath>SFX/pewShoot_FF6D3A5E.wem</CachePath>
 				</File>
 				<File Id="80689404" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Level Theme Layer 4_Metroidvania Month Jam_11Dec2023.wav</ShortName>
@@ -83,6 +87,10 @@
 				<File Id="94906913" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dark Drone Intensive Electric Waves.wav</ShortName>
 					<CachePath>SFX/Dark Drone Intensive Electric Waves_A1B4EF98.wem</CachePath>
+				</File>
+				<File Id="117812017" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>dialogueBark2.wav</ShortName>
+					<CachePath>SFX/dialogueBark2_835714D9.wem</CachePath>
 				</File>
 				<File Id="141013452" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Menu Theme_Metroidvania Month Jam_11Dec2023.wav</ShortName>
@@ -112,6 +120,10 @@
 					<ShortName>playerJump-006.wav</ShortName>
 					<CachePath>SFX/playerJump-006_D05BCF85.wem</CachePath>
 				</File>
+				<File Id="302868132" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>dialogueBark1.wav</ShortName>
+					<CachePath>SFX/dialogueBark1_835714D9.wem</CachePath>
+				</File>
 				<File Id="323749564" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerJump-002.wav</ShortName>
 					<CachePath>SFX/playerJump-002_835714D9.wem</CachePath>
@@ -126,7 +138,7 @@
 				</File>
 				<File Id="433944148" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerHurt.wav</ShortName>
-					<CachePath>SFX/playerHurt_50D0A669.wem</CachePath>
+					<CachePath>SFX/playerHurt_D9248A58.wem</CachePath>
 				</File>
 				<File Id="455232651" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>gravHit.wav</ShortName>
@@ -150,7 +162,7 @@
 				</File>
 				<File Id="575887785" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>gravShot.wav</ShortName>
-					<CachePath>SFX/gravShot_8341AB29.wem</CachePath>
+					<CachePath>SFX/gravShot_0F91FE10.wem</CachePath>
 				</File>
 				<File Id="615125432" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerHeal.wav</ShortName>
@@ -182,7 +194,7 @@
 				</File>
 				<File Id="741087322" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerDeath.wav</ShortName>
-					<CachePath>SFX/playerDeath_65AAF763.wem</CachePath>
+					<CachePath>SFX/playerDeath_AFD1E190.wem</CachePath>
 				</File>
 				<File Id="748464119" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerShield.wav</ShortName>
@@ -204,6 +216,10 @@
 					<ShortName>playerJump-005.wav</ShortName>
 					<CachePath>SFX/playerJump-005_835714D9.wem</CachePath>
 				</File>
+				<File Id="841774539" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>dialogueBark3.wav</ShortName>
+					<CachePath>SFX/dialogueBark3_835714D9.wem</CachePath>
+				</File>
 				<File Id="860451314" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Level Theme Layer 5_Metroidvania Month Jam_11Dec2023.wav</ShortName>
 					<CachePath>SFX/Level Theme Layer 5_Metroidvania Month Jam_11Dec2023_179463A7.wem</CachePath>
@@ -211,6 +227,10 @@
 				<File Id="875044222" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Swing1.wav</ShortName>
 					<CachePath>SFX/Swing1_32252AF7.wem</CachePath>
+				</File>
+				<File Id="937849871" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>dialogueBark4.wav</ShortName>
+					<CachePath>SFX/dialogueBark4_835714D9.wem</CachePath>
 				</File>
 				<File Id="965703128" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>gravityVac.wav</ShortName>
@@ -266,7 +286,14 @@
 						<MediaRef Id="618925761"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1782206281" Name="dialoguePlay" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1782206281" Name="dialoguePlay" DurationType="OneShot" DurationMin="1.5085021" DurationMax="2.2952538">
+					<MediaRefs>
+						<MediaRef Id="117812017"/>
+						<MediaRef Id="302868132"/>
+						<MediaRef Id="841774539"/>
+						<MediaRef Id="937849871"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1404805401" Name="doorOpen" DurationType="OneShot" DurationMin="0.63599426" DurationMax="0.63599426">
 					<MediaRefs>
 						<MediaRef Id="148448738"/>
@@ -282,6 +309,7 @@
 				</Event>
 				<Event Id="325523121" Name="flyerDie" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="4120941918" Name="flyerHurt" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2359603827" Name="flyerIdle" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2663107407" Name="fourthUpgrade" DurationType="OneShot" DurationMin="3.021484" DurationMax="3.021484">
 					<MediaRefs>
 						<MediaRef Id="629620136"/>
@@ -427,6 +455,11 @@
 						<ActionSetStateEntry GroupId="3105312269" Id="3089372025" Name="zeroUpgrade"/>
 					</ActionSetState>
 				</Event>
+				<Event Id="3746566024" Name="pewShoot" DurationType="OneShot" DurationMin="0.79909384" DurationMax="0.79909384">
+					<MediaRefs>
+						<MediaRef Id="47590072"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2525052962" Name="playerDash" DurationType="OneShot" DurationMin="0.3862901" DurationMax="0.4212523">
 					<MediaRefs>
 						<MediaRef Id="736254446"/>
@@ -536,6 +569,7 @@
 				</Event>
 				<Event Id="4099529891" Name="walkerDie" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3105797008" Name="walkerHurt" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1315085369" Name="walkerIdle" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 			<StateGroups>
 				<StateGroup Id="1687686957" Name="gameZone">
@@ -560,5 +594,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{47E6B404-0F8D-88AE-09D6-872D6E52855A}</FileHash>
+	<FileHash>{D60EA5B4-7F2D-5E1D-2C89-1732509516C3}</FileHash>
 </SoundBanksInfo>
