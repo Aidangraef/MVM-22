@@ -8,6 +8,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1122283870	musicStart			\Default Work Unit\Music\musicStart	
 	1186261430	bossDoorOpen			\Default Work Unit\Objects\bossDoorOpen	
 	1284320407	bossShoot			\Default Work Unit\NPCs\Enemies\Boss\bossShoot	
+	1315085369	walkerIdle			\Default Work Unit\NPCs\Enemies\Walker\walkerIdle	
 	1404805401	doorOpen			\Default Work Unit\Objects\doorOpen	
 	1435302941	testFail			\Default Work Unit\UI\testFail	
 	1437879705	bossHurt			\Default Work Unit\NPCs\Enemies\Boss\bossHurt	
@@ -18,6 +19,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1983228305	gravStart			\Default Work Unit\Player\Gravity\gravStart	
 	2230252431	gravVac			\Default Work Unit\Objects\gravVac	
 	2267600265	playerMove			\Default Work Unit\Player\Movement\playerMove	
+	2359603827	flyerIdle			\Default Work Unit\NPCs\Enemies\Flyer\flyerIdle	
 	2525052962	playerDash			\Default Work Unit\Player\Movement\playerDash	
 	2594838977	playerShield			\Default Work Unit\Player\Movement\playerShield	
 	2597336420	swing3			\Default Work Unit\Player\Attacks\swing3	
@@ -67,6 +69,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	89249921	swing2	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\Swing2_62C79D4F.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Attacks\Melee\swing2		5749
 	93873590	Credits_Metroidvania Month Jam_11Dec2023	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\Credits_Metroidvania Month Jam_11Dec2023_179463A7.wem		\Interactive Music Hierarchy\Default Work Unit\musicSwitcher\creditsTheme\Credits_Metroidvania Month Jam_11Dec2023\Credits_Metroidvania Month Jam_11Dec2023		735422
 	94906913	ambientPH	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\Dark Drone Intensive Electric Waves_A1B4EF98.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient\Ambient\ambientPH		5542514
+	117812017	dialogueBark2	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\dialogueBark2_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\helperBoi\dialogueBark\dialogueBark2		14671
 	141013452	Menu Theme_Metroidvania Month Jam_11Dec2023	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\Menu Theme_Metroidvania Month Jam_11Dec2023_179463A7.wem		\Interactive Music Hierarchy\Default Work Unit\musicSwitcher\menuTheme\Menu Theme_Metroidvania Month Jam_11Dec2023\Menu Theme_Metroidvania Month Jam_11Dec2023		1136284
 	148448738	doorOpen	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\doorOpen_1654C0F6.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\doorOpen		13328
 	150633360	playerJump-001	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\playerJump-001_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerJump\playerJump-001		13316
@@ -74,6 +77,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	209439430	playerMove	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\playerMove_18545657.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerMove		400041
 	224951551	boxCollisions-001	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\boxCollisions-001_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\boxCollision\boxCollisions-001		11388
 	291242061	playerJump-006	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\playerJump-006_D05BCF85.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerJump\playerJump-006		13353
+	302868132	dialogueBark1	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\dialogueBark1_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\helperBoi\dialogueBark\dialogueBark1		12467
 	323749564	playerJump-002	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\playerJump-002_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerJump\playerJump-002		9509
 	323964908	Level Theme Layer 1_Metroidvania Month Jam_11Dec2023	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\Level Theme Layer 1_Metroidvania Month Jam_11Dec2023_179463A7.wem		\Interactive Music Hierarchy\Default Work Unit\musicSwitcher\mainThemeU0\Level Theme Layer 1_Metroidvania Month Jam_11Dec2023\Level Theme Layer 1_Metroidvania Month Jam_11Dec2023		3115356
 	371192611	playerJump-004	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\playerJump-004_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerJump\playerJump-004		15905
@@ -97,8 +101,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	774271815	playerLand	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\playerLand_F4D61117.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerLand		5467
 	780479273	boxCollisions-002	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\boxCollisions-002_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\boxCollision\boxCollisions-002		11588
 	831640051	playerJump-005	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\playerJump-005_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Movement\playerJump\playerJump-005		13094
+	841774539	dialogueBark3	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\dialogueBark3_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\helperBoi\dialogueBark\dialogueBark3		13334
 	860451314	Level Theme Layer 5_Metroidvania Month Jam_11Dec2023	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\Level Theme Layer 5_Metroidvania Month Jam_11Dec2023_179463A7.wem		\Interactive Music Hierarchy\Default Work Unit\musicSwitcher\mainThemeU4\Level Theme Layer 5_Metroidvania Month Jam_11Dec2023\Level Theme Layer 5_Metroidvania Month Jam_11Dec2023		3376509
 	875044222	swing1	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\Swing1_32252AF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Attacks\Melee\swing1		6681
+	937849871	dialogueBark4	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\dialogueBark4_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\helperBoi\dialogueBark\dialogueBark4		14087
 	965703128	gravVac	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\gravityVac_1BD85066.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\gravVac		10094
 	973245307	boxCollisions-004	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\boxCollisions-004_835714D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Objects\Objects\boxCollision\boxCollisions-004		12577
 	987025329	gravSustain	D:\Game_Production\UnityProjects\MVMNOV23\MVMNOV23_WwiseProject\.cache\Web\SFX\gravitySustain_6BED68B8.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Player\Gravity\gravSustain		477064
