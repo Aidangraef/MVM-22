@@ -74,7 +74,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="menu" ID="{F6D66972-4EA5-47FB-8416-6B2244084E37}"/>
-						<CurrentStateRef Name="fourthUpgrade" ID="{E2700F4A-E8B3-4926-BFD3-73DA29CB0D41}"/>
+						<CurrentStateRef Name="firstUpgrade" ID="{149EC2EE-5F3E-48AB-9C4E-F7390ECB4094}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
