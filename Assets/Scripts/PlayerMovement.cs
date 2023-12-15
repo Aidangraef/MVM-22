@@ -159,7 +159,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // audio
-        if((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))&pauseReference.isPaused == false)
+        if((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D)) && pauseReference.isPaused == false)
         {
             AkSoundEngine.PostEvent("PlayerMove", gameObject);
         }

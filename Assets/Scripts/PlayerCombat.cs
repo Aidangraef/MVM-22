@@ -30,7 +30,7 @@ public class PlayerCombat : MonoBehaviour
 
         if (GetComponent<PlayerMovement>().shieldActivated) return; // cannot attack if shielding
 
-        if (Input.GetMouseButtonDown(0) && !Input.GetMouseButton(1))
+        if (Input.GetMouseButtonDown(0) && !Input.GetMouseButton(1) && !pauseReference.isPaused)
         {
             Attack();
         }
