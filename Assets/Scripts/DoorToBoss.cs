@@ -38,6 +38,7 @@ public class DoorToBoss : MonoBehaviour
         {
             if (currentText == 0)
             {
+                AkSoundEngine.PostEvent("dialoguePlay", this.gameObject);
                 Player.GetComponent<PlayerMovement>().speed = 0;
                 Player.GetComponent<PlayerMovement>().jumpForce = 0;
                 Debug.Log(dialogueParent.tag);
@@ -50,17 +51,20 @@ public class DoorToBoss : MonoBehaviour
             }
             else if (currentText == 1 && collectedCrystals < 4)
             {
+                AkSoundEngine.PostEvent("dialoguePlay", this.gameObject);
                 dialogueParent.transform.GetChild(1).GetChild(0).GetComponent<TextMeshProUGUI>().text = "We can't open this until we have all four crystals";
                 currentText += 1;
             }
             else if (currentText == 1 && collectedCrystals == 4)
             {
+                AkSoundEngine.PostEvent("dialoguePlay", this.gameObject);
                 dialogueParent.transform.GetChild(1).GetChild(0).GetComponent<TextMeshProUGUI>().text = "We have all the crystals! Let's go!";
                 currentText += 1;
                 AkSoundEngine.PostEvent("bossDoorOpen", gameObject);
             }
             else if (currentText == 2 && collectedCrystals < 4)
             {
+                AkSoundEngine.PostEvent("dialoguePlay", this.gameObject);
                 dialogueParent.GetComponent<Animator>().SetBool("dialogueOn", false);
                 Player.GetComponent<PlayerMovement>().speed = oldSpeed;
                 Player.GetComponent<PlayerMovement>().jumpForce = OldJumpForce;
@@ -78,7 +82,7 @@ public class DoorToBoss : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            Debug.Log("Can Upgrade");
+            //Debug.Log("Can Upgrade");
             touchingPlayer = true;
             EPrompt.SetActive(true);
         }

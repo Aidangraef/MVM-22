@@ -44,6 +44,7 @@ public class DialogueTrigger : MonoBehaviour
                 text = moreTexts[0];
                 moreTexts.RemoveAt(0);
                 dialogueParent.transform.GetChild(1).GetChild(0).GetComponent<TextMeshProUGUI>().text = text;
+                AkSoundEngine.PostEvent("dialoguePlay", this.gameObject);
             }
         }
     }
@@ -93,6 +94,7 @@ public class DialogueTrigger : MonoBehaviour
         }
 
         // show the dialogue for a short period of time
+        AkSoundEngine.PostEvent("dialoguePlay", this.gameObject);
         dialogueTimer = framesOnScreen;
         dialogueParent.transform.GetChild(1).GetChild(0).GetComponent<TextMeshProUGUI>().text = text;
         dialogueParent.GetComponent<Animator>().SetBool("dialogueOn", true);

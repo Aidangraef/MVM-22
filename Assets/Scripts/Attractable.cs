@@ -64,7 +64,7 @@ public class Attractable : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // play sound
-        if (gameObject.tag == "Box") AkSoundEngine.PostEvent("boxCollision", this.gameObject);
+        if (gameObject.tag == "Box" && attractionStrength == 0) AkSoundEngine.PostEvent("boxCollide", this.gameObject);
 
         // only store storable objects
         if (!storable) return;

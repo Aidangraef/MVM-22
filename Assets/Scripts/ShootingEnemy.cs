@@ -38,6 +38,7 @@ public class ShootingEnemy : MonoBehaviour
             animator.SetTrigger("Shoot");
             Instantiate(bulletPrefab, shootPoint);
             shotTimer = framesBetweenShots;
+            AkSoundEngine.PostEvent("pewShoot", this.gameObject);
         }
         else
         {

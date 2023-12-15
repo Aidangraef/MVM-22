@@ -56,7 +56,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{17F39F3A-62BC-F285-4EDF-183F2A04074F}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{93A8FC98-306E-E250-5181-2D1EF78BBD0D}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -455,7 +455,7 @@
 						<ActionSetStateEntry GroupId="3105312269" Id="3089372025" Name="zeroUpgrade"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="3746566024" Name="pewShoot" DurationType="OneShot" DurationMin="0.79909384" DurationMax="0.79909384">
+				<Event Id="3746566024" Name="pewShoot" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.79909384" DurationMax="0.79909384">
 					<MediaRefs>
 						<MediaRef Id="47590072"/>
 					</MediaRefs>
@@ -594,5 +594,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D60EA5B4-7F2D-5E1D-2C89-1732509516C3}</FileHash>
+	<FileHash>{5086675A-8591-3A43-C682-3BC172849C98}</FileHash>
 </SoundBanksInfo>
