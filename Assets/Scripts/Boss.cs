@@ -17,6 +17,19 @@ public class Boss : MonoBehaviour
 
     public GameObject BulletPrefab;
 
+    [SerializeField]
+    float playDelay = 2.5f;
+
+    [SerializeField]
+    ImageFadeEffect fadeEffect;
+
+    IEnumerator WaitAndEndGame()
+    {
+
+        yield return new WaitForSeconds(playDelay);
+        SceneManager.LoadScene(3);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -65,6 +78,7 @@ public class Boss : MonoBehaviour
                 if(attackNum <= 50)
                 {
                     animator.SetTrigger("Attack1");
+                    AkSoundEngine.PostEvent("bossDash", gameObject);
                     idleCollider.enabled = false;
                     attack1Collider.SetActive(true);
 
@@ -72,6 +86,7 @@ public class Boss : MonoBehaviour
                 else if (attackNum > 50)
                 {
                     animator.SetTrigger("Attack2");
+                    AkSoundEngine.PostEvent("bossShoot", gameObject);
                 }
             }
         }
@@ -91,12 +106,20 @@ public class Boss : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        AkSoundEngine.PostEvent("bossHurt", gameObject);
+
         hp -= damage;
         StartCoroutine(DoFlashRed());
 
         if (hp < 0)
         {
-            SceneManager.LoadScene(3);
+            AkSoundEngine.PostEvent("bossDie", gameObject);
+            AkSoundEngine.PostEvent("toCredits", gameObject);
+            // Start fade effect
+            fadeEffect.FadeSpeed = 1f / playDelay;
+            fadeEffect.TargetAlpha = 1f;
+            //SceneManager.LoadScene(3);
+            StartCoroutine(WaitAndEndGame());
             //Destroy(gameObject);
         }
 
