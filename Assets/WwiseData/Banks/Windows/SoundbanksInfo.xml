@@ -56,7 +56,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{60218B61-68DE-E18A-FCB1-143DCC596CEA}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{DF2902D7-CC38-13F7-13F4-687A22AC8AF1}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -146,7 +146,7 @@
 				</File>
 				<File Id="260407685" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>bossDash.wav</ShortName>
-					<CachePath>SFX/bossDash_4D143E14.wem</CachePath>
+					<CachePath>SFX/bossDash_4268340D.wem</CachePath>
 				</File>
 				<File Id="267454052" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>flyerDie.wav</ShortName>
@@ -234,7 +234,7 @@
 				</File>
 				<File Id="585355626" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>bossDashPrep1.wav</ShortName>
-					<CachePath>SFX/bossDashPrep1_00BAFEB3.wem</CachePath>
+					<CachePath>SFX/bossDashPrep1_745E415D.wem</CachePath>
 				</File>
 				<File Id="615125432" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerHeal.wav</ShortName>
@@ -768,5 +768,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{CC1FEFB0-9DBC-FD1B-4F74-B40EA8903198}</FileHash>
+	<FileHash>{64886DF4-620A-B41E-E47C-FAF6D169179B}</FileHash>
 </SoundBanksInfo>
