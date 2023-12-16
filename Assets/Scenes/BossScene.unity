@@ -2293,15 +2293,15 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.0037842952
-    y: 0
-    width: 0.9923263
-    height: 1
+    x: 0
+    y: 0.0206422
+    width: 0.99999994
+    height: 0.95792717
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 8.4375
+  orthographic size: 11.25
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2593,6 +2593,7 @@ GameObject:
   - component: {fileID: 590790733}
   - component: {fileID: 590790732}
   - component: {fileID: 590790731}
+  - component: {fileID: 590790734}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -2653,6 +2654,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &590790734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590790730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 531734bad0f66244795d5d49920ed3fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e0e016bfabb7b4c418c0ec32c4f1d448, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -5831,6 +5856,7 @@ GameObject:
   - component: {fileID: 1372603804}
   - component: {fileID: 1372603803}
   - component: {fileID: 1372603808}
+  - component: {fileID: 1372603809}
   m_Layer: 9
   m_Name: Boss
   m_TagString: Boss
@@ -5982,6 +6008,30 @@ MonoBehaviour:
   BulletPrefab: {fileID: 1213562688942777674, guid: 8dc6a75ba40bbf8459dcf9dd13cbf0bd, type: 3}
   playDelay: 2.5
   fadeEffect: {fileID: 0}
+--- !u!114 &1372603809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372603802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1079bbbb847220c47840c7f6d0c6d37b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MyEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2415b4b2543a7124582cce47bcf91d54, type: 2}
+  MyEvent2:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d24e58f4d35a64f438f66c70fd2893ca, type: 2}
+  MyEvent3:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b0d012113fe8c6a408d994069dbb5447, type: 2}
 --- !u!1 &1391525029
 GameObject:
   m_ObjectHideFlags: 0

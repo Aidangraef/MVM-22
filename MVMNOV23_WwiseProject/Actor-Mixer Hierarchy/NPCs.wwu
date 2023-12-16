@@ -340,6 +340,18 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="bossDash" ID="{7FD850F4-F001-4467-88C3-78F1F3F53847}">
+											<Language>SFX</Language>
+											<AudioFile>bossDash.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="260407685"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="bossDash" ID="{7FD850F4-F001-4467-88C3-78F1F3F53847}" Platform="Linked"/>
+									</ActiveSourceList>
 								</Sound>
 								<Sound Name="bossHurt" ID="{29876A36-06DE-4D0E-8638-D7D4162D4534}" ShortID="1041624986">
 									<ReferenceList>
@@ -362,6 +374,26 @@
 									</ReferenceList>
 								</Sound>
 								<Sound Name="bossShoot" ID="{7D6508C0-4783-471A-B416-4CE7412EAED0}" ShortID="248875607">
+									<PropertyList>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{70BF3E28-4C16-4B13-BF4D-B844866F08AB}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="75"/>
+															<Property Name="Min" Type="Real64" Value="-75"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
@@ -370,7 +402,161 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="angelShoot" ID="{C777C1FB-2444-462A-A45E-5D9848844A84}">
+											<Language>SFX</Language>
+											<AudioFile>angelShoot.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="949094695"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="angelShoot" ID="{C777C1FB-2444-462A-A45E-5D9848844A84}" Platform="Linked"/>
+									</ActiveSourceList>
 								</Sound>
+								<RandomSequenceContainer Name="bossDashPrep" ID="{40D0908A-0233-48CE-B280-7B9799B68440}" ShortID="238364343">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{851244E7-23FA-4162-9308-2524AE69B0C0}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="75"/>
+															<Property Name="Min" Type="Real64" Value="-75"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="bossDashPrep1" ID="{725D1723-E52E-437E-8154-0A52F0718C04}" ShortID="539189698">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="bossDashPrep1" ID="{F2BBCE69-3351-4263-BBE6-E18B713AA6C5}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0199733688415446"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.327563249001332"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.00266311584554"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>bossDashPrep1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="585355626"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="bossDashPrep1" ID="{F2BBCE69-3351-4263-BBE6-E18B713AA6C5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="bossDashPrep2" ID="{F0A61F39-408B-4435-B282-C7A6FC9A1CFF}" ShortID="100461158">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="bossDashPrep2" ID="{B2D75689-63CB-4AC3-96D7-A955B17C9686}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0119840213049268"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.012982689747004"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.348535286284953"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.00665778961385"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>bossDashPrep2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="899501177"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="bossDashPrep2" ID="{B2D75689-63CB-4AC3-96D7-A955B17C9686}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="bossDashPrep3" ID="{6162CF0B-0A8E-4BD7-83F1-C0663F379748}" ShortID="298121958">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="bossDashPrep3" ID="{FC5FED09-B236-457C-8A59-2051BF172701}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0179760319573901"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.012982689747004"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.237683089214381"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.999667110519307"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>bossDashPrep3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="887227802"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="bossDashPrep3" ID="{FC5FED09-B236-457C-8A59-2051BF172701}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="bossDashPrep4" ID="{DD4F66AF-8309-4FCA-94BA-B42B36ACB4D9}" ShortID="1016249927">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="bossDashPrep4" ID="{D0A9B194-2A3A-421A-871B-EEDA6F0E3438}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0319573901464714"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0149800266311585"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.220705725699068"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.00266311584554"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>bossDashPrep4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="823524682"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="bossDashPrep4" ID="{D0A9B194-2A3A-421A-871B-EEDA6F0E3438}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="enemyWalker" ID="{17BA4D69-AA10-43D5-8879-20226CB328AC}" ShortID="538825015">

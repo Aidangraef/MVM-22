@@ -81,10 +81,41 @@
 						</Folder>
 						<Folder Name="Boss" ID="{673782DA-EA75-473C-90CA-0382392A681A}" ShortID="567491398">
 							<ChildrenList>
-								<Event Name="bossDash" ID="{A40A8CED-20D1-4951-B514-3B07A7E29995}"/>
-								<Event Name="bossShoot" ID="{9F8E5130-BD81-4643-99CF-1449BD10D7E4}"/>
+								<Event Name="bossDash" ID="{A40A8CED-20D1-4951-B514-3B07A7E29995}">
+									<ChildrenList>
+										<Action Name="" ID="{DA5CA726-B0FF-4CB9-98A1-932F77861E6C}" ShortID="361857377">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="bossDash" ID="{58A643D2-D096-426B-A3E1-C4B8EB9F4F31}" WorkUnitID="{B8BA10E1-B5D3-4F09-B274-CF08CAB885D4}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="bossShoot" ID="{9F8E5130-BD81-4643-99CF-1449BD10D7E4}">
+									<ChildrenList>
+										<Action Name="" ID="{18C211C4-B6BA-4D0C-A8DC-7672C74E173A}" ShortID="207939397">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="bossShoot" ID="{7D6508C0-4783-471A-B416-4CE7412EAED0}" WorkUnitID="{B8BA10E1-B5D3-4F09-B274-CF08CAB885D4}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 								<Event Name="bossHurt" ID="{BA34EDFC-21DD-4163-A22E-B95366496E84}"/>
 								<Event Name="bossDie" ID="{28BC75AC-85D2-4272-BF1E-C2906ECD5BE1}"/>
+								<Event Name="bossDashPrep" ID="{89080740-E6F6-49B3-B430-13F0A69F7E87}">
+									<ChildrenList>
+										<Action Name="" ID="{9FF55C94-E03C-4EE6-8B51-790E86158A20}" ShortID="22044434">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="bossDashPrep" ID="{40D0908A-0233-48CE-B280-7B9799B68440}" WorkUnitID="{B8BA10E1-B5D3-4F09-B274-CF08CAB885D4}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Shooter" ID="{0B2785AD-8309-4D77-ABEB-FEC430A83340}" ShortID="468082894">

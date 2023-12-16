@@ -78,7 +78,7 @@ public class Boss : MonoBehaviour
                 if(attackNum <= 50)
                 {
                     animator.SetTrigger("Attack1");
-                    AkSoundEngine.PostEvent("bossDash", gameObject);
+                    //AkSoundEngine.PostEvent("bossDash", gameObject);
                     idleCollider.enabled = false;
                     attack1Collider.SetActive(true);
 
@@ -86,7 +86,7 @@ public class Boss : MonoBehaviour
                 else if (attackNum > 50)
                 {
                     animator.SetTrigger("Attack2");
-                    AkSoundEngine.PostEvent("bossShoot", gameObject);
+                    //AkSoundEngine.PostEvent("bossShoot", gameObject);
                 }
             }
         }
@@ -106,10 +106,9 @@ public class Boss : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        AkSoundEngine.PostEvent("bossHurt", gameObject);
+        
 
         hp -= damage;
-        StartCoroutine(DoFlashRed());
 
         if (hp < 0)
         {
@@ -123,6 +122,7 @@ public class Boss : MonoBehaviour
             //Destroy(gameObject);
         }
 
+        else { AkSoundEngine.PostEvent("bossHurt", gameObject); StartCoroutine(DoFlashRed()); }
     }
 
     IEnumerator DoFlashRed()

@@ -56,7 +56,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{9A5F5A11-D7D4-921D-7C24-12A3E9684B53}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{13E68790-2D91-E8BA-7879-53DB49EC0627}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -144,6 +144,10 @@
 					<ShortName>flyerHurt.wav</ShortName>
 					<CachePath>SFX/flyerHurt_144F5554.wem</CachePath>
 				</File>
+				<File Id="260407685" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>bossDash.wav</ShortName>
+					<CachePath>SFX/bossDash_835714D9.wem</CachePath>
+				</File>
 				<File Id="267454052" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>flyerDie.wav</ShortName>
 					<CachePath>SFX/flyerDie_DF1E08DA.wem</CachePath>
@@ -224,9 +228,13 @@
 					<ShortName>gravShot.wav</ShortName>
 					<CachePath>SFX/gravShot_0F91FE10.wem</CachePath>
 				</File>
+				<File Id="585355626" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>bossDashPrep1.wav</ShortName>
+					<CachePath>SFX/bossDashPrep1_35BB502C.wem</CachePath>
+				</File>
 				<File Id="615125432" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerHeal.wav</ShortName>
-					<CachePath>SFX/playerHeal_3C7219DB.wem</CachePath>
+					<CachePath>SFX/playerHeal_1F389BE3.wem</CachePath>
 				</File>
 				<File Id="618925761" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>buttonClick.wav</ShortName>
@@ -272,6 +280,10 @@
 					<ShortName>boxCollisions-002.wav</ShortName>
 					<CachePath>SFX/boxCollisions-002_835714D9.wem</CachePath>
 				</File>
+				<File Id="823524682" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>bossDashPrep4.wav</ShortName>
+					<CachePath>SFX/bossDashPrep4_F15E65C6.wem</CachePath>
+				</File>
 				<File Id="831640051" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerJump-005.wav</ShortName>
 					<CachePath>SFX/playerJump-005_835714D9.wem</CachePath>
@@ -292,6 +304,14 @@
 					<ShortName>gravelSteps-011.wav</ShortName>
 					<CachePath>SFX/gravelSteps-011_0C86ACC9.wem</CachePath>
 				</File>
+				<File Id="887227802" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>bossDashPrep3.wav</ShortName>
+					<CachePath>SFX/bossDashPrep3_087DE36D.wem</CachePath>
+				</File>
+				<File Id="899501177" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>bossDashPrep2.wav</ShortName>
+					<CachePath>SFX/bossDashPrep2_74B3B455.wem</CachePath>
+				</File>
 				<File Id="937849871" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>dialogueBark4.wav</ShortName>
 					<CachePath>SFX/dialogueBark4_835714D9.wem</CachePath>
@@ -303,6 +323,10 @@
 				<File Id="944634720" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerJump-001.wav</ShortName>
 					<CachePath>SFX/playerJump-001_6F021B69.wem</CachePath>
+				</File>
+				<File Id="949094695" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>angelShoot.wav</ShortName>
+					<CachePath>SFX/angelShoot_835714D9.wem</CachePath>
 				</File>
 				<File Id="956124736" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>gravelSteps-008.wav</ShortName>
@@ -339,7 +363,19 @@
 						<MediaRef Id="94906913"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="689081418" Name="bossDash" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="689081418" Name="bossDash" MaxAttenuation="100" DurationType="OneShot" DurationMin="11.840062" DurationMax="11.840062">
+					<MediaRefs>
+						<MediaRef Id="260407685"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4238024583" Name="bossDashPrep" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.6302203" DurationMax="0.81657755">
+					<MediaRefs>
+						<MediaRef Id="585355626"/>
+						<MediaRef Id="823524682"/>
+						<MediaRef Id="887227802"/>
+						<MediaRef Id="899501177"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1110175000" Name="bossDie" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1186261430" Name="bossDoorOpen" MaxAttenuation="100" DurationType="OneShot" DurationMin="2.806924" DurationMax="2.806924">
 					<MediaRefs>
@@ -347,7 +383,11 @@
 					</MediaRefs>
 				</Event>
 				<Event Id="1437879705" Name="bossHurt" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="1284320407" Name="bossShoot" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1284320407" Name="bossShoot" MaxAttenuation="100" DurationType="OneShot" DurationMin="1.4182105" DurationMax="1.5465693">
+					<MediaRefs>
+						<MediaRef Id="949094695"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2978173602" Name="bossStart" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<ActionSetState>
 						<ActionSetStateEntry GroupId="1687686957" Id="3080698126" Name="firstBoss"/>
@@ -712,5 +752,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{0C601CE6-08CE-44D0-0A7E-EDE5F5F9E0CF}</FileHash>
+	<FileHash>{0B4A8158-A81C-4E45-68DB-B4AB114D8864}</FileHash>
 </SoundBanksInfo>

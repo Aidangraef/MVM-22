@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID AMBIENTSTART = 1818308409U;
         static const AkUniqueID BOSSDASH = 689081418U;
+        static const AkUniqueID BOSSDASHPREP = 4238024583U;
         static const AkUniqueID BOSSDIE = 1110175000U;
         static const AkUniqueID BOSSDOOROPEN = 1186261430U;
         static const AkUniqueID BOSSHURT = 1437879705U;

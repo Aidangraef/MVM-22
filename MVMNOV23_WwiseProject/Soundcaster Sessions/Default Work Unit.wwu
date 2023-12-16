@@ -30,6 +30,10 @@
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="ambientStart" ID="{EDE3D134-7FD8-4CF7-9932-10396562745B}" WorkUnitID="{C9FD24E4-D0C3-47F1-A067-3A76C132B255}"/>
+							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="firstUpgrade" ID="{AEE703B6-2FE7-45A9-856F-6571A48D8B9F}" WorkUnitID="{A711D942-7CDD-48AD-B558-6ABA2E148970}"/>
 							<Position X="1" Y="4"/>
 						</Module>
@@ -40,6 +44,10 @@
 						<Module>
 							<ObjectRef Name="secondUpgrade" ID="{F95CBFA6-86B5-48B5-ABA6-B1760DFF1A17}" WorkUnitID="{A711D942-7CDD-48AD-B558-6ABA2E148970}"/>
 							<Position X="2" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="bossShoot" ID="{9F8E5130-BD81-4643-99CF-1449BD10D7E4}" WorkUnitID="{65A5EE05-15E9-4608-8C72-AA45659CACF6}"/>
+							<Position X="2" Y="6"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="playerMove" ID="{BD53E069-F8CF-4F5D-82BC-424FDAFB8DB8}" WorkUnitID="{A5316B78-3C56-4BA3-B621-613D151278FB}"/>
@@ -73,8 +81,8 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="menu" ID="{F6D66972-4EA5-47FB-8416-6B2244084E37}"/>
-						<CurrentStateRef Name="zeroUpgrade" ID="{2C00ED9C-AB4E-49E6-B937-E5E01C426DEE}"/>
+						<CurrentStateRef Name="firstBoss" ID="{54B8B071-18D7-4BFB-BABD-DE098247327C}"/>
+						<CurrentStateRef Name="fourthUpgrade" ID="{E2700F4A-E8B3-4926-BFD3-73DA29CB0D41}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
