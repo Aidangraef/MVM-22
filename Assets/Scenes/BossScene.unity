@@ -2294,14 +2294,14 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.0206422
-    width: 0.99999994
-    height: 0.95792717
+    y: 0.10091743
+    width: 1
+    height: 0.7979501
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 11.25
+  orthographic size: 8.4375
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -5982,7 +5982,7 @@ MonoBehaviour:
   inAttack: 0
   BulletPrefab: {fileID: 1213562688942777674, guid: 8dc6a75ba40bbf8459dcf9dd13cbf0bd, type: 3}
   playDelay: 2.5
-  fadeEffect: {fileID: 0}
+  fadeEffect: {fileID: 1621361779}
 --- !u!114 &1372603809
 MonoBehaviour:
   m_ObjectHideFlags: 0

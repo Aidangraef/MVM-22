@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Boss : MonoBehaviour
 {
-    int hp = 100;
+    int hp = 60;
 
     float attackTimer; // used to put time delays between attacks
     public bool inAttack = false;
@@ -27,13 +27,14 @@ public class Boss : MonoBehaviour
     {
 
         yield return new WaitForSeconds(playDelay);
+        Destroy(gameObject);
         SceneManager.LoadScene(3);
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        AkSoundEngine.PostEvent("bossStart", gameObject);
+        AkSoundEngine.PostEvent("bossStart", this.gameObject);
 
         attackTimer = Random.Range(1f, 3f);
         animator = GetComponent<Animator>();
@@ -80,6 +81,7 @@ public class Boss : MonoBehaviour
                     animator.SetTrigger("Attack1");
                     //AkSoundEngine.PostEvent("bossDash", gameObject);
                     idleCollider.enabled = false;
+                 //maybe delay here?
                     attack1Collider.SetActive(true);
 
                 }
@@ -106,8 +108,6 @@ public class Boss : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        
-
         hp -= damage;
 
         if (hp < 0)
@@ -119,7 +119,7 @@ public class Boss : MonoBehaviour
             fadeEffect.TargetAlpha = 1f;
             //SceneManager.LoadScene(3);
             StartCoroutine(WaitAndEndGame());
-            //Destroy(gameObject);
+            attackTimer = 10f;
         }
 
         else { AkSoundEngine.PostEvent("bossHurt", gameObject); StartCoroutine(DoFlashRed()); }
