@@ -103,8 +103,28 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="bossHurt" ID="{BA34EDFC-21DD-4163-A22E-B95366496E84}"/>
-								<Event Name="bossDie" ID="{28BC75AC-85D2-4272-BF1E-C2906ECD5BE1}"/>
+								<Event Name="bossHurt" ID="{BA34EDFC-21DD-4163-A22E-B95366496E84}">
+									<ChildrenList>
+										<Action Name="" ID="{9D91E104-FBB3-41AF-8D52-9C9EEACB2401}" ShortID="73534270">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="bossHurt" ID="{29876A36-06DE-4D0E-8638-D7D4162D4534}" WorkUnitID="{B8BA10E1-B5D3-4F09-B274-CF08CAB885D4}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="bossDie" ID="{28BC75AC-85D2-4272-BF1E-C2906ECD5BE1}">
+									<ChildrenList>
+										<Action Name="" ID="{BC229340-1CB1-4584-B50A-41DA069C11BC}" ShortID="354265786">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="bossDie" ID="{A6B682B1-2902-4EED-9C22-517734C91B8B}" WorkUnitID="{B8BA10E1-B5D3-4F09-B274-CF08CAB885D4}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 								<Event Name="bossDashPrep" ID="{89080740-E6F6-49B3-B430-13F0A69F7E87}">
 									<ChildrenList>
 										<Action Name="" ID="{9FF55C94-E03C-4EE6-8B51-790E86158A20}" ShortID="22044434">

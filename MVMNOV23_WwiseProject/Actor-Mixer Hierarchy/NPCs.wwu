@@ -362,8 +362,40 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="bossHurt" ID="{B3D340B7-5FE9-44C9-8D80-70659B79D408}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0221107967154905"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0468748890368398"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.400647636484687"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>bossHurt.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="312846028"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="bossHurt" ID="{B3D340B7-5FE9-44C9-8D80-70659B79D408}" Platform="Linked"/>
+									</ActiveSourceList>
 								</Sound>
 								<Sound Name="bossDie" ID="{A6B682B1-2902-4EED-9C22-517734C91B8B}" ShortID="946974630">
+									<PropertyList>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>7</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{19084188-EB88-440D-9156-BDB30CC1BA97}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
@@ -372,6 +404,18 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="bossDie" ID="{AB0AEADA-F481-4858-8030-0BF6F4CEEEBB}">
+											<Language>SFX</Language>
+											<AudioFile>bossDie.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="993765408"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="bossDie" ID="{AB0AEADA-F481-4858-8030-0BF6F4CEEEBB}" Platform="Linked"/>
+									</ActiveSourceList>
 								</Sound>
 								<Sound Name="bossShoot" ID="{7D6508C0-4783-471A-B416-4CE7412EAED0}" ShortID="248875607">
 									<PropertyList>

@@ -56,7 +56,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{13E68790-2D91-E8BA-7879-53DB49EC0627}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{590B287E-6FD2-8D4F-12EC-48E259CF6437}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -167,6 +167,10 @@
 				<File Id="304174743" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>gravelSteps-012.wav</ShortName>
 					<CachePath>SFX/gravelSteps-012_66369849.wem</CachePath>
+				</File>
+				<File Id="312846028" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>bossHurt.wav</ShortName>
+					<CachePath>SFX/bossHurt_0A766B87.wem</CachePath>
 				</File>
 				<File Id="323749564" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerJump-002.wav</ShortName>
@@ -344,6 +348,10 @@
 					<ShortName>gravitySustain.wav</ShortName>
 					<CachePath>SFX/gravitySustain_6BED68B8.wem</CachePath>
 				</File>
+				<File Id="993765408" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>bossDie.wav</ShortName>
+					<CachePath>SFX/bossDie_835714D9.wem</CachePath>
+				</File>
 				<File Id="1012192840" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_UI_Start.wav</ShortName>
 					<CachePath>SFX/SFX_UI_Start_835714D9.wem</CachePath>
@@ -376,13 +384,21 @@
 						<MediaRef Id="899501177"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1110175000" Name="bossDie" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1110175000" Name="bossDie" MaxAttenuation="100" DurationType="OneShot" DurationMin="1.4827292" DurationMax="1.4827292">
+					<MediaRefs>
+						<MediaRef Id="993765408"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1186261430" Name="bossDoorOpen" MaxAttenuation="100" DurationType="OneShot" DurationMin="2.806924" DurationMax="2.806924">
 					<MediaRefs>
 						<MediaRef Id="174623387"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1437879705" Name="bossHurt" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1437879705" Name="bossHurt" MaxAttenuation="100" DurationType="OneShot" DurationMin="0.40064764" DurationMax="0.40064764">
+					<MediaRefs>
+						<MediaRef Id="312846028"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1284320407" Name="bossShoot" MaxAttenuation="100" DurationType="OneShot" DurationMin="1.4182105" DurationMax="1.5465693">
 					<MediaRefs>
 						<MediaRef Id="949094695"/>
@@ -752,5 +768,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{2FAF3E07-832B-26BE-17C7-9940E6B1F68C}</FileHash>
+	<FileHash>{AC8304BC-02C9-863D-DB4E-E7DDC655E46C}</FileHash>
 </SoundBanksInfo>
