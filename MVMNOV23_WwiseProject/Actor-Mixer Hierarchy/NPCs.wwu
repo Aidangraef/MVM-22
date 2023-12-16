@@ -342,6 +342,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="bossDash" ID="{7FD850F4-F001-4467-88C3-78F1F3F53847}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.472971870838881"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.50675091544608"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>bossDash.wav</AudioFile>
 											<MediaIDList>
@@ -395,6 +400,11 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -437,6 +447,11 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -474,6 +489,11 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -497,6 +517,7 @@
 												<AudioFileSource Name="bossDashPrep1" ID="{F2BBCE69-3351-4263-BBE6-E18B713AA6C5}">
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="0.0199733688415446"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.012982689747004"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.327563249001332"/>
 														<Property Name="TrimEnd" Type="Real64" Value="1.00266311584554"/>

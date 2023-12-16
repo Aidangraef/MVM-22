@@ -156,6 +156,16 @@
 				</Event>
 				<Event Name="toCredits" ID="{0BA93F73-8177-42CA-9805-753BCF267995}">
 					<ChildrenList>
+						<Action Name="" ID="{8D99AEA4-FA50-4662-BE7D-D279998F33C6}" ShortID="387871412">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ambientPH" ID="{21E1D414-98E6-49A7-90CF-FFA62DCF2FB4}" WorkUnitID="{AE487B5E-8469-4E13-BC1F-48A4FBC7CAF4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{EAA74E6E-E02A-46F4-A7A2-DE28BBFCF2CB}" ShortID="457041549">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="22"/>
@@ -170,6 +180,17 @@
 				</Event>
 				<Event Name="toMenu" ID="{56163725-2B50-4A21-B1F1-69F353DA9988}">
 					<ChildrenList>
+						<Action Name="" ID="{DB7EBED3-D7BB-48C2-A6B9-298753E477B1}" ShortID="42029817">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ambientPH" ID="{21E1D414-98E6-49A7-90CF-FFA62DCF2FB4}" WorkUnitID="{AE487B5E-8469-4E13-BC1F-48A4FBC7CAF4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{AD58FA1A-CFA3-4DE7-BE6B-5E1459A8D311}" ShortID="700754155">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="22"/>

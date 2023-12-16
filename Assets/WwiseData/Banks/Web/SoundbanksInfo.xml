@@ -56,7 +56,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{590B287E-6FD2-8D4F-12EC-48E259CF6437}">
+		<SoundBank Id="1646894747" Type="User" Language="SFX" Hash="{60218B61-68DE-E18A-FCB1-143DCC596CEA}">
 			<ShortName>GameplayLoop</ShortName>
 			<Path>GameplayLoop.bnk</Path>
 			<Media>
@@ -146,7 +146,7 @@
 				</File>
 				<File Id="260407685" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>bossDash.wav</ShortName>
-					<CachePath>SFX/bossDash_835714D9.wem</CachePath>
+					<CachePath>SFX/bossDash_4D143E14.wem</CachePath>
 				</File>
 				<File Id="267454052" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>flyerDie.wav</ShortName>
@@ -170,7 +170,7 @@
 				</File>
 				<File Id="312846028" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>bossHurt.wav</ShortName>
-					<CachePath>SFX/bossHurt_0A766B87.wem</CachePath>
+					<CachePath>SFX/bossHurt_999C33CD.wem</CachePath>
 				</File>
 				<File Id="323749564" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerJump-002.wav</ShortName>
@@ -234,7 +234,7 @@
 				</File>
 				<File Id="585355626" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>bossDashPrep1.wav</ShortName>
-					<CachePath>SFX/bossDashPrep1_35BB502C.wem</CachePath>
+					<CachePath>SFX/bossDashPrep1_00BAFEB3.wem</CachePath>
 				</File>
 				<File Id="615125432" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>playerHeal.wav</ShortName>
@@ -371,7 +371,7 @@
 						<MediaRef Id="94906913"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="689081418" Name="bossDash" MaxAttenuation="100" DurationType="OneShot" DurationMin="11.840062" DurationMax="11.840062">
+				<Event Id="689081418" Name="bossDash" MaxAttenuation="100" DurationType="OneShot" DurationMin="2.5067508" DurationMax="2.5067508">
 					<MediaRefs>
 						<MediaRef Id="260407685"/>
 					</MediaRefs>
@@ -768,5 +768,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{97FF5E0A-DC80-F993-07AC-F1230AA52EAF}</FileHash>
+	<FileHash>{36588283-BA14-2077-C8A7-780A9FB199E8}</FileHash>
 </SoundBanksInfo>
