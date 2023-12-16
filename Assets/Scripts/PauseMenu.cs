@@ -25,7 +25,7 @@ public class PauseMenu : MonoBehaviour
             isPaused = true;
         }
         else isPaused = false; */
-        if (Input.GetKeyDown(KeyCode.Escape) & (isPaused == false))
+        if (Input.GetKeyDown(KeyCode.Tab) & (isPaused == false))
         {
             pauseMenu.SetActive(true);
             isPaused = true;
