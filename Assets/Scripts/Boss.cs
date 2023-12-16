@@ -80,9 +80,7 @@ public class Boss : MonoBehaviour
                 {
                     animator.SetTrigger("Attack1");
                     //AkSoundEngine.PostEvent("bossDash", gameObject);
-                    idleCollider.enabled = false;
-                 //maybe delay here?
-                    attack1Collider.SetActive(true);
+                    StartCoroutine(DoAttack1());
 
                 }
                 else if (attackNum > 50)
@@ -92,6 +90,14 @@ public class Boss : MonoBehaviour
                 }
             }
         }
+    }
+
+    IEnumerator DoAttack1()
+    {
+        yield return new WaitForSeconds(0.3f);
+        idleCollider.enabled = false;
+        attack1Collider.SetActive(true);
+
     }
 
     public void ExitAttack()
