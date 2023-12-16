@@ -125,7 +125,8 @@ public class Boss : MonoBehaviour
             fadeEffect.TargetAlpha = 1f;
             //SceneManager.LoadScene(3);
             StartCoroutine(WaitAndEndGame());
-            attackTimer = 10f;
+            attackTimer = 100000f;
+            animator.SetTrigger("Die");
         }
 
         else { AkSoundEngine.PostEvent("bossHurt", gameObject); StartCoroutine(DoFlashRed()); }
