@@ -1,6 +1,182 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{65A5EE05-15E9-4608-8C72-AA45659CACF6}" SchemaVersion="110" RootDocumentID="{0FDCE87A-3E1C-4B5A-8A91-CD3C3E4E6159}" ParentDocumentID="{0FDCE87A-3E1C-4B5A-8A91-CD3C3E4E6159}">
 	<Events>
-		<WorkUnit Name="NPCs" ID="{65A5EE05-15E9-4608-8C72-AA45659CACF6}" OwnerID="{0FDCE87A-3E1C-4B5A-8A91-CD3C3E4E6159}" PersistMode="Nested"/>
+		<WorkUnit Name="NPCs" ID="{65A5EE05-15E9-4608-8C72-AA45659CACF6}" OwnerID="{0FDCE87A-3E1C-4B5A-8A91-CD3C3E4E6159}" PersistMode="Nested">
+			<ChildrenList>
+				<Folder Name="Enemies" ID="{D95917D2-27A2-42B4-9273-F593E21FE335}" ShortID="724512094">
+					<ChildrenList>
+						<Folder Name="Walker" ID="{4E7454BC-FBA2-405C-9967-882932094876}" ShortID="878284861">
+							<ChildrenList>
+								<Event Name="walkerHurt" ID="{C3D5B43C-9392-4A50-9E03-6A075285D262}">
+									<ChildrenList>
+										<Action Name="" ID="{2B31192A-8856-4A27-B657-8F3360EFB6E5}" ShortID="890763929">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="walkerHurt" ID="{157DE0BB-43A6-4373-9934-DC187ACC81A1}" WorkUnitID="{B8BA10E1-B5D3-4F09-B274-CF08CAB885D4}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="walkerDie" ID="{06EC8E98-862E-490B-B2B8-9FA0A268FD85}">
+									<ChildrenList>
+										<Action Name="" ID="{30EA4A68-B13F-403C-8864-AD2B6EF23B8C}" ShortID="59481896">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="walkerDie" ID="{624E8306-44B0-42EC-88EE-342D21D1E188}" WorkUnitID="{B8BA10E1-B5D3-4F09-B274-CF08CAB885D4}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="walkerIdle" ID="{3B85E574-5887-498F-86BF-F2ED2E294D71}">
+									<ChildrenList>
+										<Action Name="" ID="{3A190A6D-06AB-4CF1-A283-1D0F9FF15047}" ShortID="149784825">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="walkerIdleStep" ID="{8A69EC96-A824-4E67-A81B-36B74DDFF11B}" WorkUnitID="{B8BA10E1-B5D3-4F09-B274-CF08CAB885D4}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Flyer" ID="{F36B75D1-CD35-487F-9E5E-3452FE91DCB9}" ShortID="446283088">
+							<ChildrenList>
+								<Event Name="flyerHurt" ID="{0A88C148-26FD-4BDF-84CD-5C971A688B12}">
+									<ChildrenList>
+										<Action Name="" ID="{AFE59A07-1B8F-4F25-AC9A-CE3137B577FE}" ShortID="937639027">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="flyerHurt" ID="{2A3565A1-3868-48CE-A207-093C181A962D}" WorkUnitID="{B8BA10E1-B5D3-4F09-B274-CF08CAB885D4}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="flyerDie" ID="{8B3025D3-469A-4638-BC83-A3E1B7568C8E}">
+									<ChildrenList>
+										<Action Name="" ID="{526644C8-3E87-4066-8AD6-BD81D5D618D6}" ShortID="338368184">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="flyerDie" ID="{19337F19-9501-4C0C-B9FE-0E7846CA7A75}" WorkUnitID="{B8BA10E1-B5D3-4F09-B274-CF08CAB885D4}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="flyerIdle" ID="{0DF85BC3-6193-489B-84D9-F8A01E726259}">
+									<ChildrenList>
+										<Action Name="" ID="{8C8E2CE5-37EB-4B41-8AF7-0CD638CFBC4B}" ShortID="895473269">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="flyerIdleFlap" ID="{3305F8D5-4CF9-43B5-B995-3F594CF20B85}" WorkUnitID="{B8BA10E1-B5D3-4F09-B274-CF08CAB885D4}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Boss" ID="{673782DA-EA75-473C-90CA-0382392A681A}" ShortID="567491398">
+							<ChildrenList>
+								<Event Name="bossDash" ID="{A40A8CED-20D1-4951-B514-3B07A7E29995}">
+									<ChildrenList>
+										<Action Name="" ID="{DA5CA726-B0FF-4CB9-98A1-932F77861E6C}" ShortID="361857377">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="bossDash" ID="{58A643D2-D096-426B-A3E1-C4B8EB9F4F31}" WorkUnitID="{B8BA10E1-B5D3-4F09-B274-CF08CAB885D4}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="bossShoot" ID="{9F8E5130-BD81-4643-99CF-1449BD10D7E4}">
+									<ChildrenList>
+										<Action Name="" ID="{18C211C4-B6BA-4D0C-A8DC-7672C74E173A}" ShortID="207939397">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="bossShoot" ID="{7D6508C0-4783-471A-B416-4CE7412EAED0}" WorkUnitID="{B8BA10E1-B5D3-4F09-B274-CF08CAB885D4}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="bossHurt" ID="{BA34EDFC-21DD-4163-A22E-B95366496E84}">
+									<ChildrenList>
+										<Action Name="" ID="{9D91E104-FBB3-41AF-8D52-9C9EEACB2401}" ShortID="73534270">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="bossHurt" ID="{29876A36-06DE-4D0E-8638-D7D4162D4534}" WorkUnitID="{B8BA10E1-B5D3-4F09-B274-CF08CAB885D4}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="bossDie" ID="{28BC75AC-85D2-4272-BF1E-C2906ECD5BE1}">
+									<ChildrenList>
+										<Action Name="" ID="{BC229340-1CB1-4584-B50A-41DA069C11BC}" ShortID="354265786">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="bossDie" ID="{A6B682B1-2902-4EED-9C22-517734C91B8B}" WorkUnitID="{B8BA10E1-B5D3-4F09-B274-CF08CAB885D4}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="bossDashPrep" ID="{89080740-E6F6-49B3-B430-13F0A69F7E87}">
+									<ChildrenList>
+										<Action Name="" ID="{9FF55C94-E03C-4EE6-8B51-790E86158A20}" ShortID="22044434">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="bossDashPrep" ID="{40D0908A-0233-48CE-B280-7B9799B68440}" WorkUnitID="{B8BA10E1-B5D3-4F09-B274-CF08CAB885D4}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Shooter" ID="{0B2785AD-8309-4D77-ABEB-FEC430A83340}" ShortID="468082894">
+							<ChildrenList>
+								<Event Name="pewShoot" ID="{D06B361A-6FBE-4ED2-9348-0F8D1EEF3098}">
+									<ChildrenList>
+										<Action Name="" ID="{220F3836-421E-4A0D-8ABA-4CDC683BBED3}" ShortID="483484877">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="bulletShot" ID="{9E2AB0EE-1544-4CFC-96CD-504784E6B3F4}" WorkUnitID="{B8BA10E1-B5D3-4F09-B274-CF08CAB885D4}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Event Name="dialoguePlay" ID="{4B313DA8-A270-41D3-B985-CEBA8B830F5B}">
+					<ChildrenList>
+						<Action Name="" ID="{327D1218-94A0-4F6B-9D56-1569AD02AE57}" ShortID="873284460">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="dialogueBark" ID="{3BDF5E10-8A7C-4B2A-A814-B63896512E26}" WorkUnitID="{461DD406-5E4B-4854-B2D4-130E64075729}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{FE416A10-573C-4D84-A13B-715961D0E804}" ShortID="304482738">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="dialogueBark" ID="{3BDF5E10-8A7C-4B2A-A814-B63896512E26}" WorkUnitID="{461DD406-5E4B-4854-B2D4-130E64075729}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

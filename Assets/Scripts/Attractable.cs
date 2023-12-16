@@ -44,6 +44,7 @@ public class Attractable : MonoBehaviour
     private void FixedUpdate()
     {
         if (blackHole == null) return; // don't do anything if no black hole
+        if (gameObject.tag == "Bullet" && !inventory.gameObject.GetComponent<PlayerMovement>().absorbBulletsUnlocked) return; // don't get absorbed if you are a bullet and the unlock hasn't been grabbed
 
         float magsqr; // offset squared between object and black hole
         Vector3 offset; // distance to black hole
@@ -62,11 +63,19 @@ public class Attractable : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        // play sound
+        if (gameObject.tag == "Box" && attractionStrength == 0) AkSoundEngine.PostEvent("boxCollide", this.gameObject);
+
         // only store storable objects
         if (!storable) return;
 
         // check for collision with black hole
         if (collision.gameObject.tag != "Black Hole") return;
+
+        // only store if inventory is not full
+        if (inventory.inventory.Count >= 10) return;
+
+        if (gameObject.tag == "Bullet" && !inventory.gameObject.GetComponent<PlayerMovement>().absorbBulletsUnlocked) return; // don't get absorbed if you are a bullet and the unlock hasn't been grabbed
 
         // don't start the coroutine if it is already happening
         if (shrinking) return;
@@ -77,6 +86,8 @@ public class Attractable : MonoBehaviour
 
     public IEnumerator DoShrink()
     {
+        AkSoundEngine.PostEvent("gravVac", this.gameObject);
+
         for(int i = 0; i < 20; i++)
         {
             Vector3 newScale = transform.localScale;
@@ -113,6 +124,7 @@ public class Attractable : MonoBehaviour
         direction.Normalize();
 
         // shoot towards mouse
+        rb.velocity = Vector2.zero;
         rb.AddForce(direction * shootingForce, ForceMode2D.Impulse);
     }
 

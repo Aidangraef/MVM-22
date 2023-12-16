@@ -1,6 +1,1476 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{39959547-F85D-43D0-8E81-38867B5CBC0D}" SchemaVersion="110">
 	<InteractiveMusic>
-		<WorkUnit Name="Default Work Unit" ID="{39959547-F85D-43D0-8E81-38867B5CBC0D}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{39959547-F85D-43D0-8E81-38867B5CBC0D}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicSwitchContainer Name="musicSwitcher" ID="{98B2DDC8-38DB-408C-85F4-0BD2C06E64F2}" ShortID="86742543">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Music" ID="{28C8B42B-4786-499B-8837-8E74A2E5B722}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicPlaylistContainer Name="menuTheme" ID="{C7AE5362-959F-4165-93F8-1405DC3AC98E}" ShortID="337413297">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="Menu Theme_Metroidvania Month Jam_11Dec2023" ID="{779D39F8-C5AA-4B0E-8E66-5278A99A0BC1}" ShortID="555865256">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="54000"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Menu Theme_Metroidvania Month Jam_11Dec2023" ID="{E058E842-99E7-47E1-8BED-94331A249C24}" ShortID="1041417839">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Menu Theme_Metroidvania Month Jam_11Dec2023" ID="{64699C9A-4EF5-4BB5-A59C-B818A3B8FBB5}">
+													<Language>SFX</Language>
+													<AudioFile>Menu Theme_Metroidvania Month Jam_11Dec2023.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="141013452"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{C4FCDDB3-19E6-4FF8-B2BA-91FACF98F7D6}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{F24351D1-4E0C-4064-97B3-1BD13B4BE1CB}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Menu Theme_Metroidvania Month Jam_11Dec2023" ID="{485ED4A8-DDCB-401D-B18C-B959605BECD3}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="54000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Menu Theme_Metroidvania Month Jam_11Dec2023" ID="{64699C9A-4EF5-4BB5-A59C-B818A3B8FBB5}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{69B1BC1A-45BC-481F-BE0D-C2D5572E19DB}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{67276EAA-F2F2-4A16-8DAF-71620AAC3984}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="50158.6867305062"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{CE19C364-C587-4CE2-8A8E-44DC9540114E}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{D2ECE852-F621-4362-92C7-EE09D999EDA8}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{69EA0D35-2C18-4722-A29C-964EE56C7AAC}" ShortID="372976811">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{31DBEE9C-B02B-4BDE-8EF9-6F695ADBA52D}" ShortID="806983469">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="Menu Theme_Metroidvania Month Jam_11Dec2023" ID="{779D39F8-C5AA-4B0E-8E66-5278A99A0BC1}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="mainThemeU0" ID="{281965B6-B94D-49BA-90FA-B80696D3D846}" ShortID="722882411">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="Level Theme Layer 1_Metroidvania Month Jam_11Dec2023" ID="{B1EABAD0-D964-420B-B736-73EDEA390A2C}" ShortID="168247664">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="147331.267605634"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Level Theme Layer 1_Metroidvania Month Jam_11Dec2023" ID="{D8888227-C56D-4C02-AC58-ABF2A94BFE6E}" ShortID="111046459">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Level Theme Layer 1_Metroidvania Month Jam_11Dec2023" ID="{93D07E0B-977A-4AD0-BB2C-6E6C87283263}">
+													<Language>SFX</Language>
+													<AudioFile>Level Theme Layer 1_Metroidvania Month Jam_11Dec2023.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="323964908"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{CAD8FB2D-7805-428D-860D-BE71EB56E25E}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{72388123-01F5-40B5-8C11-43BE3DE6A799}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Level Theme Layer 1_Metroidvania Month Jam_11Dec2023" ID="{71AF61CC-9A33-485F-9E24-A7B40898A462}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="147000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Level Theme Layer 1_Metroidvania Month Jam_11Dec2023" ID="{93D07E0B-977A-4AD0-BB2C-6E6C87283263}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{EDE514DB-69D6-497D-B093-95162B3FDEE8}">
+														<PropertyList>
+															<Property Name="TimeMs" Type="Real64" Value="1573.52112676056"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{DFE8594D-DEDD-4469-9A21-650DFFCA20D7}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="141699.718309859"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{20550B2C-27E9-48AD-A25E-6ADA4C2B303B}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{31A75DA0-A807-4AAF-B665-18E00664EE05}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{E4E2F1CE-F01D-45D0-9DE0-21CC928B46A0}" ShortID="187566449">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{D49CCC7C-1A0C-4ECA-A5C3-4C281456835D}" ShortID="67400688">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="Level Theme Layer 1_Metroidvania Month Jam_11Dec2023" ID="{B1EABAD0-D964-420B-B736-73EDEA390A2C}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="mainThemeU1" ID="{97892768-02D5-43E1-90AE-527776DD815C}" ShortID="741898993">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="Level Theme Layer 2_Metroidvania Month Jam_11Dec2023" ID="{13DF5708-57A2-43B5-B7E3-02E31EC85C0F}" ShortID="63310295">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="147000"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Level Theme Layer 2_Metroidvania Month Jam_11Dec2023" ID="{3C3965D3-FBE8-49CB-AA30-BE60614D188B}" ShortID="751152087">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Level Theme Layer 2_Metroidvania Month Jam_11Dec2023" ID="{7CA660A3-7255-45D5-9799-7BDFC661B2E7}">
+													<Language>SFX</Language>
+													<AudioFile>Level Theme Layer 2_Metroidvania Month Jam_11Dec2023.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="498598429"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{287EF453-9D47-46CA-8A91-9EF4A430B0E4}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{E40DA267-6971-4976-8E1F-66C87BFC4018}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Level Theme Layer 2_Metroidvania Month Jam_11Dec2023" ID="{C92233AB-74AA-4BF6-9CED-FD9F616EA349}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="147000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Level Theme Layer 2_Metroidvania Month Jam_11Dec2023" ID="{7CA660A3-7255-45D5-9799-7BDFC661B2E7}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{FE070973-C059-46C1-BB84-D70FC844BE05}">
+														<PropertyList>
+															<Property Name="TimeMs" Type="Real64" Value="1739.15492957746"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{C62DC48A-AC85-4EBA-85B5-3D6BEA47757C}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="141865.352112676"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{03F8B9EF-0CFB-416E-89BA-14C064EE84C1}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{C1CEA4F1-8B2F-4C6E-8AEB-5801948B1F03}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{6D405965-5391-4E05-864A-171AD67C41F7}" ShortID="118570337">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{3086BD50-832E-4011-8277-45B162B81AD1}" ShortID="931054674">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="Level Theme Layer 2_Metroidvania Month Jam_11Dec2023" ID="{13DF5708-57A2-43B5-B7E3-02E31EC85C0F}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="mainThemeU4" ID="{36089B03-6A8D-481B-AEF9-747FFFA8109A}" ShortID="75207297">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="Level Theme Layer 5_Metroidvania Month Jam_11Dec2023" ID="{9C6A1CDA-6026-4577-8EA2-9CCD89311089}" ShortID="246434630">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="147000"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Level Theme Layer 5_Metroidvania Month Jam_11Dec2023" ID="{A1AEEFF8-21FF-4423-AFEA-2DF311FFAEFA}" ShortID="23627602">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Level Theme Layer 5_Metroidvania Month Jam_11Dec2023" ID="{C3ACF643-40B7-4FEC-9393-C73BCBCD2BFC}">
+													<Language>SFX</Language>
+													<AudioFile>Level Theme Layer 5_Metroidvania Month Jam_11Dec2023.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="860451314"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{6BEC5225-76F6-4905-9F09-C7AE3F4C672C}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{6B8577FA-C249-4287-92D4-59BD0B2EBA2F}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Level Theme Layer 5_Metroidvania Month Jam_11Dec2023" ID="{12599558-7AE2-4D69-B7F6-FD8D7B32D714}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="147000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Level Theme Layer 5_Metroidvania Month Jam_11Dec2023" ID="{C3ACF643-40B7-4FEC-9393-C73BCBCD2BFC}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{6D62F242-3510-4997-B013-2912F301FDD4}">
+														<PropertyList>
+															<Property Name="TimeMs" Type="Real64" Value="1739.15492957746"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{D1699110-A944-4CB1-9FF8-AE0FB26EBBA9}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="141865.352112676"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{8E2372C1-C248-4ED3-B3B7-1E1AE272BAB5}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{DBBA9847-FBFC-47F9-81F9-6ED9E7103FE9}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{41062A26-89D9-4306-A7DF-DE342D1A875E}" ShortID="225131944">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{74347279-2124-4C59-9095-8F16F7138E14}" ShortID="380493191">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="Level Theme Layer 5_Metroidvania Month Jam_11Dec2023" ID="{9C6A1CDA-6026-4577-8EA2-9CCD89311089}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="mainThemeU3" ID="{8D2E867E-71A2-48C7-8E84-5E2AD594603D}" ShortID="930266864">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="Level Theme Layer 4_Metroidvania Month Jam_11Dec2023" ID="{2AAB5C08-FB44-4020-A54E-C9309E4DEE73}" ShortID="192379811">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="147000"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Level Theme Layer 4_Metroidvania Month Jam_11Dec2023" ID="{9D51696E-84E4-47E5-8342-E66DD7201F35}" ShortID="488762270">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Level Theme Layer 4_Metroidvania Month Jam_11Dec2023" ID="{1C44AFE4-C07E-4859-AD3F-A52D84C9CE67}">
+													<Language>SFX</Language>
+													<AudioFile>Level Theme Layer 4_Metroidvania Month Jam_11Dec2023.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="80689404"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{41B0ADF8-7B44-4F23-A66A-CEF777475E02}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{0DC01D70-9F6C-42EC-9F36-CD0547B288AA}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Level Theme Layer 4_Metroidvania Month Jam_11Dec2023" ID="{F274FB40-DDB7-4119-826B-37A5CAB682DD}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="147000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Level Theme Layer 4_Metroidvania Month Jam_11Dec2023" ID="{1C44AFE4-C07E-4859-AD3F-A52D84C9CE67}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{9EF65538-2AAF-4441-A2BA-B7D0707B5694}">
+														<PropertyList>
+															<Property Name="TimeMs" Type="Real64" Value="1656.33802816901"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{9D983E7D-2B08-40FB-830D-97E84CFE5664}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="141699.718309859"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{4BB271A6-EBD4-4CA5-A587-1CC34AB83E1B}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{A726690F-A5BA-4FCD-97CA-110CDC831E7C}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{ABEE5B88-B4DA-42AC-BF85-0E366284DB76}" ShortID="884057074">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{CE9FE7F5-EFCD-4A5A-AF74-DEE9BA04C203}" ShortID="869413501">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="Level Theme Layer 4_Metroidvania Month Jam_11Dec2023" ID="{2AAB5C08-FB44-4020-A54E-C9309E4DEE73}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="mainThemeU2" ID="{3A6AC2CB-EC16-4BA7-A2F9-71DB477D7106}" ShortID="369671259">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="Level Theme Layer 3_Metroidvania Month Jam_11Dec2023" ID="{0A1FA2F5-6F48-407E-9993-2C2C2A82E67A}" ShortID="433715044">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="147000"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Level Theme Layer 3_Metroidvania Month Jam_11Dec2023" ID="{2699D235-FAA4-42A0-86E7-E211FDC764F0}" ShortID="597221133">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Level Theme Layer 3_Metroidvania Month Jam_11Dec2023" ID="{FE45C39F-BFF1-4221-A623-D84DDFDEDCA0}">
+													<Language>SFX</Language>
+													<AudioFile>Level Theme Layer 3_Metroidvania Month Jam_11Dec2023.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="16813949"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{92AAE0E6-E483-4973-A6D5-C877735EFBDE}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{1ED14678-84EE-4C36-B15A-97017C60C6C3}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Level Theme Layer 3_Metroidvania Month Jam_11Dec2023" ID="{D78EE00B-595C-4F1A-9CEE-673DBA664E75}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="147000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Level Theme Layer 3_Metroidvania Month Jam_11Dec2023" ID="{FE45C39F-BFF1-4221-A623-D84DDFDEDCA0}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{5EA412D1-4176-43B6-89B4-14942AEC196C}">
+														<PropertyList>
+															<Property Name="TimeMs" Type="Real64" Value="1573.52112676056"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{CE43FA3A-1493-47A8-B5BA-5752E65F1B41}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="141699.718309859"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{6AA516DE-41B5-4313-A33F-ECE704D93703}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{C6788426-194C-4B9D-A39F-4017B9633B1A}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{E6F9435C-5623-4626-9142-E052651E5D5B}" ShortID="246969998">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{98E5775A-DD27-48FC-8B97-BE6B3E392B81}" ShortID="347479445">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="Level Theme Layer 3_Metroidvania Month Jam_11Dec2023" ID="{0A1FA2F5-6F48-407E-9993-2C2C2A82E67A}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="firstBossTheme" ID="{ECD41F28-EC5B-4C32-8A1F-27B8E41BD161}" ShortID="608656615">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="Bossfight_Metroidvania Month Jam_11Dec2023" ID="{1540AAF7-AACA-44CD-9216-65B9D361E470}" ShortID="195298953">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="75000"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Bossfight_Metroidvania Month Jam_11Dec2023" ID="{CCC2BE1A-3CED-43F3-8D4B-9EF90E9848F8}" ShortID="1073441720">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Bossfight_Metroidvania Month Jam_11Dec2023" ID="{20FC7D46-CEE7-47E6-A59F-1C86AD706643}">
+													<Language>SFX</Language>
+													<AudioFile>Bossfight_Metroidvania Month Jam_11Dec2023.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="20275627"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{4380F9B5-4385-41BE-8386-DD532C812C38}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{EF04435F-FB16-4432-AB87-DADCB9836C10}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Bossfight_Metroidvania Month Jam_11Dec2023" ID="{4C3B49CF-5B6A-4491-87DF-9637FCD0871F}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="75000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Bossfight_Metroidvania Month Jam_11Dec2023" ID="{20FC7D46-CEE7-47E6-A59F-1C86AD706643}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{5BE2D2F4-1341-432D-B4E8-BAEFA56D1106}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{C953872F-2CF9-4326-B4AF-4E6F48FE3DE4}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="74028.1690140845"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{2B6F5F9F-EE70-49B9-B116-9E3034847541}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{C1D9A4BF-AA8E-4E4D-98DD-7FD04973A743}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{983C98AA-7500-4A73-8AE8-FE7AC2006F91}" ShortID="350450616">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{AEA458A5-22AE-49F5-8AB6-8DE90D7E24AF}" ShortID="957133585">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="Bossfight_Metroidvania Month Jam_11Dec2023" ID="{1540AAF7-AACA-44CD-9216-65B9D361E470}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="creditsTheme" ID="{B1249D99-76BA-4D82-9B8B-B36689C6ABC3}" ShortID="318021703">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="Credits_Metroidvania Month Jam_11Dec2023" ID="{BA96EAE6-6143-4BF6-ADD0-34455AFF2335}" ShortID="1047462054">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="33000"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Credits_Metroidvania Month Jam_11Dec2023" ID="{82CDDFCB-21CF-454B-81B6-5C513F3BB913}" ShortID="882391625">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Credits_Metroidvania Month Jam_11Dec2023" ID="{01289755-2A6D-412E-99C3-C4DF9C3C57CC}">
+													<Language>SFX</Language>
+													<AudioFile>Credits_Metroidvania Month Jam_11Dec2023.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="93873590"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{1DF8CE21-8157-4586-9D74-97B2834FCE75}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{00C8508A-B6D1-4FE1-9861-7B9479D7BBB0}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Credits_Metroidvania Month Jam_11Dec2023" ID="{DEE3102E-8C0E-464B-98D5-1EA14E0C71EC}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="33000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Credits_Metroidvania Month Jam_11Dec2023" ID="{01289755-2A6D-412E-99C3-C4DF9C3C57CC}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{915CE8B7-7C13-4264-946A-3954C40B2E45}">
+														<PropertyList>
+															<Property Name="TimeMs" Type="Real64" Value="1227.04225352113"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{2DC5443C-6F9A-461F-A0E9-87FBAAAE7592}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="29244.5070422535"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{916186C9-F7DE-43CB-91FD-86A89A97312A}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{8FEDB471-3CDD-45D5-9ABD-F558C1595421}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{821E1C40-7A1E-4E86-B82E-94101039FC66}" ShortID="299906585">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{9E2E8B07-1C1C-4C5D-B0B8-6A37EC94147E}" ShortID="764263432">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="Credits_Metroidvania Month Jam_11Dec2023" ID="{BA96EAE6-6143-4BF6-ADD0-34455AFF2335}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
+					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="playerUpgrades" ID="{4CAC91E9-3E86-431E-81C4-8019472629CE}"/>
+							</StateGroupInfo>
+							<StateGroupInfo>
+								<StateGroupRef Name="gameZone" ID="{41A9B221-2736-4151-B2D8-1077A1F40B0F}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="thirdUpgrade" ID="{E31519A8-197A-402D-8238-B599A8E4EE9F}"/>
+								<CustomState Name="" ID="{86DFC0BC-5C12-4DDB-8A31-F25C09322431}" ShortID="50034244"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="firstZone" ID="{1E9F33A5-378A-4085-AEAD-3059CBDF0D58}"/>
+								<CustomState Name="" ID="{3C35D4DD-6153-4063-9893-51705E32BDBB}" ShortID="667354456"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="secondUpgrade" ID="{C1787AB4-840D-476D-99CF-024EB2BED8F7}"/>
+								<CustomState Name="" ID="{CB22CFBA-1584-4275-8265-EE157ADA3EE8}" ShortID="69693421"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="menu" ID="{F6D66972-4EA5-47FB-8416-6B2244084E37}"/>
+								<CustomState Name="" ID="{9A79253E-05F0-4751-ACE3-1039368B41DD}" ShortID="751637859"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="firstUpgrade" ID="{149EC2EE-5F3E-48AB-9C4E-F7390ECB4094}"/>
+								<CustomState Name="" ID="{7957A40B-52EF-43C4-9631-B0A927547D1A}" ShortID="3080382"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="fourthUpgrade" ID="{E2700F4A-E8B3-4926-BFD3-73DA29CB0D41}"/>
+								<CustomState Name="" ID="{0DBD66D5-1FA3-4296-BB8F-A4F7C6CEC4C7}" ShortID="401816671"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="zeroUpgrade" ID="{2C00ED9C-AB4E-49E6-B937-E5E01C426DEE}"/>
+								<CustomState Name="" ID="{1ADCBF2D-4E9F-46C4-BFBD-E0FFCFEECD39}" ShortID="369733946"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="firstBoss" ID="{54B8B071-18D7-4BFB-BABD-DE098247327C}"/>
+								<CustomState Name="" ID="{0FB6677D-D2B0-4F7B-B8B7-DE7333768258}" ShortID="739572945"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="credits" ID="{02F58429-F827-4C4D-9265-FF116A3AEEEE}"/>
+								<CustomState Name="" ID="{C21BFB93-9EAF-4765-901C-0F6FB0B9366E}" ShortID="395510236"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{7930BC76-9871-4389-8AB9-37967AB7B05C}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{6A6BDEE9-461A-4D7C-A8B3-D4520907FC51}">
+									<TransitionInfo/>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{571E3250-35CC-487C-BA6B-9A8F4F89EFBE}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="mainThemeU0" ID="{281965B6-B94D-49BA-90FA-B80696D3D846}" WorkUnitID="{39959547-F85D-43D0-8E81-38867B5CBC0D}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="menuTheme" ID="{C7AE5362-959F-4165-93F8-1405DC3AC98E}" WorkUnitID="{39959547-F85D-43D0-8E81-38867B5CBC0D}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{AD16CE9A-EDC6-45AC-B8A4-37439509D14F}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="1.5"/>
+													<Property Name="FadeTime" Type="Real64" Value="3"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+										<DestinationFadeIn>
+											<MusicFade Name="Destination Fade-in" ID="{777BF1D8-395A-4957-BF7D-76392CA32F54}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="-1.5"/>
+													<Property Name="FadeTime" Type="Real64" Value="3"/>
+												</PropertyList>
+											</MusicFade>
+										</DestinationFadeIn>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{632EF494-2617-43D9-B91E-51EDB3F51E70}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
+										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="mainThemeU1" ID="{97892768-02D5-43E1-90AE-527776DD815C}" WorkUnitID="{39959547-F85D-43D0-8E81-38867B5CBC0D}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="mainThemeU0" ID="{281965B6-B94D-49BA-90FA-B80696D3D846}" WorkUnitID="{39959547-F85D-43D0-8E81-38867B5CBC0D}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{7F98D706-397E-46A8-B43C-228EC28C9799}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="1"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+										<DestinationFadeIn>
+											<MusicFade Name="Destination Fade-in" ID="{5BE50D06-F111-4362-A326-92D444388E2F}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="-1"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
+												</PropertyList>
+											</MusicFade>
+										</DestinationFadeIn>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{28B4796E-88DC-4525-BE09-32115526462E}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
+										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="mainThemeU2" ID="{3A6AC2CB-EC16-4BA7-A2F9-71DB477D7106}" WorkUnitID="{39959547-F85D-43D0-8E81-38867B5CBC0D}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="mainThemeU1" ID="{97892768-02D5-43E1-90AE-527776DD815C}" WorkUnitID="{39959547-F85D-43D0-8E81-38867B5CBC0D}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{196FF990-3298-48E2-B0D7-44F3682D1CC4}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="1"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+										<DestinationFadeIn>
+											<MusicFade Name="Destination Fade-in" ID="{118429CC-70CF-45B6-BB96-97E3BC29E7A6}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="-1"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
+												</PropertyList>
+											</MusicFade>
+										</DestinationFadeIn>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{A1E00268-389D-4A49-B5C0-E1A75171B3B6}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
+										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="mainThemeU3" ID="{8D2E867E-71A2-48C7-8E84-5E2AD594603D}" WorkUnitID="{39959547-F85D-43D0-8E81-38867B5CBC0D}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="mainThemeU2" ID="{3A6AC2CB-EC16-4BA7-A2F9-71DB477D7106}" WorkUnitID="{39959547-F85D-43D0-8E81-38867B5CBC0D}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{3F71C68F-EA6B-4D97-9F8A-75B772E384A7}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="1"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+										<DestinationFadeIn>
+											<MusicFade Name="Destination Fade-in" ID="{36C73F17-8020-4C05-98C0-2C8BA518EBC3}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="-1"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
+												</PropertyList>
+											</MusicFade>
+										</DestinationFadeIn>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{E1B99E90-033D-4688-AFDF-1790C5259D18}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
+										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="mainThemeU4" ID="{36089B03-6A8D-481B-AEF9-747FFFA8109A}" WorkUnitID="{39959547-F85D-43D0-8E81-38867B5CBC0D}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="mainThemeU3" ID="{8D2E867E-71A2-48C7-8E84-5E2AD594603D}" WorkUnitID="{39959547-F85D-43D0-8E81-38867B5CBC0D}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{3E601DAC-7B4B-45C4-AC26-B58C89F8B947}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="1"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+										<DestinationFadeIn>
+											<MusicFade Name="Destination Fade-in" ID="{8EB04BD1-B88D-40A8-BC7F-322B9FD5C718}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="-1"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
+												</PropertyList>
+											</MusicFade>
+										</DestinationFadeIn>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{977CDA7D-40D2-4ED2-9AA2-9F1752690FEB}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="firstBossTheme" ID="{ECD41F28-EC5B-4C32-8A1F-27B8E41BD161}" WorkUnitID="{39959547-F85D-43D0-8E81-38867B5CBC0D}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{0D5C5232-4C34-4F0E-BAD0-24F8D8B423BC}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="1.5"/>
+													<Property Name="FadeTime" Type="Real64" Value="3"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+										<DestinationFadeIn>
+											<MusicFade Name="Destination Fade-in" ID="{4F43B5E6-6AF5-4880-AFF2-A57085E3EA86}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="-1.5"/>
+													<Property Name="FadeTime" Type="Real64" Value="3"/>
+												</PropertyList>
+											</MusicFade>
+										</DestinationFadeIn>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{D95BDAF4-A77F-46F7-B3D0-F3C4927D1D2E}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="creditsTheme" ID="{B1249D99-76BA-4D82-9B8B-B36689C6ABC3}" WorkUnitID="{39959547-F85D-43D0-8E81-38867B5CBC0D}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{875530E3-A2CB-4A2E-A87D-A2B3C7D84C4E}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="1.5"/>
+													<Property Name="FadeTime" Type="Real64" Value="3"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+										<DestinationFadeIn>
+											<MusicFade Name="Destination Fade-in" ID="{97AE02F5-CFFC-4744-AC55-6F74B17A6DF8}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="-1.5"/>
+													<Property Name="FadeTime" Type="Real64" Value="3"/>
+												</PropertyList>
+											</MusicFade>
+										</DestinationFadeIn>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{9FEE3D6F-116B-4568-B628-CCD7338D61CB}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="menuTheme" ID="{C7AE5362-959F-4165-93F8-1405DC3AC98E}" WorkUnitID="{39959547-F85D-43D0-8E81-38867B5CBC0D}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="creditsTheme" ID="{B1249D99-76BA-4D82-9B8B-B36689C6ABC3}" WorkUnitID="{39959547-F85D-43D0-8E81-38867B5CBC0D}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{512AF2B3-CA60-430A-BF53-BF29FDECD458}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="1.5"/>
+													<Property Name="FadeTime" Type="Real64" Value="3"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+										<DestinationFadeIn>
+											<MusicFade Name="Destination Fade-in" ID="{9FDE5505-E7A0-499F-A574-51D6641533F8}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="-1.5"/>
+													<Property Name="FadeTime" Type="Real64" Value="3"/>
+												</PropertyList>
+											</MusicFade>
+										</DestinationFadeIn>
+									</TransitionInfo>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<ArgumentList>
+						<ArgumentRef Name="gameZone" ID="{41A9B221-2736-4151-B2D8-1077A1F40B0F}"/>
+						<ArgumentRef Name="playerUpgrades" ID="{4CAC91E9-3E86-431E-81C4-8019472629CE}"/>
+					</ArgumentList>
+					<EntryList>
+						<Entry>
+							<Path>
+								<PathElementRef Name="menu" ID="{F6D66972-4EA5-47FB-8416-6B2244084E37}"/>
+								<PathElementRef Name="playerUpgrades" ID="{4CAC91E9-3E86-431E-81C4-8019472629CE}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="menuTheme" ID="{C7AE5362-959F-4165-93F8-1405DC3AC98E}" WorkUnitID="{39959547-F85D-43D0-8E81-38867B5CBC0D}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="firstZone" ID="{1E9F33A5-378A-4085-AEAD-3059CBDF0D58}"/>
+								<PathElementRef Name="None" ID="{E3845439-044B-4087-B923-D6EF035F3B77}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="mainThemeU0" ID="{281965B6-B94D-49BA-90FA-B80696D3D846}" WorkUnitID="{39959547-F85D-43D0-8E81-38867B5CBC0D}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="firstZone" ID="{1E9F33A5-378A-4085-AEAD-3059CBDF0D58}"/>
+								<PathElementRef Name="zeroUpgrade" ID="{2C00ED9C-AB4E-49E6-B937-E5E01C426DEE}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="mainThemeU0" ID="{281965B6-B94D-49BA-90FA-B80696D3D846}" WorkUnitID="{39959547-F85D-43D0-8E81-38867B5CBC0D}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="firstZone" ID="{1E9F33A5-378A-4085-AEAD-3059CBDF0D58}"/>
+								<PathElementRef Name="firstUpgrade" ID="{149EC2EE-5F3E-48AB-9C4E-F7390ECB4094}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="mainThemeU1" ID="{97892768-02D5-43E1-90AE-527776DD815C}" WorkUnitID="{39959547-F85D-43D0-8E81-38867B5CBC0D}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="firstZone" ID="{1E9F33A5-378A-4085-AEAD-3059CBDF0D58}"/>
+								<PathElementRef Name="secondUpgrade" ID="{C1787AB4-840D-476D-99CF-024EB2BED8F7}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="mainThemeU2" ID="{3A6AC2CB-EC16-4BA7-A2F9-71DB477D7106}" WorkUnitID="{39959547-F85D-43D0-8E81-38867B5CBC0D}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="firstZone" ID="{1E9F33A5-378A-4085-AEAD-3059CBDF0D58}"/>
+								<PathElementRef Name="thirdUpgrade" ID="{E31519A8-197A-402D-8238-B599A8E4EE9F}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="mainThemeU3" ID="{8D2E867E-71A2-48C7-8E84-5E2AD594603D}" WorkUnitID="{39959547-F85D-43D0-8E81-38867B5CBC0D}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="firstZone" ID="{1E9F33A5-378A-4085-AEAD-3059CBDF0D58}"/>
+								<PathElementRef Name="fourthUpgrade" ID="{E2700F4A-E8B3-4926-BFD3-73DA29CB0D41}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="mainThemeU4" ID="{36089B03-6A8D-481B-AEF9-747FFFA8109A}" WorkUnitID="{39959547-F85D-43D0-8E81-38867B5CBC0D}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="firstBoss" ID="{54B8B071-18D7-4BFB-BABD-DE098247327C}"/>
+								<PathElementRef Name="playerUpgrades" ID="{4CAC91E9-3E86-431E-81C4-8019472629CE}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="firstBossTheme" ID="{ECD41F28-EC5B-4C32-8A1F-27B8E41BD161}" WorkUnitID="{39959547-F85D-43D0-8E81-38867B5CBC0D}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="credits" ID="{02F58429-F827-4C4D-9265-FF116A3AEEEE}"/>
+								<PathElementRef Name="playerUpgrades" ID="{4CAC91E9-3E86-431E-81C4-8019472629CE}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="creditsTheme" ID="{B1249D99-76BA-4D82-9B8B-B36689C6ABC3}" WorkUnitID="{39959547-F85D-43D0-8E81-38867B5CBC0D}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+					</EntryList>
+				</MusicSwitchContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</InteractiveMusic>
 </WwiseDocument>

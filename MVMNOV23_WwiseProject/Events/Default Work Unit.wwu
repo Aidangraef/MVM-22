@@ -8,6 +8,7 @@
 				<WorkUnit Name="Objects" ID="{8120CDDE-C03B-49A1-9097-0FB092482B3A}" PersistMode="Reference"/>
 				<WorkUnit Name="Player" ID="{A5316B78-3C56-4BA3-B621-613D151278FB}" PersistMode="Reference"/>
 				<WorkUnit Name="UI" ID="{AFA36B95-C8E4-4810-A4F2-29F69183D587}" PersistMode="Reference"/>
+				<WorkUnit Name="Music" ID="{A711D942-7CDD-48AD-B558-6ABA2E148970}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

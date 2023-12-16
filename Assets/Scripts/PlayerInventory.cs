@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerInventory : MonoBehaviour
 {
@@ -30,6 +31,9 @@ public class PlayerInventory : MonoBehaviour
                 // remove from inventory
                 inventory.RemoveAt(0);
                 Destroy(UIBar.GetChild(0).gameObject);
+
+                // play sound
+                AkSoundEngine.PostEvent("gravShoot", this.gameObject);
             }           
         }
     }
@@ -39,6 +43,7 @@ public class PlayerInventory : MonoBehaviour
         inventory.Add(obj);
         GameObject newItem = Instantiate(slotPrefab, UIBar);
 
-        // TODO: Code to get image of object
+        //get image of object
+        newItem.GetComponent<Image>().overrideSprite = obj.GetComponent<SpriteRenderer>().sprite;
     }
 }

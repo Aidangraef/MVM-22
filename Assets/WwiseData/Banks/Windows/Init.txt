@@ -1,3 +1,25 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1687686957	gameZone			\Default Work Unit\gameZone	
+	3105312269	playerUpgrades			\Default Work Unit\playerUpgrades	
+
+State	ID	Name	State Group			Notes
+	748895195	None	gameZone			
+	2201105581	credits	gameZone			
+	2254719051	firstZone	gameZone			
+	2607556080	menu	gameZone			
+	3080698126	firstBoss	gameZone			
+	492523291	firstUpgrade	playerUpgrades			
+	748895195	None	playerUpgrades			
+	2663107407	fourthUpgrade	playerUpgrades			
+	2826329895	secondUpgrade	playerUpgrades			
+	3089372025	zeroUpgrade	playerUpgrades			
+	4143628668	thirdUpgrade	playerUpgrades			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	516124850	gameMusicVolume			\Default Work Unit\Volume Sliders\gameMusicVolume	
+	1052786170	gameSFXVolume			\Default Work Unit\Volume Sliders\gameSFXVolume	
+	4103204207	gameMasterVolume			\Default Work Unit\Volume Sliders\gameMasterVolume	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	77978275	Ambient			\Default Work Unit\Master Audio Bus\World\Ambient	
 	833916109	NPCs			\Default Work Unit\Master Audio Bus\World\NPCs	

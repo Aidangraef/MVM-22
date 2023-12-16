@@ -4,14 +4,56 @@
 		<WorkUnit Name="Ambient" ID="{AE487B5E-8469-4E13-BC1F-48A4FBC7CAF4}" OwnerID="{F8B0F4E1-B1E3-4CAA-B66D-654B9031B356}" PersistMode="Nested">
 			<ChildrenList>
 				<ActorMixer Name="Ambient" ID="{E9FA43DC-BAA1-4DF0-AC98-34E06D0137DD}" ShortID="690773072">
+					<PropertyList>
+						<Property Name="OverrideOutput" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+							<ObjectRef Name="Ambient" ID="{E2F1B47E-09A6-462F-BEBC-58232F1B29E3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="ambientPH" ID="{21E1D414-98E6-49A7-90CF-FFA62DCF2FB4}" ShortID="567162861">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-30</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dark Drone Intensive Electric Waves" ID="{5AA2C6AA-2794-49DD-B0D0-9749390E7F66}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="1000"/>
+										<Property Name="FadeInDuration" Type="Real64" Value="1.94045628051487"/>
+										<Property Name="LoopBegin" Type="Real64" Value="3.13458322237017"/>
+										<Property Name="LoopEnd" Type="Real64" Value="198.822135818908"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Dark Drone Intensive Electric Waves.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="94906913"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Dark Drone Intensive Electric Waves" ID="{5AA2C6AA-2794-49DD-B0D0-9749390E7F66}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>

@@ -5,6 +5,8 @@ using UnityEngine;
 public class BlackHoleMovement : MonoBehaviour
 {
     [SerializeField] private GameObject blackHole;
+    [SerializeField] private GameObject blackHoleSprite;
+    [SerializeField] private MapSwitcher map;
 
     private bool updatePosition;
 
@@ -17,10 +19,14 @@ public class BlackHoleMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // cannot move black hole in map mode
+        if (map != null && map.mapIsActive) return;
+
         // only move the black hole if the mouse button is held down
         if(Input.GetMouseButtonDown(1))
         {
             updatePosition = true;
+            AkSoundEngine.PostEvent("gravStart", this.gameObject);
         }
         else
         {
@@ -30,6 +36,8 @@ public class BlackHoleMovement : MonoBehaviour
         if(Input.GetKeyDown("v") || Input.GetMouseButtonUp(1))
         {
             blackHole.transform.position = new Vector3(-3000, -3000, 0); // "delete" the black hole
+            blackHoleSprite.transform.position = new Vector3(-3000, -3000, 0); // "delete" the black hole sprite
+            AkSoundEngine.PostEvent("gravEnd", this.gameObject);
         }
     }
 
@@ -46,6 +54,7 @@ public class BlackHoleMovement : MonoBehaviour
         if (!updatePosition) return; // mouse is not being clicked so nothing needs to happen
 
         blackHole.transform.position = mousePos;
+        blackHoleSprite.transform.position = mousePos;
         updatePosition = false;
     }
 }

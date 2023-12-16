@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1648830670636198710}
   m_Layer: 6
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Box
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 1826171153, guid: 33bede223fa24ff449458afc3f560a75, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -152,4 +152,4 @@ MonoBehaviour:
   blackHoleLayer:
     serializedVersion: 2
     m_Bits: 128
-  storable: 0
+  storable: 1

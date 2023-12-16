@@ -5,6 +5,18 @@ TagManager:
   serializedVersion: 2
   tags:
   - Black Hole
+  - Spikes
+  - Ground
+  - Dialogue
+  - Walking Enemy
+  - Shield
+  - Dash Crystal
+  - Bullet
+  - EPrompt
+  - DoorToBoss
+  - Box
+  - Boss
+  - Boss Bullet
   layers:
   - Default
   - TransparentFX

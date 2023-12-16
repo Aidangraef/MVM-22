@@ -4,14 +4,274 @@
 		<WorkUnit Name="Objects" ID="{058B7DD2-DCB7-4FB9-AC4D-707E0751F7E8}" OwnerID="{F8B0F4E1-B1E3-4CAA-B66D-654B9031B356}" PersistMode="Nested">
 			<ChildrenList>
 				<ActorMixer Name="Objects" ID="{EBBCE42D-FB8D-4763-B868-03035B4E7656}" ShortID="182535119">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="OverrideOutput" Type="bool" Value="True"/>
+						<Property Name="OverridePositioning" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Enemy Attenuation" ID="{16DB033E-7878-43AF-8891-B3083B15A7F2}" WorkUnitID="{ED9B7BF8-2B0F-4475-AE0F-19ACD2EA5937}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+							<ObjectRef Name="Objects" ID="{99FE6F70-A41A-4041-AA02-8FDC4BC8191D}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="gravVac" ID="{E3EABE9F-3EBE-4016-8A91-10CD9B0310CE}" ShortID="531188544">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{86CF2E20-175C-4EAC-A039-0CD076FC6A8E}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="gravityVac" ID="{6BBCAD6A-8D00-4B0C-8A61-FA4D30EEC7FC}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0390411950732357"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0725050765645806"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.549365387816245"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>gravityVac.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="965703128"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="gravityVac" ID="{6BBCAD6A-8D00-4B0C-8A61-FA4D30EEC7FC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="doorOpen" ID="{D0DC142B-54A2-45AC-BE0C-73FA00F8EA30}" ShortID="986740472">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>20</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="doorOpen" ID="{B895D00E-7213-4260-ADCB-E57D6CF3DD68}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.00762637316910786"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.00897220372836216"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>doorOpen.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="148448738"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="doorOpen" ID="{B895D00E-7213-4260-ADCB-E57D6CF3DD68}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="firstBossDoorOpen" ID="{558056B4-3037-4CEE-AE70-478D48C3E5F4}" ShortID="535621088">
+							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="stoneDoorOpen" ID="{A07E3698-F843-43FD-8772-4BD49A6930B0}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.114513981358189"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.207723035952064"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.213049267643142"/>
+										<Property Name="TrimEnd" Type="Real64" Value="3.01997336884155"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>stoneDoorOpen.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="174623387"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="stoneDoorOpen" ID="{A07E3698-F843-43FD-8772-4BD49A6930B0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="boxCollision" ID="{DA0316AC-D4DF-4A44-A04F-B1A2C2DA7BAD}" ShortID="173467340">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>35</Value>
+									</ValueList>
+								</Property>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{36E9D630-0975-4389-AD9D-7BC1B6DAC018}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="75"/>
+													<Property Name="Min" Type="Real64" Value="-75"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="boxCollisions-001" ID="{C6021091-EB66-48DD-BC27-72FAB9C8AE5A}" ShortID="42638420">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="boxCollisions-001" ID="{895633B3-2274-4641-AAFC-7D0FA31EBDB4}">
+											<Language>SFX</Language>
+											<AudioFile>boxCollisions-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="224951551"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="boxCollisions-001" ID="{895633B3-2274-4641-AAFC-7D0FA31EBDB4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="boxCollisions-002" ID="{1D47B462-4233-415D-980B-2308F838E127}" ShortID="685991528">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="boxCollisions-002" ID="{7033C128-D638-49DC-BB4E-A2CC98021C56}">
+											<Language>SFX</Language>
+											<AudioFile>boxCollisions-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="780479273"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="boxCollisions-002" ID="{7033C128-D638-49DC-BB4E-A2CC98021C56}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="boxCollisions-003" ID="{D04CFFFF-0833-4BD7-BEB6-626BC839D48A}" ShortID="1001889426">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="boxCollisions-003" ID="{99B24930-1B43-43B7-A7C2-563B8ECAAAC9}">
+											<Language>SFX</Language>
+											<AudioFile>boxCollisions-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="491653558"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="boxCollisions-003" ID="{99B24930-1B43-43B7-A7C2-563B8ECAAAC9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="boxCollisions-004" ID="{9B3D2A08-69D9-4481-9FE9-7FF7511C64D1}" ShortID="236067799">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3895D55E-06A7-46BC-BCB3-4F5AD7D787B5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6152AAC1-6098-4BDB-9082-CB0317B6DDF4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="boxCollisions-004" ID="{A05B68BF-057D-41F4-B4FE-ABD550C5890F}">
+											<Language>SFX</Language>
+											<AudioFile>boxCollisions-004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="973245307"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="boxCollisions-004" ID="{A05B68BF-057D-41F4-B4FE-ABD550C5890F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>

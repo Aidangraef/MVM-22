@@ -7,8 +7,7 @@
 					<ChildrenList>
 						<SoundBank Name="GameplayLoop" ID="{392ECBD8-7E57-41C6-8C0E-577DECFA9D7F}">
 							<ObjectInclusionList>
-								<ObjectRef Name="testComplete" ID="{B17AF0B5-2F46-43E3-9E3F-9EE0C82EBB29}" WorkUnitID="{AFA36B95-C8E4-4810-A4F2-29F69183D587}" Origin="Manual" Filter="7"/>
-								<ObjectRef Name="testFail" ID="{06366194-163D-4D77-9601-06A041F1D5C5}" WorkUnitID="{AFA36B95-C8E4-4810-A4F2-29F69183D587}" Origin="Manual" Filter="7"/>
+								<ObjectRef Name="Default Work Unit" ID="{0FDCE87A-3E1C-4B5A-8A91-CD3C3E4E6159}" WorkUnitID="{0FDCE87A-3E1C-4B5A-8A91-CD3C3E4E6159}" Origin="Manual" Filter="7"/>
 							</ObjectInclusionList>
 							<ObjectExclusionList/>
 							<GameSyncExclusionList/>

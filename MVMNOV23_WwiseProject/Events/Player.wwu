@@ -1,6 +1,218 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{A5316B78-3C56-4BA3-B621-613D151278FB}" SchemaVersion="110" RootDocumentID="{0FDCE87A-3E1C-4B5A-8A91-CD3C3E4E6159}" ParentDocumentID="{0FDCE87A-3E1C-4B5A-8A91-CD3C3E4E6159}">
 	<Events>
-		<WorkUnit Name="Player" ID="{A5316B78-3C56-4BA3-B621-613D151278FB}" OwnerID="{0FDCE87A-3E1C-4B5A-8A91-CD3C3E4E6159}" PersistMode="Nested"/>
+		<WorkUnit Name="Player" ID="{A5316B78-3C56-4BA3-B621-613D151278FB}" OwnerID="{0FDCE87A-3E1C-4B5A-8A91-CD3C3E4E6159}" PersistMode="Nested">
+			<ChildrenList>
+				<Folder Name="Attacks" ID="{99EBFF73-57F2-40EB-8425-7D50D5758010}" ShortID="613290427">
+					<ChildrenList>
+						<Event Name="swing1" ID="{A75745ED-4424-4FC6-BD26-CB9580D46A08}">
+							<ChildrenList>
+								<Action Name="" ID="{62F47FA6-81FB-4357-8C11-D27E7593CEEB}" ShortID="296024888">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="swing1" ID="{620D7DEE-96E4-44DF-8BC7-AC982A97E3C9}" WorkUnitID="{461DD406-5E4B-4854-B2D4-130E64075729}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="swing2" ID="{58C2F6E8-05A2-4396-AD3D-3DD57A259B04}">
+							<ChildrenList>
+								<Action Name="" ID="{E184815E-0F3A-4D5B-95B6-7224200598CE}" ShortID="274940123">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="swing2" ID="{949A9E2A-D9EA-49F3-A752-B0850AF4CE5E}" WorkUnitID="{461DD406-5E4B-4854-B2D4-130E64075729}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="swing3" ID="{4EEB08CE-F6EF-4E39-AA37-1003202E1CDD}">
+							<ChildrenList>
+								<Action Name="" ID="{5C3F8BDE-7691-4B7B-B899-BD1C963E2195}" ShortID="37894378">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="swing3" ID="{DE605C69-F0AA-4E56-9978-C2D4CC38BB14}" WorkUnitID="{461DD406-5E4B-4854-B2D4-130E64075729}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Gravity" ID="{CFF99252-BA8A-4327-88DD-C0736FE4ED81}" ShortID="134584456">
+					<ChildrenList>
+						<Event Name="gravStart" ID="{C1BE0555-07B3-4A7A-AD22-FBE264758E66}">
+							<ChildrenList>
+								<Action Name="" ID="{7E84F368-C498-45EC-ABC5-C0D646108BB1}" ShortID="639974935">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="gravSustain" ID="{CD34265D-AB33-4C67-9D62-727CCEBDD461}" WorkUnitID="{461DD406-5E4B-4854-B2D4-130E64075729}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{F75C9E0E-2E11-47FE-9C8C-F42785E0F561}" ShortID="673053341">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="gravWarpIn" ID="{43D2FE92-C3F3-49CC-8DFF-012FE515875A}" WorkUnitID="{461DD406-5E4B-4854-B2D4-130E64075729}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="gravEnd" ID="{35180EB6-AA38-4DB0-9194-45EFF5A7BA17}">
+							<ChildrenList>
+								<Action Name="" ID="{76F053EC-5924-41D6-B18D-1F9873FBB670}" ShortID="109581844">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="gravSustain" ID="{CD34265D-AB33-4C67-9D62-727CCEBDD461}" WorkUnitID="{461DD406-5E4B-4854-B2D4-130E64075729}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{9B49B0A8-B602-45A5-9F9B-9790DA03D2A8}" ShortID="570178795">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="gravWarpOut" ID="{77CC1F97-EB4B-4BBD-A33F-E3B21AE1CAB4}" WorkUnitID="{461DD406-5E4B-4854-B2D4-130E64075729}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="gravShoot" ID="{321EABB2-39AB-4BF8-87DE-11018E440C41}">
+							<ChildrenList>
+								<Action Name="" ID="{38CA8528-494B-4B92-88C7-D00F67B35D2A}" ShortID="864095188">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="gravShoot" ID="{9E9303B7-5BBE-4983-893A-FF5C205CD145}" WorkUnitID="{461DD406-5E4B-4854-B2D4-130E64075729}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Movement" ID="{5A47081F-1863-4EB8-91C3-3755E9876C8C}" ShortID="686608200">
+					<ChildrenList>
+						<Event Name="playerJump" ID="{8FEE2E24-5054-48BF-9737-4AF657B06B16}">
+							<ChildrenList>
+								<Action Name="" ID="{FAA37758-ACFC-4216-9733-B8DB7D8F64C0}" ShortID="996408858">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="playerJump" ID="{E01F3FA9-AB35-4838-B831-7D5F3FC97168}" WorkUnitID="{461DD406-5E4B-4854-B2D4-130E64075729}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="playerMove" ID="{BD53E069-F8CF-4F5D-82BC-424FDAFB8DB8}">
+							<ChildrenList>
+								<Action Name="" ID="{456DBCD8-B609-4BA0-9765-4C02C0041F59}" ShortID="651566427">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="playerMove" ID="{9B32AABF-ADF1-4AC0-8103-59CA68D8346D}" WorkUnitID="{461DD406-5E4B-4854-B2D4-130E64075729}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="playerDash" ID="{170BB0DE-BE58-4162-8233-F9FF74032D71}">
+							<ChildrenList>
+								<Action Name="" ID="{512BDAE4-B65C-4DC2-86CF-FC11E2A275F6}" ShortID="585519234">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="playerDash" ID="{E2B3F5A2-5AF1-4EA8-83F2-8C720D790076}" WorkUnitID="{461DD406-5E4B-4854-B2D4-130E64075729}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="playerShield" ID="{4D140FF8-8336-42E4-9485-A978C5DDBD8A}">
+							<ChildrenList>
+								<Action Name="" ID="{F177AC9A-F033-4E54-A108-A7BF87939238}" ShortID="295153789">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="playerShield" ID="{CA9ABF3D-DCDC-47FD-9B24-B5B175F0A814}" WorkUnitID="{461DD406-5E4B-4854-B2D4-130E64075729}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="playerLand" ID="{018F1FFB-DFF7-4492-B9B8-EBFB0E3176DE}">
+							<ChildrenList>
+								<Action Name="" ID="{E1CAEFB8-452A-48C0-9F80-0A19C4751D3A}" ShortID="249316456">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="playerLand" ID="{88BC0E57-BB2A-4BB3-9BD4-DEA3FEAF0768}" WorkUnitID="{461DD406-5E4B-4854-B2D4-130E64075729}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="playerStopMove" ID="{8BB68082-8BCB-4487-A198-F101A77B4370}">
+							<ChildrenList>
+								<Action Name="" ID="{01C05B84-45B3-42C1-B458-7732874793B3}" ShortID="152235296">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="playerMove" ID="{9B32AABF-ADF1-4AC0-8103-59CA68D8346D}" WorkUnitID="{461DD406-5E4B-4854-B2D4-130E64075729}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Health" ID="{793001E1-BA97-4907-804B-174C62072121}" ShortID="251383947">
+					<ChildrenList>
+						<Event Name="playerDie" ID="{DC10A190-CE09-48FE-85C6-77198737FE9F}">
+							<ChildrenList>
+								<Action Name="" ID="{F625E752-448C-430A-891B-D338070CAAC1}" ShortID="756501957">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="playerDie" ID="{DDCC7D2F-D01C-443C-BC55-37B53CF1BC05}" WorkUnitID="{461DD406-5E4B-4854-B2D4-130E64075729}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="playerHurt" ID="{B56AA9DA-DFB2-4C24-820D-3321855AFFC6}">
+							<ChildrenList>
+								<Action Name="" ID="{A1B457F5-49C0-419D-873F-269B28E508CD}" ShortID="261608446">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="playerHurt" ID="{8179D673-684E-41F7-87CA-F02A6D3830A2}" WorkUnitID="{461DD406-5E4B-4854-B2D4-130E64075729}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="playerHeal" ID="{35942B8B-F076-4C85-8D2F-446B518BCD5E}">
+							<ChildrenList>
+								<Action Name="" ID="{47004F89-A8A1-49BD-BD65-6EF2D973F4ED}" ShortID="854412445">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="playerHeal" ID="{04A89B92-E09C-46FB-B8A7-549AC5D3E9C3}" WorkUnitID="{461DD406-5E4B-4854-B2D4-130E64075729}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
